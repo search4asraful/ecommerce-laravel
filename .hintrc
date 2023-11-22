@@ -1,0 +1,28 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "text-decoration-skip-ink",
+          "-webkit-text-size-adjust",
+          "-webkit-overflow-scrolling",
+          "@-ms-viewport",
+          "@-ms-viewport"
+        ]
+      }
+    ]
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not and_ff <= 118",
+    "not firefox <= 118",
+    "not safari <= 17",
+    "not edge <= 118",
+    "not ios_saf <= 17"
+  ]
+}
