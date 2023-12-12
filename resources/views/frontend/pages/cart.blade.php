@@ -18,21 +18,20 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-9">
-                        <form action="" method="POST">
-                            @csrf
-                            <table class="table table-cart table-mobile">
-                                <thead>
+                        <table class="table table-cart table-mobile">
+                            <thead>
                                     <tr>
                                         <th>Product</th>
                                         <th>Price</th>
                                         <th>Quantity</th>
                                         <th>Total</th>
+                                        <th class="text-right">Action</th>
                                         <th></th>
                                     </tr>
                                 </thead>
                                 @php
                                     $sum = 0;
-                                @endphp
+                                    @endphp
                             
                                 <tbody>
                                     @foreach ($cartProduct as $product)
@@ -40,31 +39,36 @@
                                         <td class="product-col">
                                             <div class="product">
                                                 <figure class="product-media">
-                                                    <a href="#">
+                                                    <a href="{{ url('/product/details/'.$product->product_id) }}">
                                                         <img src="{{ asset('/images/'.$product->products[0]->image) }}" alt="Product image">
                                                     </a>
                                                 </figure>
                                                 <h3 class="product-title">
-                                                    <a href="#">{{ $product->products[0]->name }}</a>
+                                                    <a href="{{ url('/product/details/'.$product->product_id) }}">{{ $product->products[0]->name }}</a>
                                                 </h3><!-- End .product-title -->
                                             </div><!-- End .product -->
                                         </td>
                                         <td class="price-col"><span style="font-size: 1.4rem;">&#2547;</span>&nbsp;{{ number_format($product->price, 2) }}</td>
-                                        <td class="quantity-col">
+                                        <form action="{{ url('/cart/update/'.$product->id) }}" method="POST">
+                                            @csrf
+                                            <td class="quantity-col">
                                             <div class="cart-product-quantity">
-                                                <input type="number" class="form-control" value="{{ $product->qty }}" min="1" max="10" step="1" data-decimals="0" placeholder="{{ $product->qty }}" required>
-                                            </div><!-- End .cart-product-quantity -->
+                                                    <input type="number" name="qty" class="form-control" value="{{ $product->qty }}" name="qty" min="1" max="10" step="1" data-decimals="0" placeholder="{{ $product->qty }}" required>
+                                                </div><!-- End .cart-product-quantity -->
+                                            </td>
+                                            <td class="total-col"><span style="font-size: 1.4rem;">&#2547;</span>&nbsp;{{ number_format($totalPrice = $product->qty * $product->price, 2) }}</td>
+                                            <td class="col-1 text-center"><button type="submit" class="btn-info"><i class="icon-refresh"></i></button></td>
+                                        </form>
+                                        <td class="remove-col">
+                                            <a href="{{ url('/product/productCartRemove/'.$product->id) }}" class="btn-danger badge rounded-0 border border-5 border-dark border-left-0 border-top-0 p-3"><i class="icon-close"></i></a>
                                         </td>
-                                        <td class="total-col"><span style="font-size: 1.4rem;">&#2547;</span>&nbsp;{{ number_format($totalPrice = $product->qty * $product->price, 2) }}</td>
-                                        <td class="remove-col"><a href="{{ url('/product/productCartRemove/'.$product->id) }}" class="btn-remove"><i class="icon-close"></i></a></td>
                                     </tr>
                                     @php
                                         $sum += $totalPrice;
                                     @endphp
                                     @endforeach
                                 </tbody>
-                        </form>
-                        </table><!-- End .table table-wishlist -->
+                            </table><!-- End .table table-wishlist -->
 
                         <div class="cart-bottom">
                             <div class="cart-discount">
@@ -78,7 +82,6 @@
                                 </form>
                             </div><!-- End .cart-discount -->
 
-                            <a href="#" class="btn btn-outline-dark-2"><span>UPDATE CART</span><i class="icon-refresh"></i></a>
                         </div><!-- End .cart-bottom -->
                     </div><!-- End .col-lg-9 -->
                     <aside class="col-lg-3">

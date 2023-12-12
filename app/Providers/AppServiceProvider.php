@@ -30,7 +30,6 @@ class AppServiceProvider extends ServiceProvider
         view::composer('*', function($view){
             $view->with('categories', Category::all());
             $view->with('products', Product::all());
-            
             $view->with('cartProduct', Cart::with('products')->where('ip_address', request()->ip())->get());
         });
     }

@@ -15,6 +15,15 @@ return new class extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
+            $table->string('ip_address');
+            $table->string('name');
+            $table->string('phone');
+            $table->string('email')->nullable();
+            $table->string('address');
+            $table->unsignedInteger('total_qty');
+            $table->float('total_price', 8, 2);
+            $table->string('payment_type')->default('cash');
+            $table->string('order_note')->nullable();
             $table->timestamps();
         });
     }

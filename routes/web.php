@@ -2,10 +2,12 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Backend\BackendContoller;
 use App\Http\Controllers\Frontend\FrontendController;
 use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\ProductController;
 use App\Http\Controllers\Frontend\CartController;
+use App\Http\Controllers\Order\OrderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,13 +23,24 @@ use App\Http\Controllers\Frontend\CartController;
 Route::get('/', [FrontendController::class, 'index']);
 Route::get('/shop/products', [FrontendController::class, 'shopProducts']);
 Route::get('/product/details/{id}', [FrontendController::class, 'productDetails']);
+
 Route::post('/product/addToCart', [CartController::class, 'productAddCart']);
 Route::get('/product/productCartRemove/{id}', [CartController::class, 'productCartRemove']);
 Route::get('/cart/view', [CartController::class, 'productCartView']);
-// Route::post('/cart/update', [CartController::class, 'cartUpdate']);
+Route::post('/cart/update/{id}', [CartController::class, 'cartUpdate']);
 Route::get('/checkout', [CartController::class, 'checkout']);
 
+Route::post('/confirm/order', [OrderController::class, 'confirmOrder']);
+Route::get('/order', [OrderController::class, 'orders']);
+Route::get('/manage/order/{id}', [OrderController::class, 'orderManage']);
+Route::post('/order/update/{id}', [OrderController::class, 'orderUpdate']);
+Route::get('/order/invoice/{id}', [OrderController::class, 'orderInvoice']);
+
 Auth::routes();
+Route::get('/admin/setting', [BackendContoller::class, 'adminSetting']);
+Route::get('/banner/manage', [BackendContoller::class, 'bannerManage']);
+Route::get('/banner/tranding', [BackendContoller::class, 'trendingBanner']);
+Route::get('/deals/outlet', [BackendContoller::class, 'dealsOutlet']);
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/category/create', [CategoryController::class, 'categoryCreateForm']);

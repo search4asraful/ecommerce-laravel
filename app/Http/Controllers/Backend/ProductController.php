@@ -40,7 +40,10 @@ class ProductController extends Controller
         $product->image = $imageName;
         $product->save();
 
-        $this->setMassage('succes', 'Product has been added');
+        flash()->options([
+            'timeout' => 3000, // 3 seconds
+            'position' => 'bottom-right',
+        ])->addSuccess('Your product has been added.');
         return redirect()->back();
     }
 
@@ -84,8 +87,10 @@ class ProductController extends Controller
             'badge' => $request->badge,
             'qty' => $request->qty
         ]);
-
-        $this->setMassage('succes', 'Product has been updated');
+        flash()->options([
+            'timeout' => 3000, // 3 seconds
+            'position' => 'bottom-right',
+        ])->addSuccess('Product has been updated');
         return redirect()->back();
     }
 
@@ -93,7 +98,10 @@ class ProductController extends Controller
     {
         $product = Product::find($id);
         $product->delete();
-        $this->setMassage('succes', 'Product has been deleted');
+        flash()->options([
+            'timeout' => 3000, // 3 seconds
+            'position' => 'bottom-right',
+        ])->addSuccess('Product has been deleted');
         return redirect()->back();
     }
 }

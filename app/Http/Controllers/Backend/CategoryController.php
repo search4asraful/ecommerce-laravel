@@ -32,7 +32,10 @@ class CategoryController extends Controller
             'name' => $request->name,
             'image' => $imageName
         ]);
-        $this->setMassage('succes', 'Category has been created');
+        flash()->options([
+            'timeout' => 3000, // 3 seconds
+            'position' => 'bottom-right',
+        ])->addSuccess('Category has been created');
         return redirect()->back();
     }
 
@@ -64,7 +67,10 @@ class CategoryController extends Controller
             'name' => $request->name
         ]);
 
-        $this->setMassage('succes', 'Category has been updated');
+        flash()->options([
+            'timeout' => 3000, // 3 seconds
+            'position' => 'bottom-right',
+        ])->addSuccess('Category has been updated');
         return redirect()->back();
     }
 
@@ -72,7 +78,10 @@ class CategoryController extends Controller
     {
         $category = Category::find($id);
         $category->delete();
-        $this->setMassage('succes', 'Category has been deleted');
+        flash()->options([
+            'timeout' => 3000, // 3 seconds
+            'position' => 'bottom-right',
+        ])->addSuccess('Category has been deleted');
         return redirect()->back();
     }
 }

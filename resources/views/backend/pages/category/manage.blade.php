@@ -20,8 +20,8 @@
                     <img src="{{ asset('images/'.$category->image) }}" alt="Category image" height="60" width="auto">
                 </td>
                 <td class="text-center">
-                    <a href="{{ url('/category/edit/'.$category->id) }}" class="btn btn-info"><i class="fa-solid fa-pencil pe-2"></i>Edit</a>
-                    <a href="{{ url('/category/delete/'.$category->id) }}" class="btn btn-danger"><i class="fa-regular fa-trash-can pe-2"></i>Delete</a>
+                    <a href="{{ url('/category/edit/'.$category->id) }}" class="btn btn-small btn-info"><i class="fa-solid fa-pencil pe-2"></i>Edit</a>
+                    <a href="{{ url('/category/delete/'.$category->id) }}" class="btn btn-small btn-danger"><i class="fa-regular fa-trash-can pe-2"></i>Delete</a>
                 </td>
             </tr>
             @endforeach

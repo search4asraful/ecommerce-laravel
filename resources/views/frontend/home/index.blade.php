@@ -198,8 +198,8 @@
                             <input type="hidden" name="price" value="{{ $product->price }}">
                             <input type="hidden" name="product_id" value="{{ $product->id }}">
                             <div class="product-action">
-                                <button type="submit" class="btn-product btn-cart border-0" title="Add to cart"><span>add to cart</span></button>
-                                <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                <button type="submit" class="btn-product btn-cart btn-remove border-0" title="Add to cart"><span>add to cart</span></button>
+                                <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                             </div><!-- End .product-action -->
                         </form>
                     </figure><!-- End .product-media -->
@@ -261,7 +261,7 @@
 
                         <div class="product-action">
                             <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                            <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                            <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
@@ -300,7 +300,7 @@
 
                         <div class="product-action">
                             <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                            <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                            <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
@@ -335,7 +335,7 @@
 
                         <div class="product-action">
                             <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                            <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                            <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
@@ -376,7 +376,7 @@
 
                         <div class="product-action">
                             <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                            <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                            <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
@@ -410,7 +410,7 @@
 
                         <div class="product-action">
                             <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                            <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                            <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
@@ -470,7 +470,7 @@
 
                         <div class="product-action">
                             <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                            <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                            <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
@@ -504,7 +504,7 @@
 
                         <div class="product-action">
                             <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                            <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                            <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
@@ -538,7 +538,7 @@
 
                         <div class="product-action">
                             <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                            <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                            <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
@@ -577,7 +577,7 @@
 
                         <div class="product-action">
                             <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                            <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                            <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
@@ -612,7 +612,7 @@
 
                         <div class="product-action">
                             <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                            <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                            <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
@@ -679,7 +679,7 @@
 
                         <div class="product-action">
                             <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                            <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                            <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
@@ -712,7 +712,7 @@
 
                         <div class="product-action">
                             <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                            <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                            <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
@@ -746,7 +746,7 @@
 
                         <div class="product-action">
                             <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                            <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                            <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
@@ -786,7 +786,7 @@
 
                         <div class="product-action">
                             <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                            <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                            <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
@@ -820,7 +820,7 @@
 
                         <div class="product-action">
                             <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                            <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                            <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
@@ -855,7 +855,7 @@
 
                         <div class="product-action">
                             <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                            <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                            <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
@@ -923,7 +923,7 @@
 
                         <div class="product-action">
                             <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                            <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                            <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
@@ -964,7 +964,7 @@
 
                         <div class="product-action">
                             <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                            <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                            <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
@@ -997,7 +997,7 @@
 
                         <div class="product-action">
                             <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                            <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                            <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
@@ -1031,7 +1031,7 @@
 
                         <div class="product-action">
                             <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                            <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                            <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
@@ -1097,7 +1097,7 @@
 
                         <div class="product-action">
                             <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                            <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                            <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
@@ -1131,7 +1131,7 @@
 
                         <div class="product-action">
                             <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                            <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                            <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
@@ -1165,7 +1165,7 @@
 
                         <div class="product-action">
                             <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                            <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                            <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
@@ -1198,7 +1198,7 @@
 
                         <div class="product-action">
                             <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                            <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                            <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
@@ -1232,7 +1232,7 @@
 
                         <div class="product-action">
                             <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                            <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                            <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
@@ -1461,7 +1461,7 @@
 
                                     <div class="product-action">
                                         <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                                        <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                        <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                                     </div><!-- End .product-action -->
                                 </figure><!-- End .product-media -->
 
@@ -1500,7 +1500,7 @@
 
                                     <div class="product-action">
                                         <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                                        <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                        <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                                     </div><!-- End .product-action -->
                                 </figure><!-- End .product-media -->
 
@@ -1534,7 +1534,7 @@
 
                                     <div class="product-action">
                                         <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                                        <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                        <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                                     </div><!-- End .product-action -->
                                 </figure><!-- End .product-media -->
 
@@ -1575,7 +1575,7 @@
 
                                     <div class="product-action">
                                         <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                                        <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                        <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                                     </div><!-- End .product-action -->
                                 </figure><!-- End .product-media -->
 
@@ -1610,7 +1610,7 @@
 
                                     <div class="product-action">
                                         <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                                        <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                        <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                                     </div><!-- End .product-action -->
                                 </figure><!-- End .product-media -->
 
@@ -1673,7 +1673,7 @@
 
                                     <div class="product-action">
                                         <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                                        <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                        <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                                     </div><!-- End .product-action -->
                                 </figure><!-- End .product-media -->
 
@@ -1712,7 +1712,7 @@
 
                                     <div class="product-action">
                                         <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                                        <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                        <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                                     </div><!-- End .product-action -->
                                 </figure><!-- End .product-media -->
 
@@ -1747,7 +1747,7 @@
 
                                     <div class="product-action">
                                         <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                                        <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                        <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                                     </div><!-- End .product-action -->
                                 </figure><!-- End .product-media -->
 
@@ -1788,7 +1788,7 @@
 
                                     <div class="product-action">
                                         <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                                        <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                        <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                                     </div><!-- End .product-action -->
                                 </figure><!-- End .product-media -->
 
@@ -1822,7 +1822,7 @@
 
                                     <div class="product-action">
                                         <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                                        <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                        <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                                     </div><!-- End .product-action -->
                                 </figure><!-- End .product-media -->
 
@@ -1879,7 +1879,7 @@
 
                                     <div class="product-action">
                                         <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                                        <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                        <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                                     </div><!-- End .product-action -->
                                 </figure><!-- End .product-media -->
 
@@ -1919,7 +1919,7 @@
 
                                     <div class="product-action">
                                         <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                                        <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                        <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                                     </div><!-- End .product-action -->
                                 </figure><!-- End .product-media -->
 
@@ -1958,7 +1958,7 @@
 
                                     <div class="product-action">
                                         <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                                        <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                        <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                                     </div><!-- End .product-action -->
                                 </figure><!-- End .product-media -->
 
@@ -1992,7 +1992,7 @@
 
                                     <div class="product-action">
                                         <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                                        <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                                        <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                                     </div><!-- End .product-action -->
                                 </figure><!-- End .product-media -->
 
@@ -2055,7 +2055,7 @@
 
                         <div class="product-action">
                             <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                            <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                            <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
@@ -2099,7 +2099,7 @@
 
                         <div class="product-action">
                             <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                            <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                            <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
@@ -2136,7 +2136,7 @@
 
                         <div class="product-action">
                             <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                            <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                            <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
@@ -2177,7 +2177,7 @@
 
                         <div class="product-action">
                             <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                            <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                            <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
@@ -2213,7 +2213,7 @@
 
                         <div class="product-action">
                             <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                            <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                            <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
@@ -2248,7 +2248,7 @@
 
                         <div class="product-action">
                             <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                            <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                            <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
@@ -2290,7 +2290,7 @@
 
                         <div class="product-action">
                             <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                            <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                            <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
@@ -2334,7 +2334,7 @@
 
                         <div class="product-action">
                             <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                            <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
+                            <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
@@ -2421,5 +2421,36 @@
         </div><!-- End .row -->
     </div><!-- End .container -->
 </div><!-- End .icon-boxes-container -->
+
+<div class="container newsletter-popup-container mfp-hide" id="newsletter-popup-form">
+    <div class="row justify-content-center">
+        <div class="col-10">
+            <div class="row no-gutters bg-white newsletter-popup-content">
+                <div class="col-xl-3-5col col-lg-7 banner-content-wrap">
+                    <div class="banner-content text-center">
+                        <img src="{{ asset('/frontend/') }}/assets/images/popup/newsletter/logo.svg" class="logo" alt="logo" width="60" height="15">
+                        <h2 class="banner-title">get <span>25<light>%</light></span> off</h2>
+                        <p>Subscribe to the Habib ElectroMart newsletter to receive timely updates from your favorite products.</p>
+                        <form action="#">
+                            <div class="input-group input-group-round">
+                                <input type="email" class="form-control form-control-white" placeholder="Your Email Address" aria-label="Email Adress" required>
+                                <div class="input-group-append">
+                                    <button class="btn" type="submit"><span>go</span></button>
+                                </div><!-- .End .input-group-append -->
+                            </div><!-- .End .input-group -->
+                        </form>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="register-policy-2" required>
+                            <label class="custom-control-label" for="register-policy-2">Do not show this popup again</label>
+                        </div><!-- End .custom-checkbox -->
+                    </div>
+                </div>
+                <div class="col-xl-2-5col col-lg-5 ">
+                    <img src="{{ asset('/frontend/') }}/assets/images/popup/newsletter/img-1.jpg" class="newsletter-img" alt="newsletter">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 @endsection

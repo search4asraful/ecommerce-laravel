@@ -30,8 +30,8 @@
                             @csrf
                             <div class="form-group">
                                 <label for="category_id">Category</label>
-                                <select name="category_id" id="" class="form-control">
-                                    <option selected disabled>{{ $product->category->name }}</option>
+                                <select name="category_id" class="form-control">
+                                    <option value="{{ $product->category->id }}" selected>{{ $product->category->name }}</option>
                                     @foreach ($categories as $category)
                                         <option value="{{ $category->id }}">{{ $category->name }}</option>
                                     @endforeach

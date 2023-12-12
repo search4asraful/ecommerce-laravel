@@ -28,6 +28,10 @@ class CartController extends Controller
             'ip_address' => $request->ip()
         ]);
         }
+        flash()->options([
+            'timeout' => 3000, // 3 seconds
+            'position' => 'bottom-right',
+        ])->addSuccess('Product has been added to cart');
         return redirect()->back();
     }
 
@@ -35,6 +39,11 @@ class CartController extends Controller
     {
         $cartProduct = Cart::find($id);
         $cartProduct->delete();
+
+        flash()->options([
+            'timeout' => 3000, // 3 seconds
+            'position' => 'bottom-right',
+        ])->addWarning('Product has been removed from cart.');
         return redirect()->back();
     }
 
@@ -48,12 +57,21 @@ class CartController extends Controller
         return view('frontend.pages.checkout');
     }
 
-    // public function cartUpdate(Request $request){
-        
-    //     $cartProduct = Cart::find('product_id', $request->id);
-    //     $cartProduct->update([
-    //         'qty' => $request->qty
-    //     ]);
-    //     return redirect()->back();
-    // }
+    public function cartUpdate(Request $request, $id) {
+        $this->validate($request, [
+            'qty' => 'sometimes|integer|not_in:0'
+        ]);
+
+        $cartProduct = Cart::find($id);
+        $cartProduct->update([
+            'qty' => $request->qty
+        ]);
+
+        flash()->options([
+            'timeout' => 3000, // 3 seconds
+            'position' => 'bottom-right',
+        ])->addSuccess('Your cart has been updated');
+        return redirect()->back();
+    }
+
 }
