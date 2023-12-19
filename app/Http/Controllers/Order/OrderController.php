@@ -8,6 +8,7 @@ use App\Models\Order;
 use App\Models\Cart;
 use App\Models\OrderDetails;
 use App\Mail\OrderEmail;
+use App\Mail\OrderCheckoutEmail;
 use Mail;
 
 class OrderController extends Controller
@@ -34,6 +35,10 @@ class OrderController extends Controller
             'total_price' => $request->total_price,
             'order_note' => $request->order_note
         ]);
+        $email = $order->email;
+        if (!empty($email)) {
+        Mail::to($email)->send(new OrderCheckoutEmail($order));
+        }
 
         // order details
 
@@ -52,6 +57,10 @@ class OrderController extends Controller
             $remove = Cart::where('product_id', $cartProductRemove)->first();
             $remove->delete();
         }
+        flash()->options([
+            'timeout' => 3000, // 3 seconds
+            'position' => 'bottom-right',
+        ])->addSuccess('Order has been placed successfully');
         return redirect()->back();
     }
 
@@ -69,7 +78,9 @@ class OrderController extends Controller
         ]);
 
         $email = $order->order->email;
+        if (!empty($email)) {
         Mail::to($email)->send(new OrderEmail($order));
+        }
         flash()->options([
             'timeout' => 3000, // 3 seconds
             'position' => 'bottom-right',

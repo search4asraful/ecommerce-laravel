@@ -1,5 +1,5 @@
 <footer class="footer">
-            <div class="cta bg-image bg-dark pt-4 pb-5 mb-0" style="background-image: url({{ asset('/frontend/') }}/assets/images/demos/bg-5.jpg);">
+            <div class="cta bg-image bg-dark pt-3 pb-4 mb-0" style="background-image: url({{ asset('/frontend/') }}/assets/images/demos/bg-5.jpg);">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-sm-10 col-md-8 col-lg-6">
@@ -23,7 +23,7 @@
         	<div class="footer-middle">
 	            <div class="container">
 	            	<div class="row">
-	            		<div class="col-sm-6 col-lg-3">
+	            		<div class="col-sm-6 col-lg-6">
 	            			<div class="widget widget-about">
 	            				<img src="{{ asset('/frontend/') }}/assets/images/demos/logo-footer.svg" class="footer-logo" alt="Footer Logo" width="105" height="25">
 	            				<p>Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. </p>
@@ -41,26 +41,11 @@
 	            				<h4 class="widget-title">Useful Links</h4><!-- End .widget-title -->
 
 	            				<ul class="widget-list">
-	            					<li><a href="about.html">About Habib</a></li>
-                                    <li><a href="#">Our Services</a></li>
-	            					<li><a href="#">How to shop on Habib</a></li>
-	            					<li><a href="faq.html">FAQ</a></li>
-	            					<li><a href="contact.html">Contact us</a></li>
-	            				</ul><!-- End .widget-list -->
-	            			</div><!-- End .widget -->
-	            		</div><!-- End .col-sm-6 col-lg-3 -->
-
-	            		<div class="col-sm-6 col-lg-3">
-	            			<div class="widget">
-	            				<h4 class="widget-title">Customer Service</h4><!-- End .widget-title -->
-
-	            				<ul class="widget-list">
-	            					<li><a href="#">Payment Methods</a></li>
-	            					<li><a href="#">Money-back guarantee!</a></li>
-	            					<li><a href="#">Returns</a></li>
-	            					<li><a href="#">Shipping</a></li>
-	            					<li><a href="#">Terms and conditions</a></li>
-	            					<li><a href="#">Privacy Policy</a></li>
+	            					<li><a href="{{ url('/about-us') }}">About Us</a></li>
+                                    <li><a href="{{ url('/about-us') }}">Our Services</a></li>
+	            					<li><a href="{{ url('/contact') }}">Contact us</a></li>
+									<li><a href="{{ url('/terms-condition') }}">Terms and conditions</a></li>
+									<li><a href="{{ url('/privacy') }}">Privacy Policy</a></li>
 	            				</ul><!-- End .widget-list -->
 	            			</div><!-- End .widget -->
 	            		</div><!-- End .col-sm-6 col-lg-3 -->
@@ -70,10 +55,10 @@
 	            				<h4 class="widget-title">My Account</h4><!-- End .widget-title -->
 
 	            				<ul class="widget-list">
-	            					<li><a href="{{ url('/cart/view') }}">View Cart</a></li>
-	            					<li><a href="#">My Wishlist</a></li>
-	            					<li><a href="#">Track My Order</a></li>
-	            					<li><a href="#">Help</a></li>
+	            					<li><a href="{{ url('/cart') }}">View Cart</a></li>
+	            					<li><a href="{{ url('/wishlist') }}">My Wishlist</a></li>
+	            					<li><a href="{{ url('/track-order') }}">Track My Order</a></li>
+	            					<li><a href="{{ url('/about-us') }}">Help</a></li>
 	            				</ul><!-- End .widget-list -->
 	            			</div><!-- End .widget -->
 	            		</div><!-- End .col-sm-6 col-lg-3 -->
@@ -83,7 +68,7 @@
 
 	        <div class="footer-bottom">
 	        	<div class="container">
-	        		<p class="footer-copyright">Copyright © {{ date('Y') }} Habib ElectroMart. All Rights Reserved.</p><!-- End .footer-copyright -->
+	        		<p class="footer-copyright">Copyright © {{ date('Y') }} {{ config('app.name') }}. All Rights Reserved.</p><!-- End .footer-copyright -->
 	        		<figure class="footer-payments">
 	        			<img src="{{ asset('/frontend/') }}/assets/images/payments.png" alt="Payment methods" width="272" height="20">
 	        		</figure><!-- End .footer-payments -->

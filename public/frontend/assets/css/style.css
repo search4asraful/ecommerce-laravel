@@ -1292,13 +1292,6 @@ blockquote.text-white cite span {
 .header-intro-clearance .header-bottom .menu > li > a::before {
     top: 0;
 }
-.header-intro-clearance
-    .header-bottom
-    .menu.sf-arrows
-    > li
-    > .sf-with-ul::after {
-    right: 1.3rem;
-}
 .header-intro-clearance .header-bottom .menu > li + li {
     margin-left: 0.7rem;
 }
@@ -1958,9 +1951,6 @@ blockquote.text-white cite span {
 .header-bottom .menu li.active > a:before {
     transform-origin: left center;
     transform: scale(1, 1);
-}
-.header-bottom .menu.sf-arrows > li > .sf-with-ul::after {
-    right: 1rem;
 }
 @media screen and (min-width: 992px) {
     .main-nav {
@@ -2907,7 +2897,6 @@ p {
         visibility: hidden;
     } */
     /* This css for last hr look for after menu list */
-
 }
 @media screen and (max-width: 1100px) {
     .header-intro-clearance .header-bottom .header-right i {

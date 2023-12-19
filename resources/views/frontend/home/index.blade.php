@@ -191,7 +191,12 @@
                         </a>
 
                         <div class="product-action-vertical">
-                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
+                            <form action="{{ url('/product/addToWishlist') }}" method="POST">
+                                @csrf
+                                <input type="hidden" name="price" value="{{ $product->price }}">
+                                <input type="hidden" name="product_id" value="{{ $product->id }}">
+                            <button type="submit" class="btn-product-icon btn-wishlist" title="Add to wishlist"></button>
+                            </form>
                         </div><!-- End .product-action -->
                         <form action="{{ url('/product/addToCart') }}" method="POST">
                             @csrf
@@ -2195,162 +2200,6 @@
                                 <div class="ratings-val" style="width: 60%;"></div><!-- End .ratings-val -->
                             </div><!-- End .ratings -->
                             <span class="ratings-text">( 11 Reviews )</span>
-                        </div><!-- End .rating-container -->
-                    </div><!-- End .product-body -->
-                </div><!-- End .product -->
-            </div><!-- End .col-sm-6 col-md-4 col-lg-3 -->
-
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="product product-2">
-                    <figure class="product-media">
-                        <a href="product.html">
-                            <img src="{{ asset('/frontend/') }}/assets/images/demos/products/product-14.jpg" alt="Product image" class="product-image">
-                        </a>
-
-                        <div class="product-action-vertical">
-                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
-                        </div><!-- End .product-action -->
-
-                        <div class="product-action">
-                            <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                            <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
-                        </div><!-- End .product-action -->
-                    </figure><!-- End .product-media -->
-
-                    <div class="product-body">
-                        <div class="product-cat">
-                            <a href="#">Digital Cameras</a>
-                        </div><!-- End .product-cat -->
-                        <h3 class="product-title"><a href="product.html">Sony - Alpha a5100 Mirrorless Camera</a></h3><!-- End .product-title -->
-                        <div class="product-price">
-                            $499.99
-                        </div><!-- End .product-price -->
-                        <div class="ratings-container">
-                            <div class="ratings">
-                                <div class="ratings-val" style="width: 50%;"></div><!-- End .ratings-val -->
-                            </div><!-- End .ratings -->
-                            <span class="ratings-text">( 11 Reviews )</span>
-                        </div><!-- End .rating-container -->
-                    </div><!-- End .product-body -->
-                </div><!-- End .product -->
-            </div><!-- End .col-sm-6 col-md-4 col-lg-3 -->
-
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="product product-2">
-                    <figure class="product-media">
-                        <a href="product.html">
-                            <img src="{{ asset('/frontend/') }}/assets/images/demos/products/product-15.jpg" alt="Product image" class="product-image">
-                        </a>
-
-                        <div class="product-action-vertical">
-                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
-                        </div><!-- End .product-action -->
-
-                        <div class="product-action">
-                            <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                            <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
-                        </div><!-- End .product-action -->
-                    </figure><!-- End .product-media -->
-
-                    <div class="product-body">
-                        <div class="product-cat">
-                            <a href="#">Laptops</a>
-                        </div><!-- End .product-cat -->
-                        <h3 class="product-title"><a href="product.html">Home Mini - Smart Speaker  with Google Assistant</a></h3><!-- End .product-title -->
-                        <div class="product-price">
-                            $49.00
-                        </div><!-- End .product-price -->
-                        <div class="ratings-container">
-                            <div class="ratings">
-                                <div class="ratings-val" style="width: 60%;"></div><!-- End .ratings-val -->
-                            </div><!-- End .ratings -->
-                            <span class="ratings-text">( 24 Reviews )</span>
-                        </div><!-- End .rating-container -->
-
-                        <div class="product-nav product-nav-dots">
-                            <a href="#" class="active" style="background: #ef837b;"><span class="sr-only">Color name</span></a>
-                            <a href="#" style="background: #333333;"><span class="sr-only">Color name</span></a>
-                            <a href="#" style="background: #e2e2e2;"><span class="sr-only">Color name</span></a>
-                        </div><!-- End .product-nav -->
-                    </div><!-- End .product-body -->
-                </div><!-- End .product -->
-            </div><!-- End .col-sm-6 col-md-4 col-lg-3 -->
-
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="product product-2">
-                    <figure class="product-media">
-                        <span class="product-label label-circle label-sale">Sale</span>
-                        <a href="product.html">
-                            <img src="{{ asset('/frontend/') }}/assets/images/demos/products/product-16.jpg" alt="Product image" class="product-image">
-                        </a>
-
-                        <div class="product-action-vertical">
-                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
-                        </div><!-- End .product-action -->
-
-                        <div class="product-action">
-                            <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                            <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
-                        </div><!-- End .product-action -->
-                    </figure><!-- End .product-media -->
-
-                    <div class="product-body">
-                        <div class="product-cat">
-                            <a href="#">Audio</a>
-                        </div><!-- End .product-cat -->
-                        <h3 class="product-title"><a href="product.html">WONDERBOOM Portable Bluetooth Speaker</a></h3><!-- End .product-title -->
-                        <div class="product-price">
-                            <span class="new-price">$99.99</span>
-                            <span class="old-price">Was $129.99</span>
-                        </div><!-- End .product-price -->
-                        <div class="ratings-container">
-                            <div class="ratings">
-                                <div class="ratings-val" style="width: 40%;"></div><!-- End .ratings-val -->
-                            </div><!-- End .ratings -->
-                            <span class="ratings-text">( 4 Reviews )</span>
-                        </div><!-- End .rating-container -->
-
-                        <div class="product-nav product-nav-dots">
-                            <a href="#" class="active" style="background: #666666;"><span class="sr-only">Color name</span></a>
-                            <a href="#" style="background: #ff887f;"><span class="sr-only">Color name</span></a>
-                            <a href="#" style="background: #6699cc;"><span class="sr-only">Color name</span></a>
-                            <a href="#" style="background: #f3dbc1;"><span class="sr-only">Color name</span></a>
-                            <a href="#" style="background: #eaeaec;"><span class="sr-only">Color name</span></a>
-                        </div><!-- End .product-nav -->
-                    </div><!-- End .product-body -->
-                </div><!-- End .product -->
-            </div><!-- End .col-sm-6 col-md-4 col-lg-3 -->
-
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="product product-2">
-                    <figure class="product-media">
-                        <a href="product.html">
-                            <img src="{{ asset('/frontend/') }}/assets/images/demos/products/product-17.jpg" alt="Product image" class="product-image">
-                        </a>
-
-                        <div class="product-action-vertical">
-                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
-                        </div><!-- End .product-action -->
-
-                        <div class="product-action">
-                            <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
-                            <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
-                        </div><!-- End .product-action -->
-                    </figure><!-- End .product-media -->
-
-                    <div class="product-body">
-                        <div class="product-cat">
-                            <a href="#">Smart Home</a>
-                        </div><!-- End .product-cat -->
-                        <h3 class="product-title"><a href="product.html">Google - Home Hub with  Google Assistant</a></h3><!-- End .product-title -->
-                        <div class="product-price">
-                            $149.00
-                        </div><!-- End .product-price -->
-                        <div class="ratings-container">
-                            <div class="ratings">
-                                <div class="ratings-val" style="width: 60%;"></div><!-- End .ratings-val -->
-                            </div><!-- End .ratings -->
-                            <span class="ratings-text">( 2 Reviews )</span>
                         </div><!-- End .rating-container -->
                     </div><!-- End .product-body -->
                 </div><!-- End .product -->

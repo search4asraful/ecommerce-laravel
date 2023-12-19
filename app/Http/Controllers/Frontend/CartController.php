@@ -49,6 +49,7 @@ class CartController extends Controller
 
     public function productCartView()
     {
+        $cart = Cart::find(1);
         return view('frontend.pages.cart');
     }
 

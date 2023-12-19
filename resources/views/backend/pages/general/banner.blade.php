@@ -2,8 +2,8 @@
 
 @section('content')
 
-<div class="container mt-3">
-    <div class="col-md-6">
+<div class="container mt-5 col-md-9">
+    <div class="col-md-3">
         <div class="card">
             <div class="card-header">Carousel</div>
         </div>
@@ -32,7 +32,7 @@
             </form>
         </div>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-3 mt-5">
         <div class="card">
             <div class="card-header">Footer Partners</div>
         </div>

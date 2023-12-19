@@ -8,9 +8,8 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
-use App\Models\OrderDetails;
 
-class OrderEmail extends Mailable
+class OrderCheckoutEmail extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -20,9 +19,9 @@ class OrderEmail extends Mailable
      * @return void
      */
     public $order;
-    public function __construct(OrderDetails $statusOrder)
+    public function __construct($checkOutOrder)
     {
-        $this->order = $statusOrder;
+        $this->order = $checkOutOrder;
     }
 
     /**
@@ -33,7 +32,7 @@ class OrderEmail extends Mailable
     public function envelope()
     {
         return new Envelope(
-            subject: 'Order Status Email',
+            subject: 'Order Checkout Email',
         );
     }
 
@@ -45,7 +44,7 @@ class OrderEmail extends Mailable
     public function content()
     {
         return new Content(
-            view: 'backend.emails.orderStatus',
+            view: 'backend.emails.orderCheckout',
         );
     }
 

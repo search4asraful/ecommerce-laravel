@@ -16,6 +16,15 @@
     <div class="page-content">
         <div class="cart">
             <div class="container">
+                @if($cartProduct->isEmpty())
+                <div class="text-center">
+                    <img class="mx-auto" src="{{ asset('/frontend/') }}/assets/images/emptyCart.png" alt="">
+                    <div>
+                        <h4>Your cart is empty <a class="h6 text-primary" href="/shop/products">shop now</a></h4>
+                        <p>First atleast add one product in your cart.</p>
+                    </div>
+                </div>
+                @else
                 <div class="row">
                     <div class="col-lg-9">
                         <table class="table table-cart table-mobile">
@@ -102,7 +111,7 @@
                                     <tr class="summary-shipping-row">
                                         <td>
                                             <div class="custom-control custom-radio">
-                                                <input type="radio" id="free-shipping" name="shipping" class="custom-control-input">
+                                                <input type="radio" id="free-shipping" name="shipping" value="0" class="custom-control-input" selected>
                                                 <label class="custom-control-label" for="free-shipping">Free Shipping</label>
                                             </div><!-- End .custom-control -->
                                         </td>
@@ -112,7 +121,7 @@
                                     <tr class="summary-shipping-row">
                                         <td>
                                             <div class="custom-control custom-radio">
-                                                <input type="radio" id="standart-shipping" name="shipping" class="custom-control-input">
+                                                <input type="radio" id="standart-shipping" name="shipping" value="10" class="custom-control-input">
                                                 <label class="custom-control-label" for="standart-shipping">Standart:</label>
                                             </div><!-- End .custom-control -->
                                         </td>
@@ -122,7 +131,7 @@
                                     <tr class="summary-shipping-row">
                                         <td>
                                             <div class="custom-control custom-radio">
-                                                <input type="radio" id="express-shipping" name="shipping" class="custom-control-input">
+                                                <input type="radio" id="express-shipping" name="shipping" value="20" class="custom-control-input">
                                                 <label class="custom-control-label" for="express-shipping">Express:</label>
                                             </div><!-- End .custom-control -->
                                         </td>
@@ -142,6 +151,7 @@
                         <a href="{{ url('/') }}" class="btn btn-outline-dark-2 btn-block mb-3"><span>CONTINUE SHOPPING</span><i class="icon-refresh"></i></a>
                     </aside><!-- End .col-lg-3 -->
                 </div><!-- End .row -->
+                @endif
             </div><!-- End .container -->
         </div><!-- End .cart -->
     </div><!-- End .page-content -->

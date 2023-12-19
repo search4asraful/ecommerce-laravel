@@ -7,6 +7,7 @@ use App\Http\Controllers\Frontend\FrontendController;
 use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\ProductController;
 use App\Http\Controllers\Frontend\CartController;
+use App\Http\Controllers\Frontend\WishlistController;
 use App\Http\Controllers\Order\OrderController;
 
 /*
@@ -21,17 +22,28 @@ use App\Http\Controllers\Order\OrderController;
 */
 
 Route::get('/', [FrontendController::class, 'index']);
-Route::get('/shop/products', [FrontendController::class, 'shopProducts']);
+Route::get('/shop', [FrontendController::class, 'shopProducts']);
+Route::get('/category/product/list', [FrontendController::class, 'productFromCategory']);
 Route::get('/product/details/{id}', [FrontendController::class, 'productDetails']);
+Route::get('/contact', [FrontendController::class, 'contact']);
+Route::get('/about-us', [FrontendController::class, 'aboutUs']);
+Route::get('/coming-soon', [FrontendController::class, 'comingsoon']);
+Route::get('/track-order', [FrontendController::class, 'trackOrder']);
+Route::get('/terms-condition', [FrontendController::class, 'termsCondition']);
+Route::get('/privacy', [FrontendController::class, 'privacy']);
 
+Route::post('/product/addToWishlist', [WishlistController::class, 'productAddWishlist']);
+Route::get('/product/productWishlistRemove/{id}', [WishlistController::class, 'productWishlistRemove']);
+Route::get('/wishlist', [WishlistController::class, 'productwishlistView']);
+
+Route::get('/cart', [CartController::class, 'productCartView']);
 Route::post('/product/addToCart', [CartController::class, 'productAddCart']);
 Route::get('/product/productCartRemove/{id}', [CartController::class, 'productCartRemove']);
-Route::get('/cart/view', [CartController::class, 'productCartView']);
 Route::post('/cart/update/{id}', [CartController::class, 'cartUpdate']);
 Route::get('/checkout', [CartController::class, 'checkout']);
 
-Route::post('/confirm/order', [OrderController::class, 'confirmOrder']);
 Route::get('/order', [OrderController::class, 'orders']);
+Route::post('/confirm/order', [OrderController::class, 'confirmOrder']);
 Route::get('/manage/order/{id}', [OrderController::class, 'orderManage']);
 Route::post('/order/update/{id}', [OrderController::class, 'orderUpdate']);
 Route::get('/order/invoice/{id}', [OrderController::class, 'orderInvoice']);
