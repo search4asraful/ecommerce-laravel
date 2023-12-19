@@ -3,59 +3,25 @@
 @section('content')
 
 <div class="container mt-5 col-md-9">
-    <div class="col-md-3">
+    <div class="col-md-9 mx-auto">
         <div class="card">
             <div class="card-header">Carousel</div>
-        </div>
+        </div><br/>
         <div class="card-body">
-            <form action="{{ url('/update/carousel') }}" method="post" enctype="multipart/form-data">
+            <form action="{{ url('/update/banner') }}" method="post" enctype="multipart/form-data">
                 @csrf
                 <div class="form-group">
-                    <label for="image">Carousel 1</label>
-                    <img src="#" alt="Carousel image" height="70" width="150">
-                    <span class="btn btn-dark" style="display:block;" onclick="document.getElementById('getFile').click()">Choose new one</span>
-                    <input type="file"name="image" class="" id="getFile" style="display:none">
-                </div>
-                <div class="form-group">
-                    <label for="image">Carousel 2</label>
-                    <img src="#" alt="Carousel image" height="70" width="150">
-                    <span class="btn btn-dark" style="display:block;" onclick="document.getElementById('getFile').click()">Choose new one</span>
-                    <input type="file"name="image" class="" id="getFile" style="display:none">
-                </div>
-                <div class="form-group">
-                    <label for="image">Carousel 3</label>
-                    <img src="#" alt="Carousel image" height="70" width="150">
-                    <span class="btn btn-dark" style="display:block;" onclick="document.getElementById('getFile').click()">Choose new one</span>
-                    <input type="file"name="image" class="" id="getFile" style="display:none">
-                </div>
-                <button type="submit" class="btn btn-sm btn-primary mt-2">Update</button>
-            </form>
-        </div>
-    </div>
-    <div class="col-md-3 mt-5">
-        <div class="card">
-            <div class="card-header">Footer Partners</div>
-        </div>
-        <div class="card-body">
-            <form action="{{ url('/update/footer') }}" method="post" enctype="multipart/form-data">
-                @csrf
-                <div class="form-group">
-                    <label for="image">Partner 1</label>
-                    <img src="#" alt="Partner image" height="70" width="150">
-                    <span class="btn btn-dark" style="display:block;" onclick="document.getElementById('getFile').click()">Choose new one</span>
-                    <input type="file"name="image" class="" id="getFile" style="display:none">
-                </div>
-                <div class="form-group">
-                    <label for="image">Partner 2</label>
-                    <img src="#" alt="Partner image" height="70" width="150">
-                    <span class="btn btn-dark" style="display:block;" onclick="document.getElementById('getFile').click()">Choose new one</span>
-                    <input type="file"name="image" class="" id="getFile" style="display:none">
-                </div>
-                <div class="form-group">
-                    <label for="image">Partner 3</label>
-                    <img src="#" alt="Partner image" height="70" width="150">
-                    <span class="btn btn-dark" style="display:block;" onclick="document.getElementById('getFile').click()">Choose new one</span>
-                    <input type="file"name="image" class="" id="getFile" style="display:none">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" class="form-control"><br/>
+                    <label for="price">Price</label>
+                    <input type="number" name="price" id="price" class="form-control"><br/>
+                    <label for="heading">Heading</label>
+                    <input type="text" name="heading" id="heading" class="form-control"><br/>
+                    <label for="pricetag">Price tag</label>
+                    <input type="text" name="pricetag" id="pricetag" class="form-control"><br/>
+                    <label for="image">Image</label>
+                    {{-- <span class="btn btn-dark" style="display:block;" onclick="document.getElementById('getFile').click()">Choose new one</span> --}}
+                    <input type="file"name="image" class="form-control" >
                 </div>
                 <button type="submit" class="btn btn-sm btn-primary mt-2">Update</button>
             </form>

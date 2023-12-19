@@ -70,7 +70,7 @@
                             <a href="{{ url('/wishlist') }}" title="Wishlist">
                                 <div class="icon">
                                     <i class="icon-heart-o"></i>
-                                    <span class="wishlist-count badge">1</span>
+                                    <span class="wishlist-count badge">0</span>
                                 </div>
                                 <p>Wishlist</p>
                             </a>
@@ -80,7 +80,7 @@
                             <a href="#" class="dropdown-toggle" title="Cart" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
                                 <div class="icon">
                                     <i class="icon-shopping-cart"></i>
-                                    <span class="cart-count">{{ count($cartProduct) }}</span>
+                                    <span class="cart-count">{{ $cartProduct ? count($cartProduct) : 0 }}</span>
                                 </div>
                                 <p>Cart</p>
                             </a>

@@ -40,4 +40,5 @@ class WishlistController extends Controller
         $wish = wishlist::find(1);
         return view('frontend.pages.wishlist');
     }
+
 }

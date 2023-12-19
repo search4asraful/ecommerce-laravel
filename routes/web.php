@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Backend\BackendContoller;
 use App\Http\Controllers\Frontend\FrontendController;
 use App\Http\Controllers\Backend\CategoryController;
+use App\Http\Controllers\Backend\GeneralController;
 use App\Http\Controllers\Backend\ProductController;
 use App\Http\Controllers\Frontend\CartController;
 use App\Http\Controllers\Frontend\WishlistController;
@@ -53,6 +54,8 @@ Route::get('/admin/setting', [BackendContoller::class, 'adminSetting']);
 Route::get('/banner/manage', [BackendContoller::class, 'bannerManage']);
 Route::get('/banner/tranding', [BackendContoller::class, 'trendingBanner']);
 Route::get('/deals/outlet', [BackendContoller::class, 'dealsOutlet']);
+
+Route::post('/update/banner', [GeneralController::class, 'bannerStore']);
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/category/create', [CategoryController::class, 'categoryCreateForm']);
