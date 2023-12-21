@@ -14,9 +14,8 @@ class FrontendController extends Controller
         return view('frontend.home.index', compact('products'));
     }
 
-    public function shopProducts()
-    {
-    return view('frontend.pages.shop');
+    public function shopProducts(){
+        return view('frontend.pages.shop');
     }
 
     public function productDetails($id)

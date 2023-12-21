@@ -32,7 +32,8 @@ class GeneralController extends Controller
         flash()->options([
             'timeout' => 3000, // 3 seconds
             'position' => 'bottom-right',
-        ])->addSuccess('Your product has been added.');
+        ])->addSuccess('Your banner details has been added.');
         return redirect()->back();
     }
+
 }

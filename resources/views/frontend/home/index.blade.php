@@ -14,7 +14,7 @@
                 }
             }
         }'>
-        <div class="intro-slide" style="background-image: url({{ asset('/frontend/') }}/assets/images/demos/slider/slide-1.png);">
+        <div class="intro-slide" style="background-image: url({{ asset('/images/banner/') }}/slide-1.png);">
             <div class="container intro-content">
                 <div class="row justify-content-end">
                     <div class="col-auto col-sm-7 col-md-6 col-lg-5">
@@ -23,9 +23,9 @@
                         <h1 class="intro-title">Dre Studio 3</h1><!-- End .intro-title -->
 
                         <div class="intro-price">
-                            <sup class="intro-old-price">$349,95</sup>
+                            <sup class="intro-old-price">&#2547;349,95</sup>
                             <span class="text-third">
-                                $279<sup>.99</sup>
+                                &#2547;279<sup>.99</sup>
                             </span>
                         </div><!-- End .intro-price -->
 
@@ -38,7 +38,7 @@
             </div><!-- End .intro-content -->
         </div><!-- End .intro-slide -->
 
-        <div class="intro-slide" style="background-image: url({{ asset('/frontend/') }}/assets/images/demos/slider/slide-2.png);">
+        <div class="intro-slide" style="background-image: url({{ asset('/images/banner/') }}/slide-2.png);">
             <div class="container intro-content">
                 <div class="row justify-content-end">
                     <div class="col-auto col-sm-7 col-md-6 col-lg-5">
@@ -48,7 +48,7 @@
                         <div class="intro-price">
                             <sup>Today:</sup>
                             <span class="text-primary">
-                                $999<sup>.99</sup>
+                                &#2547;999<sup>.99</sup>
                             </span>
                         </div><!-- End .intro-price -->
 
@@ -211,7 +211,7 @@
 
                     <div class="product-body">
                         <div class="product-cat">
-                            <a href="#">{{ $product->category->name }}</a>
+                            <a href="{{ url('/product/details/'.$product->id) }}">{{ $product->category->name }}</a>
                         </div><!-- End .product-cat -->
                         <h3 class="product-title"><a href="{{ url('/product/details/'.$product->id) }}">{{ $product->name }}</a></h3><!-- End .product-title -->
                         <div class="product-price mt-1">
@@ -2237,7 +2237,7 @@
 
                     <div class="icon-box-content">
                         <h3 class="icon-box-title">Free Returns</h3><!-- End .icon-box-title -->
-                        <p>Within 30 days</p>
+                        <p>Within 07 days</p>
                     </div><!-- End .icon-box-content -->
                 </div><!-- End .icon-box -->
             </div><!-- End .col-sm-6 col-lg-3 -->

@@ -7,7 +7,8 @@
         <div class="container d-flex align-items-center">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Products</a></li>
+                <li class="breadcrumb-item"><a href="{{ url('/shop') }}">Shop</a></li>
+                <li class="breadcrumb-item"><a href="{{ URL::previous() }}">Products</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Details</li>
             </ol>
 

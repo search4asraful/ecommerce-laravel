@@ -42,12 +42,14 @@
     <!-- End .soon-bg bg-image -->
 </div><!-- End .soon -->
 
-    <script>
+@push('script')
+    
+<script>
     $(function() {
         "use strict";
         if ($.fn.countdown) {
             $('.coming-countdown').countdown({
-                until: new Date(2024, 1, 1), // 7th month = August / Months 0 - 11 (January  - December)
+                until: new Date(2024, 1, 1), // 1th month = January / Months 0 - 11 (January  - December)
                 format: 'DHMS',
                 padZeroes: true
             });
@@ -57,5 +59,6 @@
         }
     });
     </script>
+@endpush
 
 @endsection

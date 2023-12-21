@@ -20,7 +20,7 @@
                 <div class="text-center">
                     <img class="mx-auto" src="{{ asset('/frontend/') }}/assets/images/emptyCart.png" alt="">
                     <div>
-                        <h4>Your cart is empty <a class="h6 text-primary" href="/shop/products">shop now</a></h4>
+                        <h4>Your cart is empty <a class="h6 text-primary" href="/shop">shop now</a></h4>
                         <p>First atleast add one product in your cart.</p>
                     </div>
                 </div>
