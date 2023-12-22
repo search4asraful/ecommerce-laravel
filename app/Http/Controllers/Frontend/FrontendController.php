@@ -14,6 +14,10 @@ class FrontendController extends Controller
         return view('frontend.home.index', compact('products'));
     }
 
+    public function customerLogin(){
+        return view('frontend.pages.login');
+    }
+
     public function shopProducts(){
         return view('frontend.pages.shop');
     }

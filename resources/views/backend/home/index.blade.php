@@ -1,7 +1,7 @@
 @extends('backend.master')
 
 @section('content')
-
+<div class="col-md-12 mx-auto">
 <div class="container-fluid px-4 pt-2">
     <ol class="breadcrumb mb-4">
         <li class="breadcrumb-item active">Dashboard</li>
@@ -64,6 +64,7 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 
 @endsection

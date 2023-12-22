@@ -46,6 +46,7 @@
                                     <figure class="product-media">
                                         <form style="position: absolute; left: 10px; top: 10px;" action="{{ url('/product/addToWishlist') }}" method="POST">
                                             @csrf
+                                            <input type="hidden" name="qty" value="{{ $product->qty }}">
                                             <input type="hidden" name="price" value="{{ $product->price }}">
                                             <input type="hidden" name="product_id" value="{{ $product->id }}">
                                         <button type="submit" class="btn-product-icon btn-wishlist" title="Add to wishlist"></button>
@@ -59,7 +60,7 @@
                                 <div class="col-6 col-lg-3 order-lg-last">
                                     <div class="product-list-action">
                                         <div class="product-price">
-                                            <span style="font-size: 1.4rem;">&#2547;</span>{{ number_format($product->price, 2) }}
+                                            <span style="font-size: 1.4rem;">&#2547;</span>&nbsp;{{ number_format($product->price, 2) }}
                                         </div><!-- End .product-price -->
                                         <div class="ratings-container">
                                             <div class="ratings">
@@ -151,10 +152,8 @@
                                     <div class="filter-price">
                                         <div class="filter-price-text">
                                             Price Range:
-                                            {{-- <span id="filter-price-range"></span> --}}
-                                            <input type="range" min="0" max="100" value="25">
+                                            <span id="filter-price-range"></span>
                                         </div><!-- End .filter-price-text -->
-
                                         <div id="price-slider"></div><!-- End #price-slider -->
                                     </div><!-- End .filter-price -->
                                 </div><!-- End .widget-body -->
@@ -254,5 +253,11 @@
         </div><!-- End .container -->
     </div><!-- End .page-content -->
 </main><!-- End .main -->
+
+@push('front_script')
+    <script src="{{ asset('/frontend/') }}/assets/js/wNumb.js"></script>
+    <script src="{{ asset('/frontend/') }}/assets/js/bootstrap-input-spinner.js"></script>
+    <script src="{{ asset('/frontend/') }}/assets/js/nouislider.min.js"></script>
+@endpush
 
 @endsection

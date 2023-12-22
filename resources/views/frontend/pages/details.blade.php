@@ -13,7 +13,7 @@
             </ol>
 
             <nav class="product-pager ml-auto" aria-label="Product">
-                <a class="product-pager-link product-pager-prev" href="#" aria-label="Previous" tabindex="-1">
+                <a class="product-pager-link product-pager-prev" href="{{ URL::previous() }}" aria-label="Previous" tabindex="-1">
                     <i class="icon-angle-left"></i>
                     <span>Prev</span>
                 </a>
@@ -64,24 +64,39 @@
                             <div class="details-filter-row details-row-size">
                                 <label for="qty">Qty:</label>
                                 <div class="product-details-quantity">
-                                    <input type="number" id="qty" class="form-control" value="1" min="1" max="10" step="1" data-decimals="0" required>
+                                    <input type="number" id="qty" class="form-control" value="" min="1" max="{{ $product->qty }}" step="1" data-decimals="0" placeholder="1" required>
                                 </div><!-- End .product-details-quantity -->
-                                &emsp;&emsp;<span>Available: {{ $product->qty }}</span>
+                                    &emsp;&emsp;<span>
+                                    @if($product->qty == 0)
+                                    <p>Out of Stock</p>
+                                    @else
+                                    Available: {{ $product->qty }}
+                                    @endif
+                                    </span>
                             </div><!-- End .details-filter-row -->
     
                             <div class="product-details-action">
-                                <a href="#" class="btn-product btn-cart"><span>add to cart</span></a>
-    
                                 <div class="details-action-wrapper">
-                                    <a href="#" class="btn-product btn-wishlist" title="Wishlist"><span>Add to Wishlist</span></a>
-                                    <a href="#" class="btn-product btn-compare" title="Compare"><span>Add to Compare</span></a>
+                                    <form action="{{ url('/product/addToCart') }}" method="POST">
+                                        @csrf
+                                        <input type="hidden" name="price" value="{{ $product->price }}">
+                                        <input type="hidden" name="product_id" value="{{ $product->id }}">
+                                        <button type="submit" class="btn btn-product btn-cart btn-remove border-0"title="Cart">Add to Cart</button>
+                                    </form>&emsp;&emsp;&emsp;&emsp;
+                                    <form action="{{ url('/product/addToWishlist') }}" method="POST">
+                                        @csrf
+                                        <input type="hidden" name="qty" value="{{ $product->qty }}">
+                                        <input type="hidden" name="price" value="{{ $product->price }}">
+                                        <input type="hidden" name="product_id" value="{{ $product->id }}">
+                                    <button type="submit" class="btn-product btn-wishlist btn-remove border-0" title="Wishlist"><span>Add to Wishlist</span></button>
+                                    </form>
                                 </div><!-- End .details-action-wrapper -->
                             </div><!-- End .product-details-action -->
     
                             <div class="product-details-footer">
                                 <div class="product-cat">
                                     <span>Category:</span>
-                                    <a href="#">{{ $product->category->name }}</a>
+                                    <a href="{{ url('/category/product/list') }}">{{ $product->category->name }}</a>
                                 </div><!-- End .product-cat -->
     
                                 <div class="social-icons social-icons-sm">

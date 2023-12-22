@@ -193,6 +193,7 @@
                         <div class="product-action-vertical">
                             <form action="{{ url('/product/addToWishlist') }}" method="POST">
                                 @csrf
+                                <input type="hidden" name="qty" value="{{ $product->qty }}">
                                 <input type="hidden" name="price" value="{{ $product->price }}">
                                 <input type="hidden" name="product_id" value="{{ $product->id }}">
                             <button type="submit" class="btn-product-icon btn-wishlist" title="Add to wishlist"></button>
@@ -204,7 +205,6 @@
                             <input type="hidden" name="product_id" value="{{ $product->id }}">
                             <div class="product-action">
                                 <button type="submit" class="btn-product btn-cart btn-remove border-0" title="Add to cart"><span>add to cart</span></button>
-                                <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                             </div><!-- End .product-action -->
                         </form>
                     </figure><!-- End .product-media -->
@@ -2301,5 +2301,7 @@
         </div>
     </div>
 </div>
+
+<button id="scroll-top" title="Back to Top"><i class="icon-arrow-up"></i></button>
 
 @endsection

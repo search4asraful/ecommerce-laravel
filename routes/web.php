@@ -23,6 +23,7 @@ use App\Http\Controllers\Order\OrderController;
 */
 
 Route::get('/', [FrontendController::class, 'index']);
+Route::get('/login/customer', [FrontendController::class, 'customerLogin']);
 Route::get('/shop', [FrontendController::class, 'shopProducts']);
 Route::get('/category/product/list', [FrontendController::class, 'productFromCategory']);
 Route::get('/product/details/{id}', [FrontendController::class, 'productDetails']);

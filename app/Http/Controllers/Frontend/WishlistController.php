@@ -10,8 +10,18 @@ class WishlistController extends Controller
 {
     public function productAddwishlist(Request $request)
     {
+        $existingWishlist = wishlist::where('product_id', $request->product_id)->first();
+
+    if ($existingWishlist) {
+        flash()->options([
+            'timeout' => 3000,
+            'position' => 'bottom-right',
+        ])->addInfo('Product is already in the wishlist');
+    } else {
+        wishlist::where('product_id', $request->product_id)->first();
         wishlist::create([
         'product_id' => $request->product_id,
+        'qty' => $request->qty,
         'price' => $request->price,
         'ip_address' => $request->ip()
         ]);
@@ -20,6 +30,7 @@ class WishlistController extends Controller
             'timeout' => 3000, // 3 seconds
             'position' => 'bottom-right',
         ])->addSuccess('Product has been added to wishlist');
+    }
         return redirect()->back();
     }
 

@@ -42,8 +42,10 @@
     <!-- End .soon-bg bg-image -->
 </div><!-- End .soon -->
 
-@push('script')
+@push('front_script')
     
+<script src="assets/js/jquery.countdown.min.js"></script>
+
 <script>
     $(function() {
         "use strict";

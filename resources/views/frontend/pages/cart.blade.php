@@ -7,7 +7,7 @@
         <div class="container">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{{ ('/') }}">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Shop</a></li>
+                <li class="breadcrumb-item"><a href="{{ url()->previous() }}">Shop</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Shopping Cart</li>
             </ol>
         </div><!-- End .container -->
@@ -18,9 +18,9 @@
             <div class="container">
                 @if($cartProduct->isEmpty())
                 <div class="text-center">
-                    <img class="mx-auto" src="{{ asset('/frontend/') }}/assets/images/emptyCart.png" alt="">
+                    <img class="mx-auto" src="{{ asset('/frontend/') }}/assets/images/no-data.svg" alt="Empty icon" width="450">
                     <div>
-                        <h4>Your cart is empty <a class="h6 text-primary" href="/shop">shop now</a></h4>
+                        <h4>Your cart is empty <a class="h6 text-primary" href="{{ ('/shop') }}">shop now</a></h4>
                         <p>First atleast add one product in your cart.</p>
                     </div>
                 </div>
@@ -62,7 +62,7 @@
                                             @csrf
                                             <td class="quantity-col">
                                             <div class="cart-product-quantity">
-                                                    <input type="number" name="qty" class="form-control" value="{{ $product->qty }}" name="qty" min="1" max="10" step="1" data-decimals="0" placeholder="{{ $product->qty }}" required>
+                                                    <input type="number" name="qty" class="form-control" value="{{ $product->qty }}" name="qty" min="1" max="{{ $product->qty }}" step="1" data-decimals="0" placeholder="{{ $product->qty }}" required>
                                                 </div><!-- End .cart-product-quantity -->
                                             </td>
                                             <td class="total-col"><span style="font-size: 1.4rem;">&#2547;</span>&nbsp;{{ number_format($totalPrice = $product->qty * $product->price, 2) }}</td>

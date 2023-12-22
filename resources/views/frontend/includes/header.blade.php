@@ -39,41 +39,42 @@
                     </div>
 
                     <div class="header-right">
-                        <div class="dropdown compare-dropdown">
-                            <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static" title="Compare Products" aria-label="Compare Products">
-                                <div class="icon">
-                                    <i class="icon-random"></i>
-                                </div>
-                                <p>Compare</p>
-                            </a>
+                        <div class="dropdown wishlist-dropdown">
+                            <div class="wishlist">
+                                <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static" title="Wishlist" aria-label="wishlist Products">
+                                    <div class="icon">
+                                        <i class="icon-heart-o"></i>
+                                        <span class="wishlist-count badge">{{ $wishlistProduct ? count($wishlistProduct) : 0 }}</span>
+                                    </div>
+                                    <p>Wishlist</p>
+                                </a>
+                            </div>
 
                             <div class="dropdown-menu dropdown-menu-right">
-                                <ul class="compare-products">
-                                    <li class="compare-product">
-                                        <a href="#" class="btn-remove" title="Remove Product"><i class="icon-close"></i></a>
-                                        <h4 class="compare-product-title"><a href="product.html">Blue Night Dress</a></h4>
+                                @if($wishlistProduct->isEmpty())
+                                <div class="text-center">
+                                    <img class="mx-auto" src="{{ asset('/frontend/') }}/assets/images/no-data.svg" width="200" alt="Empty wishlist icon">
+                                    <h6>Your Wishlist is empty</h6>
+                                    <p>Add atleast one item on your wishlist</p>
+                                </div>
+                                @else
+                                    <ul class="wishlist-products">
+                                        @foreach ($wishlistProduct as $product)
+                                        <li class="wishlist-product">
+                                            <a href="{{ url('/product/productWishlistRemove/'.$product->id) }}" class="btn-remove" title="Remove Product"><i class="icon-close"></i></a>
+                                            <h4 class="wishlist-product-title">
+                                                <a href="{{ url('/product/details/'.$product->product_id) }}">{{ $product->products[0]->name }}</a>
+                                            </h4>
                                     </li>
-                                    <li class="compare-product">
-                                        <a href="#" class="btn-remove" title="Remove Product"><i class="icon-close"></i></a>
-                                        <h4 class="compare-product-title"><a href="product.html">White Long Skirt</a></h4>
-                                    </li>
+                                    @endforeach
                                 </ul>
 
-                                <div class="compare-actions">
+                                <div class="wishlist-actions">
                                     <a href="#" class="action-link">Clear All</a>
-                                    <a href="#" class="btn btn-outline-primary-2"><span>Compare</span><i class="icon-long-arrow-right"></i></a>
+                                    <a href="{{ url('/wishlist') }}" class="btn btn-outline-primary-2"><span>View</span><i class="icon-long-arrow-right"></i></a>
                                 </div>
+                                @endif
                             </div><!-- End .dropdown-menu -->
-                        </div><!-- End .compare-dropdown -->
-
-                        <div class="wishlist">
-                            <a href="{{ url('/wishlist') }}" title="Wishlist">
-                                <div class="icon">
-                                    <i class="icon-heart-o"></i>
-                                    <span class="wishlist-count badge">0</span>
-                                </div>
-                                <p>Wishlist</p>
-                            </a>
                         </div><!-- End .wishlist-dropdown -->
 
                         <div class="dropdown cart-dropdown">
@@ -93,9 +94,9 @@
                                 <div class="dropdown-cart-products">
                                     @if($cartProduct->isEmpty())
                                     <div class="text-center">
-                                        <img class="mx-auto" src="{{ asset('/frontend/') }}/assets/images/emptyCart.png" width="200" alt="">
+                                        <img class="mx-auto" src="{{ asset('/frontend/') }}/assets/images/no-data.svg" width="200" alt="Empty cart icon">
                                         <h6>Your cart is empty</h6>
-                                        <p>Add to cart atleast one product</p>
+                                        <p>Add item on your cart</p>
                                     </div>
                                     @else
                                     @foreach ($cartProduct as $product)
@@ -112,9 +113,7 @@
                                         </div><!-- End .product-cart-details -->
                                         
                                         <figure class="product-image-container">
-                                            <a href="{{ url('/product/details/'.$product->product_id) }}" class="product-image">
-                                                <img src="{{ asset('/images/'.$product->products[0]->image) }}" alt="product">
-                                            </a>
+                                            <img src="{{ asset('/images/'.$product->products[0]->image) }}" alt="product">
                                         </figure>
                                         <a href="{{ url('/product/productCartRemove/'.$product->id) }}" class="btn-remove" title="Remove Product"><i class="icon-close"></i></a>
                                     </div><!-- End .product -->

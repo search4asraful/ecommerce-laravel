@@ -6,8 +6,8 @@
     <nav aria-label="breadcrumb" class="breadcrumb-nav">
         <div class="container">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="/">Home</a></li>
-                <li class="breadcrumb-item">Shop</li>
+                <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
+                <li class="breadcrumb-item"><a href="{{ url()->previous() }}">Shop</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Wishlist</li>
             </ol>
         </div><!-- End .container -->
@@ -15,6 +15,13 @@
 
     <div class="page-content">
         <div class="container">
+            @if($wishlistProduct->isEmpty())
+            <div class="text-center">
+                <img class="mx-auto" src="{{ asset('/frontend/') }}/assets/images/no-data.svg" alt="Empty icon" width="450">
+                <h6>Your Wishlist is empty</h6>
+                <p>Add atleast one item on your wishlist</p>
+            </div>
+            @else
             <table class="table table-wishlist table-mobile">
                 <thead>
                     <tr>
@@ -22,96 +29,35 @@
                         <th>Price</th>
                         <th>Stock Status</th>
                         <th></th>
-                        <th></th>
                     </tr>
                 </thead>
 
                 <tbody>
+                    @foreach($wishlistProduct as $product)
                     <tr>
                         <td class="product-col">
                             <div class="product">
                                 <figure class="product-media">
-                                    <a href="#">
-                                        <img src="{{ asset('/frontend/') }}/assets/images/products/table/product-1.jpg" alt="Product image">
+                                    <a href="{{ url('/product/details/'.$product->product_id) }}">
+                                        <img src="{{ asset('images/'.$product->products[0]->image) }}" alt="Product image">
                                     </a>
                                 </figure>
 
                                 <h3 class="product-title">
-                                    <a href="#">Beige knitted elastic runner shoes</a>
+                                    <a href="{{ url('/product/details/'.$product->product_id) }}">{{ $product->products[0]->name }}</a>
                                 </h3><!-- End .product-title -->
                             </div><!-- End .product -->
                         </td>
-                        <td class="price-col">$84.00</td>
-                        <td class="stock-col"><span class="in-stock">In stock</span></td>
-                        <td class="action-col">
-                            <div class="dropdown">
-                            <button class="btn btn-block btn-outline-primary-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="icon-list-alt"></i>Select Options
-                            </button>
-
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">First option</a>
-                                <a class="dropdown-item" href="#">Another option</a>
-                                <a class="dropdown-item" href="#">The best option</a>
-                              </div>
-                            </div>
-                        </td>
-                        <td class="remove-col"><button class="btn-remove"><i class="icon-close"></i></button></td>
+                        <td class="price-col">&#2547; {{ number_format($product->price, 2) }}</td>
+                        <td class="stock-col"><span class="{{ $product->qty == 0 ? 'out-of-stock' : 'in-stock' }}">
+                        {{ $product->qty == 0 ? 'Out of Stock' : 'In stock' }}
+                        </span></td>
+                        <td class="remove-col"><a href="{{ url('/product/productWishlistRemove/'.$product->id) }}" class="btn-remove"><i class="icon-close"></i></a></td>
                     </tr>
-                    <tr>
-                        <td class="product-col">
-                            <div class="product">
-                                <figure class="product-media">
-                                    <a href="#">
-                                        <img src="{{ asset('/frontend/') }}/assets/images/products/table/product-2.jpg" alt="Product image">
-                                    </a>
-                                </figure>
-
-                                <h3 class="product-title">
-                                    <a href="#">Blue utility pinafore denim dress</a>
-                                </h3><!-- End .product-title -->
-                            </div><!-- End .product -->
-                        </td>
-                        <td class="price-col">$76.00</td>
-                        <td class="stock-col"><span class="in-stock">In stock</span></td>
-                        <td class="action-col">
-                            <button class="btn btn-block btn-outline-primary-2"><i class="icon-cart-plus"></i>Add to Cart</button>
-                        </td>
-                        <td class="remove-col"><button class="btn-remove"><i class="icon-close"></i></button></td>
-                    </tr>
-                    <tr>
-                        <td class="product-col">
-                            <div class="product">
-                                <figure class="product-media">
-                                    <a href="#">
-                                        <img src="{{ asset('/frontend/') }}/assets/images/products/table/product-3.jpg" alt="Product image">
-                                    </a>
-                                </figure>
-
-                                <h3 class="product-title">
-                                    <a href="#">Orange saddle lock front chain cross body bag</a>
-                                </h3><!-- End .product-title -->
-                            </div><!-- End .product -->
-                        </td>
-                        <td class="price-col">$52.00</td>
-                        <td class="stock-col"><span class="out-of-stock">Out of stock</span></td>
-                        <td class="action-col">
-                            <button class="btn btn-block btn-outline-primary-2 disabled">Out of Stock</button>
-                        </td>
-                        <td class="remove-col"><button class="btn-remove"><i class="icon-close"></i></button></td>
-                    </tr>
+                    @endforeach
                 </tbody>
             </table><!-- End .table table-wishlist -->
-            <div class="wishlist-share">
-                <div class="social-icons social-icons-sm mb-2">
-                    <label class="social-label">Share on:</label>
-                    <a href="#" class="social-icon" title="Facebook" target="_blank"><i class="icon-facebook-f"></i></a>
-                    <a href="#" class="social-icon" title="Twitter" target="_blank"><i class="icon-twitter"></i></a>
-                    <a href="#" class="social-icon" title="Instagram" target="_blank"><i class="icon-instagram"></i></a>
-                    <a href="#" class="social-icon" title="Youtube" target="_blank"><i class="icon-youtube"></i></a>
-                    <a href="#" class="social-icon" title="Pinterest" target="_blank"><i class="icon-pinterest"></i></a>
-                </div><!-- End .soial-icons -->
-            </div><!-- End .wishlist-share -->
+            @endif
         </div><!-- End .container -->
     </div><!-- End .page-content -->
 </main><!-- End .main -->
