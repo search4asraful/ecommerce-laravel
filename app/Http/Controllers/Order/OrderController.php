@@ -20,9 +20,11 @@ class OrderController extends Controller
             'total_price' => 'required|integer|not_in:0',
             'total_qty' => 'required|integer|not_in:0',
             'address' => 'required|string',
+            'city' => 'required|string',
             'phone' => 'required|string',
+            'payment_type' => 'required|string',
             'email' => 'nullable|email',
-            'order_note' => 'nullable|string',
+            'order_note' => 'nullable|string'
         ]);
 
         $order = Order::create([
@@ -31,8 +33,10 @@ class OrderController extends Controller
             'name' => $request->name,
             'email' => $request->email,
             'address' => $request->address,
+            'city' => $request->city,
             'total_qty' => $request->total_qty,
             'total_price' => $request->total_price,
+            'payment_type' => $request->payment_type,
             'order_note' => $request->order_note
         ]);
         $email = $order->email;

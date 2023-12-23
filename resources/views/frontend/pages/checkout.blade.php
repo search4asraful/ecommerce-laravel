@@ -18,7 +18,8 @@
             <div class="container">
                 <form action="{{ url('/confirm/order') }}" method="POST">
                     @csrf
-                        <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-9">
                                 <h2 class="checkout-title">Billing Details</h2><!-- End .checkout-title -->
                                 @php
                                         $sumPrice = 0;
@@ -27,7 +28,7 @@
                                 @foreach ($cartProduct as $product)
                                     <input type="hidden" name="product_id[]" value="{{ $product->product_id }}"/>
                                     <input type="hidden" name="qty[]" value="{{ $totalqty = $product->qty }}"/>
-                                    <input type="hidden" name="price[]" value="{{ $totalPrice = $product->price }}"/>
+                                    <input type="hidden" name="price[]" value="{{ $totalPrice = $product->price * $product->qty }}"/>
 
                                     @php
                                         $sumPrice += $totalPrice;
@@ -38,8 +39,16 @@
                                 <input type="hidden" class="btn-info" name="total_qty" value="{{ $sumQty }}">
                                 <label>Name *</label>
                                 <input type="text" name="name" class="form-control" required>
-                                <label>Address *</label>
-                                <input type="text" name="address" class="form-control" placeholder="House number and Street name" required>
+                                <div class="row">
+                                <div class="col-sm-6">
+                                    <label>Address *</label>
+                                    <input type="text" name="address" class="form-control" placeholder="House number and Street name" required>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label>City *</label>
+                                    <input type="text" name="city" class="form-control" placeholder="Enter your city" required>
+                                </div>
+                                </div><!-- End .row -->
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <label>Phone *</label>
@@ -52,8 +61,53 @@
                                 </div><!-- End .row -->
                                 <label>Order notes (optional)</label>
                                 <textarea name="order_note" class="form-control" cols="30" rows="4" placeholder="Notes about your order, e.g. special notes for delivery"></textarea>
-                                <button type="submit" class="btn btn-primary btn-rounded">Confirm order</button>
                         </div><!-- End .col-lg-12 -->
+                        <aside class="col-lg-3">
+                            <div class="summary">
+                                <h3 class="summary-title">Your Order</h3><!-- End .summary-title -->
+
+                                <table class="table table-summary">
+                                    <thead>
+                                        <tr>
+                                            <th>Product</th>
+                                            <th>Price</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        @foreach ($cartProduct as $product)
+                                        <tr>
+                                            <td>{{ $product->products[0]->name }}</td>
+                                            <td><span>{{ $product->qty }}</span> x {{ number_format($product->price, 2) }}</td>
+                                        </tr>
+                                        @endforeach
+                                        <tr class="summary-subtotal">
+                                            <td>Subtotal:</td>
+                                            <td>&#2547; {{ number_format($sumPrice, 2) }}</td>
+                                        </tr><!-- End .summary-subtotal -->
+                                        <tr>
+                                            <td>Shipping:</td>
+                                            <td>Free shipping</td>
+                                        </tr>
+                                        <tr class="summary-total">
+                                            <td>Total:</td>
+                                            <td>&#2547; {{ number_format($sumPrice, 2) }}</td>
+                                        </tr><!-- End .summary-total -->
+                                    </tbody>
+                                </table><!-- End .table table-summary -->
+
+                                <div class="accordion-summary" id="accordion-payment">
+                                    <input type="radio" name="payment_type" value="cod" id="paymentType" checked>
+                                    <label for="paymentType">Cash on Delivary</label>
+                                </div><!-- End .accordion -->
+
+                                <button type="submit" class="btn btn-outline-primary-2 btn-order btn-block">
+                                    <span class="btn-text">Place Order</span>
+                                    <span class="btn-hover-text">Proceed to Checkout</span>
+                                </button>
+                            </div><!-- End .summary -->
+                        </aside><!-- End .col-lg-3 -->
+                    </div><!-- End .row -->
                 </form>
             </div><!-- End .container -->
         </div><!-- End .checkout -->

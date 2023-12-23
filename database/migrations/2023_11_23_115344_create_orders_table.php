@@ -20,9 +20,10 @@ return new class extends Migration
             $table->string('phone');
             $table->string('email')->nullable();
             $table->string('address');
+            $table->string('city');
             $table->unsignedInteger('total_qty');
             $table->float('total_price', 8, 2);
-            $table->string('payment_type')->default('cash');
+            $table->string('payment_type');
             $table->string('order_note')->nullable();
             $table->timestamps();
         });

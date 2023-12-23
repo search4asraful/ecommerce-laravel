@@ -57,6 +57,7 @@ Route::get('/banner/tranding', [BackendContoller::class, 'trendingBanner']);
 Route::get('/deals/outlet', [BackendContoller::class, 'dealsOutlet']);
 
 Route::post('/update/banner', [GeneralController::class, 'bannerStore']);
+Route::get('/banners', [GeneralController::class, 'bannerShow']);
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/category/create', [CategoryController::class, 'categoryCreateForm']);

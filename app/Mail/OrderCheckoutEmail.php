@@ -32,7 +32,7 @@ class OrderCheckoutEmail extends Mailable
     public function envelope()
     {
         return new Envelope(
-            subject: 'Order Checkout Email',
+            subject: 'Your order has been placed!',
         );
     }
 

@@ -6,8 +6,8 @@
     <nav aria-label="breadcrumb" class="breadcrumb-nav">
         <div class="container">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="{{ ('/') }}">Home</a></li>
-                <li class="breadcrumb-item"><a href="{{ url()->previous() }}">Shop</a></li>
+                <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
+                <li class="breadcrumb-item"><a href="{{ url('/shop') }}">Shop</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Shopping Cart</li>
             </ol>
         </div><!-- End .container -->
@@ -62,7 +62,7 @@
                                             @csrf
                                             <td class="quantity-col">
                                             <div class="cart-product-quantity">
-                                                    <input type="number" name="qty" class="form-control" value="{{ $product->qty }}" name="qty" min="1" max="{{ $product->qty }}" step="1" data-decimals="0" placeholder="{{ $product->qty }}" required>
+                                                    <input type="number" name="qty" class="form-control" value="" name="qty" min="1" max="" step="1" data-decimals="0" placeholder="{{ $product->qty }}" required>
                                                 </div><!-- End .cart-product-quantity -->
                                             </td>
                                             <td class="total-col"><span style="font-size: 1.4rem;">&#2547;</span>&nbsp;{{ number_format($totalPrice = $product->qty * $product->price, 2) }}</td>
@@ -78,20 +78,6 @@
                                     @endforeach
                                 </tbody>
                             </table><!-- End .table table-wishlist -->
-
-                        <div class="cart-bottom">
-                            <div class="cart-discount">
-                                <form action="#">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" required placeholder="coupon code">
-                                        <div class="input-group-append">
-                                            <button class="btn btn-outline-primary-2" type="submit"><i class="icon-long-arrow-right"></i></button>
-                                        </div><!-- .End .input-group-append -->
-                                    </div><!-- End .input-group -->
-                                </form>
-                            </div><!-- End .cart-discount -->
-
-                        </div><!-- End .cart-bottom -->
                     </div><!-- End .col-lg-9 -->
                     <aside class="col-lg-3">
                         <div class="summary summary-cart">
@@ -111,11 +97,11 @@
                                     <tr class="summary-shipping-row">
                                         <td>
                                             <div class="custom-control custom-radio">
-                                                <input type="radio" id="free-shipping" name="shipping" value="0" class="custom-control-input" selected>
+                                                <input type="radio" id="free-shipping" name="shipping" value="0" class="custom-control-input" checked>
                                                 <label class="custom-control-label" for="free-shipping">Free Shipping</label>
                                             </div><!-- End .custom-control -->
                                         </td>
-                                        <td>&#2547;0.00</td>
+                                        <td>&#2547; 0.00</td>
                                     </tr><!-- End .summary-shipping-row -->
 
                                     <tr class="summary-shipping-row">
@@ -125,7 +111,7 @@
                                                 <label class="custom-control-label" for="standart-shipping">Standart:</label>
                                             </div><!-- End .custom-control -->
                                         </td>
-                                        <td>&#2547;10.00</td>
+                                        <td>&#2547; 10.00</td>
                                     </tr><!-- End .summary-shipping-row -->
 
                                     <tr class="summary-shipping-row">
@@ -135,7 +121,7 @@
                                                 <label class="custom-control-label" for="express-shipping">Express:</label>
                                             </div><!-- End .custom-control -->
                                         </td>
-                                        <td>&#2547;20.00</td>
+                                        <td>&#2547; 20.00</td>
                                     </tr><!-- End .summary-shipping-row -->
                                     
                                     <tr class="summary-total">

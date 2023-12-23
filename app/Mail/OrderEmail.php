@@ -33,7 +33,7 @@ class OrderEmail extends Mailable
     public function envelope()
     {
         return new Envelope(
-            subject: 'Order Status Email',
+            subject: 'Order status email',
         );
     }
 

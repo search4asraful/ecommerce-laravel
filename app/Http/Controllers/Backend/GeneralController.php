@@ -32,8 +32,14 @@ class GeneralController extends Controller
         flash()->options([
             'timeout' => 3000, // 3 seconds
             'position' => 'bottom-right',
-        ])->addSuccess('Your banner details has been added.');
+        ])->addSuccess('Your new banner has been added');
         return redirect()->back();
+    }
+    
+    public function bannerShow()
+    {
+        $banners = Banner::all();
+        return view('frontend.home.index', compact('banners'));
     }
 
 }

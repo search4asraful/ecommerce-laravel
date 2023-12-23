@@ -9,8 +9,8 @@
 <body>
     <h2>Your order status</h2>
     <p>Hello, {{ $order->order->name }}!</p>
-    <p> your order has been successfully <span>{{ $order->status }}.</span></p>
+    <p>Your order has been successfully <span>{{ $order->status }}.</span></p>
 
-    <p>Thank you!</p>
+    <p>Thank you ('-')</p>
 </body>
 </html>
