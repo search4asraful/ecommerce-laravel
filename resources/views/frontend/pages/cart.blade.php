@@ -97,7 +97,7 @@
                                     <tr class="summary-shipping-row">
                                         <td>
                                             <div class="custom-control custom-radio">
-                                                <input type="radio" id="free-shipping" name="shipping" value="0" class="custom-control-input" checked>
+                                                <input type="radio" id="free-shipping" name="shipping" value="free shipping" class="custom-control-input" checked>
                                                 <label class="custom-control-label" for="free-shipping">Free Shipping</label>
                                             </div><!-- End .custom-control -->
                                         </td>
@@ -107,21 +107,21 @@
                                     <tr class="summary-shipping-row">
                                         <td>
                                             <div class="custom-control custom-radio">
-                                                <input type="radio" id="standart-shipping" name="shipping" value="10" class="custom-control-input">
+                                                <input type="radio" id="standart-shipping" name="shipping" value="100" class="custom-control-input">
                                                 <label class="custom-control-label" for="standart-shipping">Standart:</label>
                                             </div><!-- End .custom-control -->
                                         </td>
-                                        <td>&#2547; 10.00</td>
+                                        <td>&#2547; 100.00</td>
                                     </tr><!-- End .summary-shipping-row -->
 
                                     <tr class="summary-shipping-row">
                                         <td>
                                             <div class="custom-control custom-radio">
-                                                <input type="radio" id="express-shipping" name="shipping" value="20" class="custom-control-input">
+                                                <input type="radio" id="express-shipping" name="shipping" value="130" class="custom-control-input">
                                                 <label class="custom-control-label" for="express-shipping">Express:</label>
                                             </div><!-- End .custom-control -->
                                         </td>
-                                        <td>&#2547; 20.00</td>
+                                        <td>&#2547; 130.00</td>
                                     </tr><!-- End .summary-shipping-row -->
                                     
                                     <tr class="summary-total">

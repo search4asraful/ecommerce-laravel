@@ -38,6 +38,8 @@ return array(
     'App\\Mail\\OrderEmail' => $baseDir . '/app/Mail/OrderEmail.php',
     'App\\Models\\Banner' => $baseDir . '/app/Models/Banner.php',
     'App\\Models\\Category' => $baseDir . '/app/Models/Category.php',
+    'App\\Models\\General' => $baseDir . '/app/Models/General.php',
+    'App\\Models\\Membership' => $baseDir . '/app/Models/Membership.php',
     'App\\Models\\Product' => $baseDir . '/app/Models/Product.php',
     'App\\Models\\User' => $baseDir . '/app/Models/User.php',
     'App\\Models\\cart' => $baseDir . '/app/Models/cart.php',

@@ -579,6 +579,8 @@ class ComposerStaticInitfe33f98a750b8c5a51b30c78bd3fab21
         'App\\Mail\\OrderEmail' => __DIR__ . '/../..' . '/app/Mail/OrderEmail.php',
         'App\\Models\\Banner' => __DIR__ . '/../..' . '/app/Models/Banner.php',
         'App\\Models\\Category' => __DIR__ . '/../..' . '/app/Models/Category.php',
+        'App\\Models\\General' => __DIR__ . '/../..' . '/app/Models/General.php',
+        'App\\Models\\Membership' => __DIR__ . '/../..' . '/app/Models/Membership.php',
         'App\\Models\\Product' => __DIR__ . '/../..' . '/app/Models/Product.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Models\\cart' => __DIR__ . '/../..' . '/app/Models/cart.php',

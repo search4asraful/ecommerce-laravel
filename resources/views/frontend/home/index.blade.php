@@ -28,7 +28,7 @@
                             </span>
                         </div><!-- End .intro-price -->
                         
-                        <a href="{{ url('/shop') }}" class="btn btn-primary btn-round">
+                        <a href="{{ $banner->link }}" class="btn btn-primary btn-round">
                             <span>Shop More</span>
                             <i class="icon-long-arrow-right"></i>
                         </a>

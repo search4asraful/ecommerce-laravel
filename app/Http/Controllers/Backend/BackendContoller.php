@@ -26,4 +26,9 @@ class BackendContoller extends Controller
     {
         return view('backend.pages.general.trending');
     }
+
+    public function membershipManage()
+    {
+        return view('backend.pages.general.membership');
+    }
 }

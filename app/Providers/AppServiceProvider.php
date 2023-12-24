@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\view;
 use App\Models\Category;
 use App\Models\Product;
 use App\Models\Cart;
+use App\Models\Membership;
 use App\Models\wishlist;
 
 class AppServiceProvider extends ServiceProvider
@@ -33,6 +34,7 @@ class AppServiceProvider extends ServiceProvider
             $view->with('banners', Banner::all());
             $view->with('categories', Category::all());
             $view->with('products', Product::all());
+            $view->with('memberships', Membership::all());
             $view->with('cartProduct', Cart::with('products')->where('ip_address', request()->ip())->get());
             $view->with('wishlistProduct', wishlist::with('products')->where('ip_address', request()->ip())->get());
         });

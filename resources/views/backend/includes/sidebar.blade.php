@@ -14,8 +14,9 @@
             </a>
             <div class="collapse" id="generalCollapse" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                 <nav class="sb-sidenav-menu-nested nav">
-                    <a class="nav-link" href="{{ url('/banner/manage') }}">Banner</a>
-                    <a class="nav-link" href="{{ url('/banner/tranding') }}">Tranding</a>
+                    <a class="nav-link" href="{{ url('/banner/manage') }}">Carousel</a>
+                    <a class="nav-link" href="{{ url('/tranding/manage') }}">Tranding</a>
+                    <a class="nav-link" href="{{ url('/membership/manage') }}">Membership</a>
                     <a class="nav-link" href="{{ url('/deals/outlet') }}">Deals & Outlet</a>
                 </nav>
             </div>

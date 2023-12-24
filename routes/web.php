@@ -53,11 +53,17 @@ Route::get('/order/invoice/{id}', [OrderController::class, 'orderInvoice']);
 Auth::routes();
 Route::get('/admin/setting', [BackendContoller::class, 'adminSetting']);
 Route::get('/banner/manage', [BackendContoller::class, 'bannerManage']);
-Route::get('/banner/tranding', [BackendContoller::class, 'trendingBanner']);
+Route::get('/membership/manage', [BackendContoller::class, 'membershipManage']);
+Route::get('/tranding/manage', [BackendContoller::class, 'trendingBanner']);
 Route::get('/deals/outlet', [BackendContoller::class, 'dealsOutlet']);
 
-Route::post('/update/banner', [GeneralController::class, 'bannerStore']);
+Route::post('/create/banner', [GeneralController::class, 'bannerStore']);
+Route::get('/banner/delete/{id}', [GeneralController::class, 'bannerDelete']);
 Route::get('/banners', [GeneralController::class, 'bannerShow']);
+
+Route::post('/create/membership', [GeneralController::class, 'membershipStore']);
+Route::get('/membership/delete/{id}', [GeneralController::class, 'membershipDelete']);
+Route::get('/memberships', [GeneralController::class, 'membershipShow']);
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/category/create', [CategoryController::class, 'categoryCreateForm']);
