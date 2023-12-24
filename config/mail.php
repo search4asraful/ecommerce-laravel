@@ -46,17 +46,6 @@ return [
 
         //     this works for mailtrap
         // ],
-        
-        'gmail' => [
-            'transport' => 'smtp',
-            'host' => 'smtp.gmail.com',
-            'port' => 587,
-            'encryption' => 'tls',
-            'username' => 'laraprojecttest@gmail.com',
-            'password' => 'tistlisatqvsbgrc',
-            'timeout' => null,
-            'auth_mode' => null,
-        ],        
 
         'ses' => [
             'transport' => 'ses',
