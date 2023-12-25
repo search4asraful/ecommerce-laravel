@@ -49,13 +49,30 @@ class CartController extends Controller
 
     public function productCartView()
     {
-        $cart = Cart::find(1);
-        return view('frontend.pages.cart');
+        $cart = Cart::with('products')->first();
+
+        if ($cart && $cart->products->isNotEmpty()) {
+            return view('frontend.pages.cart');
+        }
+        flash()->options([
+            'timeout' => 3500, // 3 seconds
+            'position' => 'bottom-right',
+        ])->addInfo('Your cart is empty. Add products to cart for proceed');
+        return view('frontend.home.index');
     }
 
     public function checkout()
     {
-        return view('frontend.pages.checkout');
+        $cart = Cart::with('products')->first();
+
+        if ($cart && $cart->products->isNotEmpty()) {
+            return view('frontend.pages.checkout');
+        }
+        flash()->options([
+            'timeout' => 3500, // 3 seconds
+            'position' => 'bottom-right',
+        ])->addInfo('Your cart is empty. Add products to cart for proceed');
+        return view('frontend.pages.shop');
     }
 
     public function cartUpdate(Request $request, $id) {

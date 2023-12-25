@@ -87,7 +87,7 @@
                                         </tr><!-- End .summary-subtotal -->
                                         <tr>
                                             <td>Shipping:</td>
-                                            <td>{{ $product->shipping }}</td>
+                                            <td>Free Shipping</td>
                                         </tr>
                                         <tr class="summary-total">
                                             <td>Total:</td>

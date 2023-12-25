@@ -48,8 +48,16 @@ class WishlistController extends Controller
 
     public function productwishlistView()
     {
-        $wish = wishlist::find(1);
-        return view('frontend.pages.wishlist');
+        $wish = wishlist::with('products')->first();
+
+        if ($wish && $wish->products->isNotEmpty()) {
+            return view('frontend.pages.wishlist');
+        }
+        flash()->options([
+            'timeout' => 3500, // 3 seconds
+            'position' => 'bottom-right',
+        ])->addInfo('Your wishlist is empty. Add products to wishlist for proceed');
+        return view('frontend.home.index');
     }
 
 }

@@ -16,7 +16,7 @@
                 <nav class="sb-sidenav-menu-nested nav">
                     <a class="nav-link" href="{{ url('/banner/manage') }}">Carousel</a>
                     <a class="nav-link" href="{{ url('/tranding/manage') }}">Tranding</a>
-                    <a class="nav-link" href="{{ url('/membership/manage') }}">Membership</a>
+                    <a class="nav-link" href="{{ url('/membership/manage') }}">Brand membership</a>
                     <a class="nav-link" href="{{ url('/deals/outlet') }}">Deals & Outlet</a>
                 </nav>
             </div>
@@ -30,6 +30,17 @@
                 <nav class="sb-sidenav-menu-nested nav">
                     <a class="nav-link" href="{{ url('/category/create') }}">Add category</a>
                     <a class="nav-link" href="{{ url('/category/manage') }}">Manage category</a>
+                </nav>
+            </div>
+            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#brandCollapse" aria-expanded="false" aria-controls="collapseLayouts">
+                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                Brand
+                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+            </a>
+            <div class="collapse" id="brandCollapse" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                <nav class="sb-sidenav-menu-nested nav">
+                    <a class="nav-link" href="{{ url('/brand/create') }}">Add brand</a>
+                    <a class="nav-link" href="{{ url('/brand/manage') }}">Manage brand</a>
                 </nav>
             </div>
             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#productCollapse" aria-expanded="false" aria-controls="collapseLayouts">

@@ -70,7 +70,7 @@ class GeneralController extends Controller
         ]);
 
         $imageName = time().'.'.$request->image->extension();
-        $request->image->move('images/membership/', $imageName);
+        $request->image->move('images/brands/', $imageName);
 
         $membership = new Membership();
         $membership->name = $request->name;

@@ -124,11 +124,9 @@
                 <li class="nav-item">
                     <a class="nav-link active" id="new-all-link" data-toggle="tab" href="#new-all-tab" role="tab" aria-controls="new-all-tab" aria-selected="true">all</a>
                 </li>
-                @foreach ($categories as $category)
                 <li class="nav-item">
-                    <a class="nav-link" id="new-all-link" data-toggle="tab" href="#new-all-tab" role="tab" aria-controls="new-all-tab" aria-selected="true">{{ $category->name }}</a>
+                    <a class="nav-link" id="new-all-link" data-toggle="tab" href="#new-all-tab" role="tab" aria-controls="new-all-tab" aria-selected="true">Category list</a>
                 </li>
-                @endforeach
             </ul>
        </div><!-- End .heading-right -->
     </div><!-- End .heading -->
@@ -1349,29 +1347,11 @@
                 }
             }
         }'>
+        @foreach($memberships as $membership)
         <a href="#" class="brand">
-            <img src="{{ asset('/frontend/') }}/assets/images/brands/1.png" alt="Brand Name">
+            <img src="{{ asset('/images/brands/'.$membership->image) }}" alt="Brand Name">
         </a>
-
-        <a href="#" class="brand">
-            <img src="{{ asset('/frontend/') }}/assets/images/brands/2.png" alt="Brand Name">
-        </a>
-
-        <a href="#" class="brand">
-            <img src="{{ asset('/frontend/') }}/assets/images/brands/3.png" alt="Brand Name">
-        </a>
-
-        <a href="#" class="brand">
-            <img src="{{ asset('/frontend/') }}/assets/images/brands/4.png" alt="Brand Name">
-        </a>
-
-        <a href="#" class="brand">
-            <img src="{{ asset('/frontend/') }}/assets/images/brands/5.png" alt="Brand Name">
-        </a>
-
-        <a href="#" class="brand">
-            <img src="{{ asset('/frontend/') }}/assets/images/brands/6.png" alt="Brand Name">
-        </a>
+        @endforeach
     </div><!-- End .owl-carousel -->
 </div><!-- End .container -->
 
@@ -2279,6 +2259,6 @@
     </div>
 </div>
 
-<button id="scroll-top" title="Back to Top"><i class="icon-arrow-up"></i></button>
+@include('frontend.includes.scroll-top')
 
 @endsection

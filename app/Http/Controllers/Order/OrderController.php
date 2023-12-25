@@ -9,6 +9,7 @@ use App\Models\Cart;
 use App\Models\OrderDetails;
 use App\Mail\OrderEmail;
 use App\Mail\OrderCheckoutEmail;
+use App\Models\Product;
 use Mail;
 
 class OrderController extends Controller
@@ -61,6 +62,20 @@ class OrderController extends Controller
             $remove = Cart::where('product_id', $cartProductRemove)->first();
             $remove->delete();
         }
+
+        // reduce qty from product qty
+
+        foreach ($request->product_id as $key => $productId) {
+            $product = Product::find($productId);
+        
+            if ($product) {
+                $quantityToDeduct = $request->qty[$key] ?? 0;
+                $newQuantity = $product->qty - $quantityToDeduct;
+                $newQuantity = max(0, $newQuantity);
+                $product->update(['qty' => $newQuantity]);
+            }
+        }                      
+        
         flash()->options([
             'timeout' => 3000, // 3 seconds
             'position' => 'bottom-right',

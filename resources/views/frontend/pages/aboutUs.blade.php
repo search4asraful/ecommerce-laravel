@@ -70,59 +70,13 @@
                 <div class="col-lg-7">
                     <div class="brands-display">
                         <div class="row justify-content-center">
+                            @foreach($memberships as $membership)
                             <div class="col-6 col-sm-4">
                                 <a href="#" class="brand">
-                                    <img src="{{ ('/frontend/') }}/assets/images/brands/1.png" alt="Brand Name">
+                                    <img src="{{ ('/images/brands/'.$membership->image) }}" alt="Brand Name">
                                 </a>
                             </div><!-- End .col-sm-4 -->
-
-                            <div class="col-6 col-sm-4">
-                                <a href="#" class="brand">
-                                    <img src="{{ ('/frontend/') }}/assets/images/brands/2.png" alt="Brand Name">
-                                </a>
-                            </div><!-- End .col-sm-4 -->
-
-                            <div class="col-6 col-sm-4">
-                                <a href="#" class="brand">
-                                    <img src="{{ ('/frontend/') }}/assets/images/brands/3.png" alt="Brand Name">
-                                </a>
-                            </div><!-- End .col-sm-4 -->
-
-                            <div class="col-6 col-sm-4">
-                                <a href="#" class="brand">
-                                    <img src="{{ ('/frontend/') }}/assets/images/brands/4.png" alt="Brand Name">
-                                </a>
-                            </div><!-- End .col-sm-4 -->
-
-                            <div class="col-6 col-sm-4">
-                                <a href="#" class="brand">
-                                    <img src="{{ ('/frontend/') }}/assets/images/brands/5.png" alt="Brand Name">
-                                </a>
-                            </div><!-- End .col-sm-4 -->
-
-                            <div class="col-6 col-sm-4">
-                                <a href="#" class="brand">
-                                    <img src="{{ ('/frontend/') }}/assets/images/brands/6.png" alt="Brand Name">
-                                </a>
-                            </div><!-- End .col-sm-4 -->
-
-                            <div class="col-6 col-sm-4">
-                                <a href="#" class="brand">
-                                    <img src="{{ ('/frontend/') }}/assets/images/brands/7.png" alt="Brand Name">
-                                </a>
-                            </div><!-- End .col-sm-4 -->
-
-                            <div class="col-6 col-sm-4">
-                                <a href="#" class="brand">
-                                    <img src="{{ ('/frontend/') }}/assets/images/brands/8.png" alt="Brand Name">
-                                </a>
-                            </div><!-- End .col-sm-4 -->
-
-                            <div class="col-6 col-sm-4">
-                                <a href="#" class="brand">
-                                    <img src="{{ ('/frontend/') }}/assets/images/brands/9.png" alt="Brand Name">
-                                </a>
-                            </div><!-- End .col-sm-4 -->
+                            @endforeach
                         </div><!-- End .row -->
                     </div><!-- End .brands-display -->
                 </div><!-- End .col-lg-7 -->
@@ -245,5 +199,7 @@
         </div><!-- End .bg-light-2 pt-5 pb-6 -->
     </div><!-- End .page-content -->
 </main><!-- End .main -->
+
+@include('frontend.includes.scroll-top')
 
 @endsection

@@ -29,6 +29,6 @@ class BackendContoller extends Controller
 
     public function membershipManage()
     {
-        return view('backend.pages.general.membership');
+        return view('backend.pages.general.brand-membership');
     }
 }

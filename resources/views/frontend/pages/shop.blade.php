@@ -52,7 +52,7 @@
                                         <button type="submit" class="btn-product-icon btn-wishlist" title="Add to wishlist"></button>
                                         </form>
                                         <a href="{{ url('/product/details/'.$product->id) }}">
-                                            <img src="{{ ('images/'.$product->image) }}">
+                                            <img src="{{ asset('images/'.$product->image) }}">
                                         </a>
                                     </figure><!-- End .product-media -->
                                 </div><!-- End .col-sm-6 col-lg-3 -->
