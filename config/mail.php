@@ -35,27 +35,18 @@ return [
 
     'mailers' => [
         // 'smtp' => [
-        //     'transport' => 'smtp',
-        //     'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
-        //     'port' => env('MAIL_PORT', 587),
-        //     'encryption' => env('MAIL_ENCRYPTION', 'tls'),
-        //     'username' => env('MAIL_USERNAME'),
-        //     'password' => env('MAIL_PASSWORD'),
-        //     'timeout' => null,
-        //     'local_domain' => env('MAIL_EHLO_DOMAIN'),
-
-        //     this works for mailtrap
-        // ],
-
-        'gmail' => [
+            'gmail' => [ //only for gmail server use to send mails
             'transport' => 'smtp',
-            'host' => 'smtp.gmail.com',
-            'port' => 587,
-            'encryption' => 'tls',
-            'username' => 'laraprojecttest@gmail.com',
-            'password' => 'qqkmmeiwfukbdxlh',
+            'host' => env('MAIL_HOST', 'smtp.gmail.com'), //smtp.mailgun.org only for mailtrap
+            'port' => env('MAIL_PORT', 587),
+            'encryption' => env('MAIL_ENCRYPTION', 'tls'),
+            'username' => env('MAIL_USERNAME'),
+            'password' => env('MAIL_PASSWORD'),
             'timeout' => null,
-            'auth_mode' => null,
+            'local_domain' => env('MAIL_EHLO_DOMAIN'),
+            'auth_mode' => null, //only for gmail server use to send mails
+
+            // comented things works for mailtrap
         ],
 
         'ses' => [
