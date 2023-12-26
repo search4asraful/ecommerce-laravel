@@ -56,8 +56,8 @@ class WishlistController extends Controller
         flash()->options([
             'timeout' => 3500, // 3 seconds
             'position' => 'bottom-right',
-        ])->addInfo('Your wishlist is empty. Add products to wishlist for proceed');
-        return view('frontend.home.index');
+        ])->addInfo('Your wishlist is empty. <br/>Add products to wishlist for proceed');
+        return redirect('/');
     }
 
 }

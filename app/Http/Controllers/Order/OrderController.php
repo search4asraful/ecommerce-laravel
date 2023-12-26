@@ -79,8 +79,8 @@ class OrderController extends Controller
         flash()->options([
             'timeout' => 3000, // 3 seconds
             'position' => 'bottom-right',
-        ])->addSuccess('Order has been placed successfully');
-        return redirect()->back();
+        ])->addSuccess('Your order has been successfully placed');
+        return redirect('/');
     }
 
     public function orders()

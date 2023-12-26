@@ -222,7 +222,7 @@
 
     @include('frontend.includes.script')
     @stack('front_script')
-
+    {!! flash()->render() !!}
 </body>
 <!-- Habib/index-4.html -->
 </html>

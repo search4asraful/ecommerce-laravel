@@ -91,7 +91,7 @@ class GeneralController extends Controller
         flash()->options([
             'timeout' => 3000, // 3 seconds
             'position' => 'bottom-right',
-        ])->addSuccess('membership has been deleted');
+        ])->addSuccess('A membership has been deleted');
         return redirect()->back();
     }
 

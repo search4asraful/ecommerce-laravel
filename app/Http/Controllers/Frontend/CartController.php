@@ -57,8 +57,8 @@ class CartController extends Controller
         flash()->options([
             'timeout' => 3500, // 3 seconds
             'position' => 'bottom-right',
-        ])->addInfo('Your cart is empty. Add products to cart for proceed');
-        return view('frontend.home.index');
+        ])->addInfo('Your cart is empty. <br/>Add products to cart for proceed');
+        return redirect('/');
     }
 
     public function checkout()
@@ -71,8 +71,8 @@ class CartController extends Controller
         flash()->options([
             'timeout' => 3500, // 3 seconds
             'position' => 'bottom-right',
-        ])->addInfo('Your cart is empty. Add products to cart for proceed');
-        return view('frontend.pages.shop');
+        ])->addInfo('First add products to cart for proceed');
+        return redirect('/shop');
     }
 
     public function cartUpdate(Request $request, $id) {
