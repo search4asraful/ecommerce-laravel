@@ -169,17 +169,17 @@
 
                             <div class="collapse show" id="widget-1">
                                 <div class="widget-body">
+                                    @foreach ($categories as $category)
                                     <div class="filter-items filter-items-count">
-                                        @foreach ($products as $product)
                                         <div class="filter-item">
                                             <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="{{ $product->category->name }}">
-                                                <label class="custom-control-label" for="{{ $product->category->name }}">{{ $product->category->name }}</label>
+                                                <input type="checkbox" class="custom-control-input" id="{{ $category->name }}">
+                                                <label class="custom-control-label" for="{{ $category->name }}">{{ $category->name }}</label>
                                             </div><!-- End .custom-checkbox -->
                                             <span class="item-count">3</span>
                                         </div><!-- End .filter-item -->
-                                        @endforeach
                                     </div><!-- End .filter-items -->
+                                    @endforeach
                                 </div><!-- End .widget-body -->
                             </div><!-- End .collapse -->
                         </div><!-- End .widget -->
