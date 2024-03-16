@@ -52,7 +52,11 @@
                             <div class="form-group">
                                 <label for="badge">Badge</label>
                                 <select name="badge" id="" class="form-control">
+                                    @if (!is_null($product->badge))
+                                    <option selected>{{ ucfirst($product->badge) }}</option>
+                                    @else
                                     <option selected disabled>Select a badge</option>
+                                    @endif
                                     <option value="new">New</option>
                                     <option value="hot">Hot</option>
                                     <option value="top">Top</option>

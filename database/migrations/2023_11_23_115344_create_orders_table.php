@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('address');
             $table->string('city');
             $table->unsignedInteger('total_qty');
-            $table->float('total_price', 8, 2);
+            $table->unsignedInteger('total_price');
             $table->string('payment_type');
             $table->string('order_note')->nullable();
             $table->timestamps();

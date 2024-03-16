@@ -11,7 +11,6 @@
             </ol>
         </div><!-- End .container -->
     </nav><!-- End .breadcrumb-nav -->
-    <h2>privacy</h2>
 </main>
-
+    
 @endsection

@@ -66,6 +66,19 @@
                 font-size: 2rem !important;
             }
         }
+        #watermark
+        {
+        position: absolute;;
+        left: 50%;
+        top: 30%;
+        transform: translate(-50%, -50%);
+        opacity:0.5;
+        z-index:-1;
+        font-weight: 700;
+        rotate: -35deg;
+        font-size: 4rem;
+        color:rgb(22, 123, 191);
+        }
     </style>
 </head>
 <body>
@@ -78,10 +91,10 @@
             </a>
         </nav>
         <div>
-            <p><strong>Name :</strong>&ensp;{{ $orderInvoice->order->name }}</p>
-            <p><strong>Phone :</strong>&ensp;{{ $orderInvoice->order->phone }}</p>
-            <p><strong>Email :</strong>&ensp;{{ $orderInvoice->order->email }}</p>
-            <p><strong>Address :</strong>&ensp;{{ $orderInvoice->order->address }}<span class="float-right">{{ date('d-M-Y h:i A', time() + 6 * 60 * 60) }}</span></p>
+            <p><strong>Name :</strong>&ensp;{{ $orderDetails->first()->order->name }}</p>
+            <p><strong>Phone :</strong>&ensp;{{ $orderDetails->first()->order->phone }}</p>
+            <p><strong>Email :</strong>&ensp;{{ $orderDetails->first()->order->email }}</p>
+            <p><strong>Address :</strong>&ensp;{{ $orderDetails->first()->order->address }}<span class="float-right">{{ date('d-M-Y h:i A', time() + 6 * 60 * 60) }}</span></p>
         </div>
         <div class="mt-2">
             <table class="table">
@@ -90,17 +103,37 @@
                     <th>Products</th>
                     <th>Qty</th>
                     <th>Price</th>
-                    <th>Payment method</th>
                 </tr>
+                @foreach ($orderDetails as $orderDetail)
                 <tr>
-                    <td>1</td>
-                    <td>{{ $orderInvoice->product->name }}</td>
-                    <td>{{ $orderInvoice->qty }}</td>
-                    <td>&#2547; {{ number_format($orderInvoice->order->total_price, 2) }}</td>
-                    <td>{{ ucFirst($orderInvoice->order->payment_type) }}</td>
+                    <td>{{ $loop->index+1 }}</td>
+                    <td>{{ $orderDetail->product->name }}</td>
+                    <td>{{ $orderDetail->qty }}</td>
+                    <td>&#2547; {{ number_format($orderDetail->price, 2) }}</td>
+                </tr>
+                @endforeach
+                <tr>
+                    <td></td>
+                    <td><small>
+                        Payment method used:
+                            @if(strtolower($orderDetail->order->payment_type) === 'cod')
+                                Cash on Delivery
+                            @else
+                                {{ ucfirst($orderDetail->order->payment_type) }}
+                            @endif
+                    </small>
+                    </td>
+                    <td>Total</td>
+                    <td>&#2547; {{number_format($orderDetails->first()->order->total_price, 2)}}
+                    </td>
                 </tr>
             </table>
         </div>
+        <div id="watermark">{{ config('app.name') }}</div>
     </div>
+    <footer class="text-center">
+        Software generated invoice no seal or signature needed.<br/>
+        &copy;{{ date('Y') }} {{ config('app.name') }} - All rights Reserved.
+    </footer>
 </body>
 </html>

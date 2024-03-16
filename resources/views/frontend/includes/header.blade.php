@@ -27,7 +27,7 @@
 
                     <div class="header-center">
                         <div class="header-search header-search-extended header-search-visible d-none d-lg-block">
-                            <a href="#" class="search-toggle" role="button"><i class="icon-search"></i></a>
+                            <a href="javascript:void(0)" class="search-toggle" role="button"><i class="icon-search"></i></a>
                             <form action="#" method="get">
                                 <div class="header-search-wrapper search-wrapper-wide">
                                     <label for="q" class="sr-only">Search</label>
@@ -41,7 +41,7 @@
                     <div class="header-right">
                         <div class="dropdown wishlist-dropdown">
                             <div class="wishlist">
-                                <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static" title="Wishlist" aria-label="wishlist Products">
+                                <a href="javascript:void(0)" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static" title="Wishlist" aria-label="wishlist Products">
                                     <div class="icon">
                                         <i class="icon-heart-o"></i>
                                         <span class="wishlist-count badge">{{ $wishlistProduct ? count($wishlistProduct) : 0 }}</span>
@@ -70,7 +70,7 @@
                                 </ul>
 
                                 <div class="wishlist-actions">
-                                    <a href="#" class="action-link">Clear All</a>
+                                    <a href="javascript:void(0)" class="action-link">Clear All</a>
                                     <a href="{{ url('/wishlist') }}" class="btn btn-outline-primary-2"><span>View</span><i class="icon-long-arrow-right"></i></a>
                                 </div>
                                 @endif
@@ -78,7 +78,7 @@
                         </div><!-- End .wishlist-dropdown -->
 
                         <div class="dropdown cart-dropdown">
-                            <a href="#" class="dropdown-toggle" title="Cart" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
+                            <a href="javascript:void(0)" class="dropdown-toggle" title="Cart" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
                                 <div class="icon">
                                     <i class="icon-shopping-cart"></i>
                                     <span class="cart-count">{{ $cartProduct ? count($cartProduct) : 0 }}</span>
@@ -146,7 +146,7 @@
                 <div class="container">
                     <div class="header-left">
                         <div class="dropdown category-dropdown">
-                            <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static" title="Browse Categories">
+                            <a href="javascript:void(0)" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static" title="Browse Categories">
                                 Browse Categories <i class="icon-angle-down"></i>
                             </a>
 
@@ -172,7 +172,7 @@
                                     <a href="{{ url('/shop') }}">Shop</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="sf-with-ul">Pages</a>
+                                    <a href="javascript:void(0)" class="sf-with-ul">Pages</a>
                                     <ul>
                                         <li><a href="{{ url('/coming-soon') }}">Coming Soon</a></li>
                                     </ul>

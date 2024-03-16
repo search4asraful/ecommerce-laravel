@@ -15,24 +15,27 @@
                 </tr>
                 <tr>
                     <td class="col-md-6">
-                        <strong>Name : </strong>{{ $order->order->name }}<br/>
-                        <strong>Phone : </strong>{{ $order->order->phone }}<br/>
-                        <strong>Email address: </strong>{{ $order->order->email }}<br/><br/>
-                        <strong>Address : </strong>{{ $order->order->address }}
+                        <strong>Name : </strong>{{ $orders->order->name }}<br/>
+                        <strong>Phone : </strong>{{ $orders->order->phone }}<br/>
+                        <strong>Email address: </strong>{{ $orders->order->email }}<br/>
+                        <strong>Address : </strong>{{ $orders->order->address }}<br/><br/>
+                        <strong>Order note : </strong>{{ $orders->order->order_note }}<br/>
                     </td>
                     <td class="col-md-6">
-                        <strong>Product name : </strong>{{ $order->product->name }}<br/>
-                        <strong>Product quantity : </strong>{{ $order->qty }} pis
+                        @foreach ($orders as $order)
+                        <strong>Product name : </strong>{{ $orders->product->name }}<br/>
+                        <strong>QTY : </strong>{{ $orders->qty }} pis<br/>
+                        @endforeach
                     </td>
                 </tr>
             </table>
         </div>
-        <form action="{{ url('/order/update/'.$order->id) }}" method="post" enctype="multipart/form-data">
+        <form action="{{ url('/order/update/'.$orders->id) }}" method="post" enctype="multipart/form-data">
             @csrf
             <div class="form-group">
                 <label for="status">Order status</label>
                 <select name="status" class="form-control">
-                    <option value="{{ $order->status }}" selected>{{ $order->status }}</option>
+                    <option value="{{ $orders->status }}" selected>{{ $orders->status }}</option>
                     <option value="shipped">Shipped</option>
                     <option value="delivered">Delivered</option>
                     <option value="canceled">canceled</option>

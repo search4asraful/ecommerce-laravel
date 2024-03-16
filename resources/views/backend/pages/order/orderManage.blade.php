@@ -9,27 +9,25 @@
         @else
         <table class="table table-bordered">
             <tr>
-                <th class="col-md-1">SL</th>
-                <th class="col-md-4">Product</th>
-                <th class="col-md-4">Customer</th>
-                <th class="col-md-1">Status</th>
-                <th class="col-md-2">Action</th>
+                <th class="col-md-1">Order ID</th>
+                <th class="col-md-6">Customer name</th>
+                <th class="col-md-2">Status</th>
+                <th class="col-md-1">Action</th>
             </tr>
-            @foreach ($orders as $order)
-            <tr>
-                <td>{{ $loop->index+1 }}</td>
-                <td><em>Product name : </em>{{ $order->product->name }}</td>
-                <td><em>Name : </em>{{ $order->order->name }}<br/>
-                    <em>Phone : </em>{{ $order->order->phone }}<br/>
-                    <em>Address : </em>{{ $order->order->address }}
-                </td>
-                <td>{{ $order->status }}</td>
-                <td class="text-center">
-                    <a href="{{ url('/manage/order/'.$order->id) }}" class="btn btn-sm btn-warning"><i class="fa-solid fa-pencil pe-2"></i>Edit</a>
-                    <a href="{{ url('/order/invoice/'.$order->id) }}" class="btn btn-sm btn-info"><i class="fa-solid fa-file-invoice pe-2"></i>Invoice</a>
-                </td>
-            </tr>
-            @endforeach
+                @php
+                $uniqueOrders = $orders->unique('order_id');
+                @endphp
+                @foreach ($uniqueOrders as $uniqueOrder)
+                    <tr>
+                        <td>#{{ $uniqueOrder->order_id }}</td>
+                        <td>{{ $uniqueOrder->order->name }}</td>
+                        <td>{{ $uniqueOrder->status }}</td>
+                        <td class="text-center">
+                            <a href="{{ url('/manage/order/'.$uniqueOrder->order->id) }}" class="btn btn-sm btn-warning"><i class="fa-solid fa-pencil"></i></a>
+                            <a href="{{ url('/order/invoice/'.$uniqueOrder->order->id) }}" class="btn btn-sm btn-info"><i class="fa-solid fa-file-invoice"></i></a>
+                        </td>
+                    </tr>
+                @endforeach
         </table>
         @endif
     </div>

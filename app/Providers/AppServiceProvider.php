@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Models\Banner;
+use App\Models\Brand;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\view;
 use App\Models\Category;
@@ -33,6 +34,7 @@ class AppServiceProvider extends ServiceProvider
         view::composer('*', function($view){
             $view->with('banners', Banner::all());
             $view->with('categories', Category::all());
+            $view->with('brands', Brand::all());
             $view->with('products', Product::all());
             $view->with('memberships', Membership::all());
             $view->with('cartProduct', Cart::with('products')->where('ip_address', request()->ip())->get());

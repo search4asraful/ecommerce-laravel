@@ -1,8 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Backend\BackendContoller;
+use App\Http\Controllers\Backend\BrandController;
 use App\Http\Controllers\Frontend\FrontendController;
 use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\GeneralController;
@@ -22,7 +24,8 @@ use App\Http\Controllers\Order\OrderController;
 |
 */
 
-Route::get('/', [FrontendController::class, 'index']);
+Route::get('/', [FrontendController::class, 'frontIndex']);
+Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/login/customer', [FrontendController::class, 'customerLogin']);
 Route::get('/shop', [FrontendController::class, 'shopProducts']);
 Route::get('/category/product/list', [FrontendController::class, 'productFromCategory']);
@@ -65,13 +68,19 @@ Route::post('/create/membership', [GeneralController::class, 'membershipStore'])
 Route::get('/membership/delete/{id}', [GeneralController::class, 'membershipDelete']);
 Route::get('/memberships', [GeneralController::class, 'membershipShow']);
 
-Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/category/create', [CategoryController::class, 'categoryCreateForm']);
 Route::get('/category/manage', [CategoryController::class, 'categoryManage']);
 Route::post('/category/store', [CategoryController::class, 'categoryStore']);
 Route::get('/category/edit/{id}', [CategoryController::class, 'categoryEdit']);
 Route::post('/category/update/{id}', [CategoryController::class, 'categoryUpdate']);
 Route::get('/category/delete/{id}', [CategoryController::class, 'categoryDelete']);
+
+Route::get('/brand/create', [BrandController::class, 'brandCreateForm']);
+Route::get('/brand/manage', [BrandController::class, 'brandManage']);
+Route::post('/brand/store', [BrandController::class, 'brandStore']);
+Route::get('/brand/edit/{id}', [BrandController::class, 'brandEdit']);
+Route::post('/brand/update/{id}', [BrandController::class, 'brandUpdate']);
+Route::get('/brand/delete/{id}', [BrandController::class, 'brandDelete']);
 
 Route::get('/product/productAdd', [ProductController::class, 'productAddForm']);
 Route::post('/product/store', [ProductController::class, 'productStore']);

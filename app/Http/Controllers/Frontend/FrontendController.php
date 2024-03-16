@@ -8,7 +8,7 @@ use App\Models\Product;
 
 class FrontendController extends Controller
 {
-    public function index()
+    public function frontIndex()
     {
         $products = Product::orderBy('id', 'desc')->get();
         return view('frontend.home.index', compact('products'));

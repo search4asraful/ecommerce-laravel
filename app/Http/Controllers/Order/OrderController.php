@@ -10,7 +10,7 @@ use App\Models\OrderDetails;
 use App\Mail\OrderEmail;
 use App\Mail\OrderCheckoutEmail;
 use App\Models\Product;
-use Mail;
+use Illuminate\Support\Facades\Mail;
 
 class OrderController extends Controller
 {
@@ -109,13 +109,17 @@ class OrderController extends Controller
 
     public function orderManage($id)
     {
-        $order = OrderDetails::with('order')->where('id', $id)->first();
-        return view('backend.pages.order.edit', compact('order'));
+        $orders = OrderDetails::with('order')->where('order_id', $id)->first();
+        if ($orders) {
+            return view('backend.pages.order.edit', compact('orders'));
+        } else {
+            return redirect()->back()->with('error', 'Order not found');
+        }
     }
 
     public function orderInvoice($id)
     {
-        $orderInvoice = OrderDetails::with('order')->where('id', $id)->first();
-        return view('backend.pages.pdf.invoice', compact('orderInvoice'));
+        $orderDetails = OrderDetails::with('product')->where('order_id', $id)->get();
+        return view('backend.pages.pdf.invoice', compact('orderDetails'));
     }
 }
