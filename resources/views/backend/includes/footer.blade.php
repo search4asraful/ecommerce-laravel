@@ -3,9 +3,9 @@
         <div class="d-flex align-items-center justify-content-between">
             <div class="text-muted">Copyright &copy; {{ config('app.name', 'Electromart') }} {{ date('Y') }}</div>
             <div>
-                <a href="#">Privacy Policy</a>
+                <a href="{{ url('/privacy/policy') }}">Privacy Policy</a>
                 &middot;
-                <a href="#">Terms &amp; Conditions</a>
+                <a href="{{ url('/terms-condition') }}">Terms &amp; Conditions</a>
             </div>
         </div>
     </div>

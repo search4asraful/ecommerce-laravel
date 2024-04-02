@@ -12,13 +12,11 @@ class WishlistController extends Controller
     {
         $existingWishlist = wishlist::where('product_id', $request->product_id)->first();
 
-    if ($existingWishlist) {
-        flash()->options([
-            'timeout' => 3000,
-            'position' => 'bottom-right',
-        ])->addInfo('Product is already in the wishlist');
-    } else {
+        if ($existingWishlist) {
+            $this->setMassege('info', 'Product is already in the wishlist');
+        } else {
         wishlist::where('product_id', $request->product_id)->first();
+        
         wishlist::create([
         'product_id' => $request->product_id,
         'qty' => $request->qty,
@@ -26,10 +24,7 @@ class WishlistController extends Controller
         'ip_address' => $request->ip()
         ]);
         
-        flash()->options([
-            'timeout' => 3000, // 3 seconds
-            'position' => 'bottom-right',
-        ])->addSuccess('Product has been added to wishlist');
+        $this->setMassege('success', 'Product has been added to wishlist');
     }
         return redirect()->back();
     }
@@ -39,10 +34,7 @@ class WishlistController extends Controller
         $wishlistProduct = wishlist::find($id);
         $wishlistProduct->delete();
 
-        flash()->options([
-            'timeout' => 3000, // 3 seconds
-            'position' => 'bottom-right',
-        ])->addWarning('Product has been removed from wishlist.');
+        $this->setMassege('warning', 'Product has been removed from wishlist.');
         return redirect()->back();
     }
 
@@ -53,10 +45,7 @@ class WishlistController extends Controller
         if ($wish && $wish->products->isNotEmpty()) {
             return view('frontend.pages.wishlist');
         }
-        flash()->options([
-            'timeout' => 3500, // 3 seconds
-            'position' => 'bottom-right',
-        ])->addInfo('Your wishlist is empty. <br/>Add products to wishlist for proceed');
+        $this->setMassege('info', 'Your wishlist is empty. <br/>Add products to wishlist for proceed');
         return redirect('/');
     }
 

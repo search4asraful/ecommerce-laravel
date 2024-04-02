@@ -28,10 +28,8 @@ class CartController extends Controller
             'ip_address' => $request->ip()
         ]);
         }
-        flash()->options([
-            'timeout' => 3000, // 3 seconds
-            'position' => 'bottom-right',
-        ])->addSuccess('Product has been added to cart');
+        
+        $this->setMassege('success', 'Product has been added to cart');
         return redirect()->back();
     }
 
@@ -40,10 +38,7 @@ class CartController extends Controller
         $cartProduct = Cart::find($id);
         $cartProduct->delete();
 
-        flash()->options([
-            'timeout' => 3000, // 3 seconds
-            'position' => 'bottom-right',
-        ])->addWarning('Product has been removed from cart.');
+        $this->setMassege('warning', 'Product has been removed from cart.');
         return redirect()->back();
     }
 
@@ -55,7 +50,7 @@ class CartController extends Controller
             return view('frontend.pages.cart');
         }
         flash()->options([
-            'timeout' => 3500, // 3 seconds
+            'timeout' => 3500,
             'position' => 'bottom-right',
         ])->addInfo('Your cart is empty. <br/>Add products to cart for proceed');
         return redirect('/');
@@ -68,10 +63,7 @@ class CartController extends Controller
         if ($cart && $cart->products->isNotEmpty()) {
             return view('frontend.pages.checkout');
         }
-        flash()->options([
-            'timeout' => 3500, // 3 seconds
-            'position' => 'bottom-right',
-        ])->addInfo('First add products to cart for proceed');
+        $this->setMassege('info', 'First add products to cart for proceed');
         return redirect('/shop');
     }
 
@@ -85,10 +77,7 @@ class CartController extends Controller
             'qty' => $request->qty
         ]);
 
-        flash()->options([
-            'timeout' => 3000, // 3 seconds
-            'position' => 'bottom-right',
-        ])->addSuccess('Your cart has been updated');
+        $this->setMassege('success', 'Your cart has been updated');
         return redirect()->back();
     }
 

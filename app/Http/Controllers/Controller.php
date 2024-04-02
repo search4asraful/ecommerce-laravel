@@ -11,5 +11,8 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
     
-
+    public function setMassege($type, $message)
+    {
+        session()->flash($type, $message);
+    }
 }

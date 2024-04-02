@@ -9,7 +9,7 @@
             <div class="col-md-8">
             @if ($errors->any())
                 <div class="alert alert-danger">
-                <ul>
+                <ul class="mb-0">
                     @foreach ($errors->all() as $error)
                         <li>{{ $error }}</li>
                     @endforeach
@@ -34,6 +34,15 @@
                                     <option value="{{ $product->category->id }}" selected>{{ $product->category->name }}</option>
                                     @foreach ($categories as $category)
                                         <option value="{{ $category->id }}">{{ $category->name }}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="brand_id">brand</label>
+                                <select name="brand_id" id="" class="form-control">
+                                    <option value="{{ $product->brand->id }}" selected>{{ $product->brand->name }}</option>
+                                    @foreach ($brands as $brand)
+                                        <option value="{{ $brand->id }}">{{ $brand->name }}</option>
                                     @endforeach
                                 </select>
                             </div>

@@ -25,7 +25,7 @@
                         </a>
                     </div><!-- End .header-left -->
 
-                    <div class="header-center">
+                    <div class="header-center d-none">
                         <div class="header-search header-search-extended header-search-visible d-none d-lg-block">
                             <a href="javascript:void(0)" class="search-toggle" role="button"><i class="icon-search"></i></a>
                             <form action="#" method="get">

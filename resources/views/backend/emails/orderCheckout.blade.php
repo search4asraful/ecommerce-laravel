@@ -111,12 +111,12 @@
                   <td align="left" bgcolor="#e7e7e7" width="75%" style="padding: 12px;font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;"><strong>Order</strong></td>
                   <td align="left" bgcolor="#e7e7e7" width="25%" style="padding: 12px;font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;"><strong>#00{{ $order->id }}</strong></td>
                 </tr>
-                @foreach ($orders as $order)
+                {{-- @foreach ($orders as $order)
                   <tr>
                     <td align="left" width="75%" style="padding: 6px 12px;font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;">{{ $order->product->name }}</td>
                     <td align="left" width="25%" style="padding: 6px 12px;font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;">{{ $order->product->price }}</td>
                   </tr> 
-                @endforeach
+                @endforeach --}}
                 <tr>
                   <td align="left" width="75%" style="padding: 6px 12px;font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;">Item</td>
                   <td align="left" width="25%" style="padding: 6px 12px;font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;">$24.00</td>

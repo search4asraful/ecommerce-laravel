@@ -71,7 +71,7 @@
 
                                         <div class="product-action">
                                             <a href="popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
-                                            <a href="#" class="btn-product btn-compare" title="Compare"><span>compare</span></a>
+                                            <a href="javascript:void(0)" class="btn-product btn-compare" title="Compare"><span>compare</span></a>
                                         </div><!-- End .product-action -->
                                         <form action="{{ url('/product/addToCart') }}" method="POST">
                                             @csrf
@@ -87,7 +87,7 @@
                                 <div class="col-lg-6">
                                     <div class="product-body product-action-inner">
                                         <div class="product-cat">
-                                            <a href="#">{{ $product->category->name }}</a>
+                                            <a href="javascript:void(0)">{{ $product->category->name }}</a>
                                         </div><!-- End .product-cat -->
                                         <h3 class="product-title"><a href="{{ url('/product/details/'.$product->id) }}">{{ $product->name }}</a></h3><!-- End .product-title -->
 
@@ -96,14 +96,14 @@
                                         </div><!-- End .product-content -->
                                         
                                         <div class="product-nav product-nav-thumbs">
-                                            <a href="#" class="active">
+                                            <a href="javascript:void(0)" class="active">
                                                 <img src="{{ url('images/'.$product->image) }}" alt="product desc">
                                             </a>
-                                            <a href="#">
+                                            <a href="javascript:void(0)">
                                                 <img src="{{ asset('/frontend/') }}/assets/images/products/product-4-2-thumb.jpg" alt="product desc">
                                             </a>
 
-                                            <a href="#">
+                                            <a href="javascript:void(0)">
                                                 <img src="{{ asset('/frontend/') }}/assets/images/products/product-4-3-thumb.jpg" alt="product desc">
                                             </a>
                                         </div><!-- End .product-nav -->
@@ -117,16 +117,16 @@
                     <nav aria-label="Page navigation">
                         <ul class="pagination">
                             <li class="page-item disabled">
-                                <a class="page-link page-link-prev" href="#" aria-label="Previous" tabindex="-1" aria-disabled="true">
+                                <a class="page-link page-link-prev" href="javascript:void(0)" aria-label="Previous" tabindex="-1" aria-disabled="true">
                                     <span aria-hidden="true"><i class="icon-long-arrow-left"></i></span>Prev
                                 </a>
                             </li>
-                            <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item active" aria-current="page"><a class="page-link" href="javascript:void(0)">1</a></li>
+                            <li class="page-item"><a class="page-link" href="javascript:void(0)">2</a></li>
+                            <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
                             <li class="page-item-total">of 6</li>
                             <li class="page-item">
-                                <a class="page-link page-link-next" href="#" aria-label="Next">
+                                <a class="page-link page-link-next" href="javascript:void(0)" aria-label="Next">
                                     Next <span aria-hidden="true"><i class="icon-long-arrow-right"></i></span>
                                 </a>
                             </li>
@@ -137,7 +137,7 @@
                     <div class="sidebar sidebar-shop">
                         <div class="widget widget-clean">
                             <label>Filters:</label>
-                            <a href="#" class="sidebar-filter-clear">Clean All</a>
+                            <a href="javascript:void(0)" class="sidebar-filter-clear">Clean All</a>
                         </div><!-- End .widget widget-clean -->
 
                         <div class="widget widget-collapsible">

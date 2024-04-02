@@ -43,9 +43,9 @@
 	            				<ul class="widget-list">
 	            					<li><a href="{{ url('/about-us') }}">About Us</a></li>
                                     <li><a href="{{ url('/about-us') }}">Our Services</a></li>
-	            					<li><a href="{{ url('/contact') }}">Contact us</a></li>
-									<li><a href="{{ url('/terms-condition') }}">Terms and conditions</a></li>
-									<li><a href="{{ url('/privacy') }}">Privacy Policy</a></li>
+	            					<li><a href="{{ url('/contact/us/') }}">Contact us</a></li>
+									<li><a href="{{ url('/terms/condition') }}">Terms and conditions</a></li>
+									<li><a href="{{ url('/privacy/policy') }}">Privacy Policy</a></li>
 	            				</ul><!-- End .widget-list -->
 	            			</div><!-- End .widget -->
 	            		</div><!-- End .col-sm-6 col-lg-3 -->
@@ -58,7 +58,7 @@
 	            					<li><a href="{{ url('/cart') }}">View Cart</a></li>
 	            					<li><a href="{{ url('/wishlist') }}">My Wishlist</a></li>
 	            					<li><a href="{{ url('/track-order') }}">Track My Order</a></li>
-	            					<li><a href="{{ url('/about-us') }}">Help</a></li>
+	            					<li><a href="{{ url('/contact/us/') }}">Help</a></li>
 	            				</ul><!-- End .widget-list -->
 	            			</div><!-- End .widget -->
 	            		</div><!-- End .col-sm-6 col-lg-3 -->

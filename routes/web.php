@@ -30,12 +30,12 @@ Route::get('/login/customer', [FrontendController::class, 'customerLogin']);
 Route::get('/shop', [FrontendController::class, 'shopProducts']);
 Route::get('/category/product/list', [FrontendController::class, 'productFromCategory']);
 Route::get('/product/details/{id}', [FrontendController::class, 'productDetails']);
-Route::get('/contact', [FrontendController::class, 'contact']);
+Route::get('/contact/us/', [FrontendController::class, 'contact']);
 Route::get('/about-us', [FrontendController::class, 'aboutUs']);
 Route::get('/coming-soon', [FrontendController::class, 'comingsoon']);
-Route::get('/track-order', [FrontendController::class, 'trackOrder']);
-Route::get('/terms-condition', [FrontendController::class, 'termsCondition']);
-Route::get('/privacy', [FrontendController::class, 'privacy']);
+Route::get('/track/order', [FrontendController::class, 'trackOrder']);
+Route::get('/terms/condition', [FrontendController::class, 'termsCondition']);
+Route::get('/privacy/policy', [FrontendController::class, 'privacy']);
 
 Route::post('/product/addToWishlist', [WishlistController::class, 'productAddWishlist']);
 Route::get('/product/productWishlistRemove/{id}', [WishlistController::class, 'productWishlistRemove']);

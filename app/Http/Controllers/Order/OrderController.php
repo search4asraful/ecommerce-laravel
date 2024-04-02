@@ -76,10 +76,7 @@ class OrderController extends Controller
             }
         }                      
         
-        flash()->options([
-            'timeout' => 3000, // 3 seconds
-            'position' => 'bottom-right',
-        ])->addSuccess('Your order has been successfully placed');
+        $this->setMassege('success', 'Your order has been successfully placed');
         return redirect('/');
     }
 
@@ -100,10 +97,8 @@ class OrderController extends Controller
         if (!empty($email)) {
         Mail::to($email)->send(new OrderEmail($order));
         }
-        flash()->options([
-            'timeout' => 3000, // 3 seconds
-            'position' => 'bottom-right',
-        ])->addSuccess('Order has been updated');
+        
+        $this->setMassege('success', 'Order has been updated');
         return redirect()->back();
     }
 

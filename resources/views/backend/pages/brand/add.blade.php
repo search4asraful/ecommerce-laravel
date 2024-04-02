@@ -9,16 +9,16 @@
             <div class="col-md-8">
             @if ($errors->any())
                 <div class="alert alert-danger">
-                <ul>
+                <ul class="mb-0">
                     @foreach ($errors->all() as $error)
                         <li>{{ $error }}</li>
                     @endforeach
                 </ul>
                 </div>
             @endif
-            @if (session()->has('succes'))
+            @if (session()->has('success'))
                 <div class="alert alert-primary alert-dismissible fade show" role="alert">
-                <strong>Succes!</strong> You have created a brand.
+                <strong>Success!</strong> You have created a brand.
                 </div>
             @endif
                 <div class="card">
@@ -30,7 +30,9 @@
                             @csrf
                             <div class="form-group">
                                 <label for="name">Name</label>
-                                <input type="text" name="name" placeholder="Brand name" class="form-control">
+                                <label>
+                                    <input type="text" name="name" placeholder="Brand name" class="form-control">
+                                </label>
                             </div>
                             <div class="form-group">
                                 <label for="image">Image</label>

@@ -6,7 +6,7 @@
     <nav aria-label="breadcrumb" class="breadcrumb-nav">
         <div class="container">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Terms & Condition</li>
             </ol>
         </div><!-- End .container -->
@@ -33,7 +33,7 @@
         
         <p><strong>2. Privacy Policy</strong></p>
 
-        <p>Your use of the Website is also governed by our Privacy Policy, which can be found at <a href="{{ url('/privacy') }}">privacy policy.</a></p>
+        <p>Your use of the Website is also governed by our Privacy Policy, which can be found at <a href="{{ url('/privacy/policy') }}">privacy policy.</a></p>
 
         <p><strong>3. User Accounts</strong></p>
 
@@ -84,9 +84,9 @@
         
         <p><strong>Contact Information:</strong></p>
         <p>{{ config('app.name') }}<br>
-        [Your Address]<br>
-        [Your Email]<br>
-        [Your Phone Number]</p>
+        <p>55 Main Street, 2nd Floor, E-Block, New York</p>
+        <p>info@example.com</p>
+        <p>+000 (123) 456 88</p>
     </div>
 </main>
 

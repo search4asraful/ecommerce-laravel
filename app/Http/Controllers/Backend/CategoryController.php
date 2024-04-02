@@ -3,11 +3,20 @@
 namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\CategoryStoreRequest;
+use App\Http\Requests\CategoryUpdateRequest;
 use App\Models\Category;
-use Illuminate\Http\Request;
+use App\Services\CategoryServices;
 
 class CategoryController extends Controller
 {
+    protected $CategoryServices;
+
+    public function __construct(CategoryServices $CategoryServices)
+    {
+        $this->CategoryServices = $CategoryServices;
+    }
+
     public function categoryCreateForm()
     {
         return view('backend.pages.category.add');
@@ -19,23 +28,11 @@ class CategoryController extends Controller
         return view('backend.pages.category.manage', compact('categories'));
     }
 
-    public function categoryStore(Request $request)
+    public function categoryStore(CategoryStoreRequest $request)
     {
-        $this->validate($request, [
-            'name' => 'required|string|max:255',
-            'image' => 'required|image'
-        ]);
+        $this->CategoryServices->categoryStore($request);
 
-        $imageName = time().'.'.$request->image->extension();
-        $request->image->move('images/', $imageName);
-        Category::create([
-            'name' => $request->name,
-            'image' => $imageName
-        ]);
-        flash()->options([
-            'timeout' => 3000, // 3 seconds
-            'position' => 'bottom-right',
-        ])->addSuccess('Category has been created');
+        $this->setMassege('success', 'Category has been created');
         return redirect()->back();
     }
 
@@ -45,32 +42,12 @@ class CategoryController extends Controller
         return view('backend.pages.category.edit', compact('category'));
     }
 
-    public function categoryUpdate(Request $request, $id)
+    public function categoryUpdate(CategoryUpdateRequest $request, $id)
     {
-        $this->validate($request, [
-            'name' => 'required|string|max:255',
-            'image' => 'sometimes|image'
-        ]);
-
         $category = Category::find($id);
+        $this->CategoryServices->categoryUpdate($category, $request);
 
-        if($request->hasFile('image')){
-            if(file_exists(public_path('images/'.$category->image))){
-                unlink(public_path('images/'.$category->image));
-            }else{
-                $imageName = time().'.'.$request->image->extension();
-                $request->image->move('images/',$imageName);
-            }
-            $category->image = $imageName;
-        }
-        $category->update([
-            'name' => $request->name
-        ]);
-
-        flash()->options([
-            'timeout' => 3000, // 3 seconds
-            'position' => 'bottom-right',
-        ])->addSuccess('Category has been updated');
+        $this->setMassege('success', 'Category has been updated');
         return redirect()->back();
     }
 
@@ -78,10 +55,8 @@ class CategoryController extends Controller
     {
         $category = Category::find($id);
         $category->delete();
-        flash()->options([
-            'timeout' => 3000, // 3 seconds
-            'position' => 'bottom-right',
-        ])->addSuccess('Category has been deleted');
+
+        $this->setMassege('success', 'Category has been deleted');
         return redirect()->back();
     }
 }

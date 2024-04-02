@@ -3,45 +3,33 @@
 namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\BannerStoreRequest;
+use App\Http\Requests\MembershipStoreRequest;
 use App\Models\Banner;
 use App\Models\Membership;
+use App\Services\GeneralServices;
 use Illuminate\Http\Request;
 
 class GeneralController extends Controller
 {
+    protected $generalServices;
+
+    public function __construct(GeneralServices $generalServices)
+    {
+        $this->generalServices = $generalServices;
+    }
+
     public function bannerShow()
     {
         $banners = Banner::all();
         return view('frontend.home.index', compact('banners'));
     }
 
-    public function bannerStore(Request $request)
+    public function bannerStore(BannerStoreRequest $request)
     {
-        $this->validate($request, [
-            'name' => 'required|string|max:255',
-            'price' => 'required|integer|not_in:0',
-            'heading' => 'required|string|max:255',
-            'pricetag' => 'nullable|string|max:255',
-            'link' => 'required|string|max:255',
-            'image' => 'required|image'
-        ]);
+        $this->generalServices->bannerStore($request);
 
-        $imageName = time().'.'.$request->image->extension();
-        $request->image->move('images/banner/', $imageName);
-
-        $banner = new Banner();
-        $banner->name = $request->name;
-        $banner->price = $request->price;
-        $banner->heading = $request->heading;
-        $banner->pricetag = $request->pricetag;
-        $banner->link = $request->link;
-        $banner->image = $imageName;
-        $banner->save();
-
-        flash()->options([
-            'timeout' => 3000, // 3 seconds
-            'position' => 'bottom-right',
-        ])->addSuccess('Your new banner has been added');
+        $this->setMassege('success', 'Your new banner has been added');
         return redirect()->back();
     }
     
@@ -49,10 +37,8 @@ class GeneralController extends Controller
     {
         $product = Banner::find($id);
         $product->delete();
-        flash()->options([
-            'timeout' => 3000, // 3 seconds
-            'position' => 'bottom-right',
-        ])->addSuccess('Banner has been deleted');
+
+        $this->setMassege('success', 'Banner has been deleted');
         return redirect()->back();
     }
 
@@ -62,25 +48,11 @@ class GeneralController extends Controller
         return view('frontend.home.index', compact('memberships'));
     }
 
-    public function membershipStore(Request $request)
+    public function membershipStore(MembershipStoreRequest $request)
     {
-        $this->validate($request, [
-            'name' => 'required|string|max:255',
-            'image' => 'required|image'
-        ]);
+        $this->generalServices->membershipStore($request);
 
-        $imageName = time().'.'.$request->image->extension();
-        $request->image->move('images/brands/', $imageName);
-
-        $membership = new Membership();
-        $membership->name = $request->name;
-        $membership->image = $imageName;
-        $membership->save();
-
-        flash()->options([
-            'timeout' => 3000, // 3 seconds
-            'position' => 'bottom-right',
-        ])->addSuccess('Your new membership has been added');
+        $this->setMassege('success', 'Your new membership has been added');
         return redirect()->back();
     }
     
@@ -88,10 +60,8 @@ class GeneralController extends Controller
     {
         $product = Membership::find($id);
         $product->delete();
-        flash()->options([
-            'timeout' => 3000, // 3 seconds
-            'position' => 'bottom-right',
-        ])->addSuccess('A membership has been deleted');
+        
+        $this->setMassege('success', 'A membership has been deleted');
         return redirect()->back();
     }
 

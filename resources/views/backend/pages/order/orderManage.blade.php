@@ -5,7 +5,7 @@
 <div class="container mt-3">
     <div class="col-md-12">
         @if($orders->isEmpty())
-            <p>No orders found.</p>
+            <h4 class="text-center">No orders found!</h4>
         @else
         <table class="table table-bordered">
             <tr>
@@ -17,7 +17,7 @@
                 @php
                 $uniqueOrders = $orders->unique('order_id');
                 @endphp
-                @foreach ($uniqueOrders as $uniqueOrder)
+                @forelse ($uniqueOrders as $uniqueOrder)
                     <tr>
                         <td>#{{ $uniqueOrder->order_id }}</td>
                         <td>{{ $uniqueOrder->order->name }}</td>

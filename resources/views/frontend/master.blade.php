@@ -57,7 +57,7 @@
                                 <a href="{{ url('/') }}">Home</a>
                             </li>
                             <li>
-                                <a href="#">Shop</a>
+                                <a href="javascript:void(0)">Shop</a>
                                 <ul>
                                     <li><a href="{{ url('/shop') }}">Products</a></li>
                                     <li><a href="{{ url('/wishlist') }}">Wishlist</a></li>
@@ -67,13 +67,13 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">Pages</a>
+                                <a href="javascript:void(0)">Pages</a>
                                 <ul>
                                     <li>
                                         <a href="{{ url('/about-us') }}">About Us</a>
                                     </li>
                                     <li>
-                                        <a href="{{ url('/contact') }}">Contact</a>
+                                        <a href="{{ url('/contact/us/') }}">Contact</a>
                                     </li>
                                     <li><a href="{{ url('/login/customer') }}">Login</a></li>
                                     <li><a href="{{ url('/coming-soon') }}"><span>Coming Soon<span class="tip tip-new">New</span></span></a></li>
@@ -85,8 +85,8 @@
                 <div class="tab-pane fade" id="mobile-cats-tab" role="tabpanel" aria-labelledby="mobile-cats-link">
                     <nav class="mobile-cats-nav">
                         <ul class="mobile-cats-menu">
-                            <li><a class="mobile-cats-lead" href="#">Daily offers</a></li>
-                            <li><a class="mobile-cats-lead" href="#">Gift Ideas</a></li>
+                            <li><a class="mobile-cats-lead" href="javascript:void(0)">Daily offers</a></li>
+                            <li><a class="mobile-cats-lead" href="javascript:void(0)">Gift Ideas</a></li>
                             @foreach ($categories as $category)
                             <li><a href="{{ url('/category/product/list') }}">{{ $category->name }}</a></li>
                             @endforeach
@@ -96,10 +96,10 @@
             </div><!-- End .tab-content -->
 
             <div class="social-icons">
-                <a href="#" class="social-icon" target="_blank" title="Facebook"><i class="icon-facebook-f"></i></a>
-                <a href="#" class="social-icon" target="_blank" title="Twitter"><i class="icon-twitter"></i></a>
-                <a href="#" class="social-icon" target="_blank" title="Instagram"><i class="icon-instagram"></i></a>
-                <a href="#" class="social-icon" target="_blank" title="Youtube"><i class="icon-youtube"></i></a>
+                <a href="javascript:void(0)" class="social-icon" target="_blank" title="Facebook"><i class="icon-facebook-f"></i></a>
+                <a href="javascript:void(0)" class="social-icon" target="_blank" title="Twitter"><i class="icon-twitter"></i></a>
+                <a href="javascript:void(0)" class="social-icon" target="_blank" title="Instagram"><i class="icon-instagram"></i></a>
+                <a href="javascript:void(0)" class="social-icon" target="_blank" title="Youtube"><i class="icon-youtube"></i></a>
             </div><!-- End .social-icons -->
         </div><!-- End .mobile-menu-wrapper -->
     </div><!-- End .mobile-menu-container -->
@@ -147,20 +147,20 @@
                                                 <label class="custom-control-label" for="signin-remember">Remember Me</label>
                                             </div><!-- End .custom-checkbox -->
 
-                                            <a href="#" class="forgot-link">Forgot Your Password?</a>
+                                            <a href="javascript:void(0)" class="forgot-link">Forgot Your Password?</a>
                                         </div><!-- End .form-footer -->
                                     </form>
                                     <div class="form-choice">
                                         <p class="text-center">or sign in with</p>
                                         <div class="row">
                                             <div class="col-sm-6">
-                                                <a href="#" class="btn btn-login btn-g">
+                                                <a href="javascript:void(0)" class="btn btn-login btn-g">
                                                     <i class="icon-google"></i>
                                                     Login With Google
                                                 </a>
                                             </div><!-- End .col-6 -->
                                             <div class="col-sm-6">
-                                                <a href="#" class="btn btn-login btn-f">
+                                                <a href="javascript:void(0)" class="btn btn-login btn-f">
                                                     <i class="icon-facebook-f"></i>
                                                     Login With Facebook
                                                 </a>
@@ -188,7 +188,7 @@
 
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox" class="custom-control-input" id="register-policy" required>
-                                                <label class="custom-control-label" for="register-policy">I agree to the <a href="#">privacy policy</a> *</label>
+                                                <label class="custom-control-label" for="register-policy">I agree to the <a href="javascript:void(0)">privacy policy</a> *</label>
                                             </div><!-- End .custom-checkbox -->
                                         </div><!-- End .form-footer -->
                                     </form>
@@ -196,13 +196,13 @@
                                         <p class="text-center">or sign in with</p>
                                         <div class="row">
                                             <div class="col-sm-6">
-                                                <a href="#" class="btn btn-login btn-g">
+                                                <a href="javascript:void(0)" class="btn btn-login btn-g">
                                                     <i class="icon-google"></i>
                                                     Login With Google
                                                 </a>
                                             </div><!-- End .col-6 -->
                                             <div class="col-sm-6">
-                                                <a href="#" class="btn btn-login  btn-f">
+                                                <a href="javascript:void(0)" class="btn btn-login  btn-f">
                                                     <i class="icon-facebook-f"></i>
                                                     Login With Facebook
                                                 </a>

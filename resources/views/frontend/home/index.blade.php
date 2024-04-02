@@ -69,42 +69,42 @@
     <div class="row justify-content-center">
         <div class="col-md-6 col-lg-4">
             <div class="banner banner-overlay banner-overlay-light">
-                <a href="#">
+                <a href="javascript:void(0)">
                     <img src="{{ asset('/frontend/') }}/assets/images/demos/banners/banner-1.png" alt="Banner">
                 </a>
 
                 <div class="banner-content">
-                    <h4 class="banner-subtitle"><a href="#">Smart Offer</a></h4><!-- End .banner-subtitle -->
-                    <h3 class="banner-title"><a href="#">Save $150 <strong>on Samsung <br>Galaxy Note9</strong></a></h3><!-- End .banner-title -->
-                    <a href="#" class="banner-link">Shop Now<i class="icon-long-arrow-right"></i></a>
+                    <h4 class="banner-subtitle"><a href="javascript:void(0)">Smart Offer</a></h4><!-- End .banner-subtitle -->
+                    <h3 class="banner-title"><a href="javascript:void(0)">Save $150 <strong>on Samsung <br>Galaxy Note9</strong></a></h3><!-- End .banner-title -->
+                    <a href="javascript:void(0)" class="banner-link">Shop Now<i class="icon-long-arrow-right"></i></a>
                 </div><!-- End .banner-content -->
             </div><!-- End .banner -->
         </div><!-- End .col-md-4 -->
 
         <div class="col-md-6 col-lg-4">
             <div class="banner banner-overlay banner-overlay-light">
-                <a href="#">
+                <a href="javascript:void(0)">
                     <img src="{{ asset('/frontend/') }}/assets/images/demos/banners/banner-2.jpg" alt="Banner">
                 </a>
 
                 <div class="banner-content">
-                    <h4 class="banner-subtitle"><a href="#">Time Deals</a></h4><!-- End .banner-subtitle -->
-                    <h3 class="banner-title"><a href="#"><strong>Bose SoundSport</strong> <br>Time Deal -30%</a></h3><!-- End .banner-title -->
-                    <a href="#" class="banner-link">Shop Now<i class="icon-long-arrow-right"></i></a>
+                    <h4 class="banner-subtitle"><a href="javascript:void(0)">Time Deals</a></h4><!-- End .banner-subtitle -->
+                    <h3 class="banner-title"><a href="javascript:void(0)"><strong>Bose SoundSport</strong> <br>Time Deal -30%</a></h3><!-- End .banner-title -->
+                    <a href="javascript:void(0)" class="banner-link">Shop Now<i class="icon-long-arrow-right"></i></a>
                 </div><!-- End .banner-content -->
             </div><!-- End .banner -->
         </div><!-- End .col-md-4 -->
 
         <div class="col-md-6 col-lg-4">
             <div class="banner banner-overlay banner-overlay-light">
-                <a href="#">
+                <a href="javascript:void(0)">
                     <img src="{{ asset('/frontend/') }}/assets/images/demos/banners/banner-3.png" alt="Banner">
                 </a>
 
                 <div class="banner-content">
-                    <h4 class="banner-subtitle"><a href="#">Clearance</a></h4><!-- End .banner-subtitle -->
-                    <h3 class="banner-title"><a href="#"><strong>GoPro - Fusion 360</strong> <br>Save $70</a></h3><!-- End .banner-title -->
-                    <a href="#" class="banner-link">Shop Now<i class="icon-long-arrow-right"></i></a>
+                    <h4 class="banner-subtitle"><a href="javascript:void(0)">Clearance</a></h4><!-- End .banner-subtitle -->
+                    <h3 class="banner-title"><a href="javascript:void(0)"><strong>GoPro - Fusion 360</strong> <br>Save $70</a></h3><!-- End .banner-title -->
+                    <a href="javascript:void(0)" class="banner-link">Shop Now<i class="icon-long-arrow-right"></i></a>
                 </div><!-- End .banner-content -->
             </div><!-- End .banner -->
         </div><!-- End .col-lg-4 -->
@@ -236,18 +236,18 @@
                         </a>
 
                         <div class="product-action-vertical">
-                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
+                            <a href="javascript:void(0)" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
                         </div><!-- End .product-action -->
 
                         <div class="product-action">
-                            <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
+                            <a href="javascript:void(0)" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
                             <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
                     <div class="product-body">
                         <div class="product-cat">
-                            <a href="#">Tablets</a>
+                            <a href="javascript:void(0)">Tablets</a>
                         </div><!-- End .product-cat -->
                         <h3 class="product-title"><a href="product.html">Apple - 11 Inch iPad Pro  with Wi-Fi 256GB </a></h3><!-- End .product-title -->
                         <div class="product-price">
@@ -261,9 +261,9 @@
                         </div><!-- End .rating-container -->
 
                         <div class="product-nav product-nav-dots">
-                            <a href="#" style="background: #edd2c8;"><span class="sr-only">Color name</span></a>
-                            <a href="#" style="background: #eaeaec;"><span class="sr-only">Color name</span></a>
-                            <a href="#" class="active" style="background: #333333;"><span class="sr-only">Color name</span></a>
+                            <a href="javascript:void(0)" style="background: #edd2c8;"><span class="sr-only">Color name</span></a>
+                            <a href="javascript:void(0)" style="background: #eaeaec;"><span class="sr-only">Color name</span></a>
+                            <a href="javascript:void(0)" class="active" style="background: #333333;"><span class="sr-only">Color name</span></a>
                         </div><!-- End .product-nav -->
                     </div><!-- End .product-body -->
                 </div><!-- End .product -->
@@ -275,18 +275,18 @@
                         </a>
 
                         <div class="product-action-vertical">
-                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
+                            <a href="javascript:void(0)" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
                         </div><!-- End .product-action -->
 
                         <div class="product-action">
-                            <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
+                            <a href="javascript:void(0)" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
                             <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
                     <div class="product-body">
                         <div class="product-cat">
-                            <a href="#">Audio</a>
+                            <a href="javascript:void(0)">Audio</a>
                         </div><!-- End .product-cat -->
                         <h3 class="product-title"><a href="product.html">Bose - SoundLink Bluetooth Speaker</a></h3><!-- End .product-title -->
                         <div class="product-price">
@@ -310,18 +310,18 @@
                         </a>
 
                         <div class="product-action-vertical">
-                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
+                            <a href="javascript:void(0)" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
                         </div><!-- End .product-action -->
 
                         <div class="product-action">
-                            <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
+                            <a href="javascript:void(0)" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
                             <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
                     <div class="product-body">
                         <div class="product-cat">
-                            <a href="#">Cell Phone</a>
+                            <a href="javascript:void(0)">Cell Phone</a>
                         </div><!-- End .product-cat -->
                         <h3 class="product-title"><a href="product.html">Google - Pixel 3 XL  128GB</a></h3><!-- End .product-title -->
                         <div class="product-price">
@@ -336,9 +336,9 @@
                         </div><!-- End .rating-container -->
 
                         <div class="product-nav product-nav-dots">
-                            <a href="#" class="active" style="background: #edd2c8;"><span class="sr-only">Color name</span></a>
-                            <a href="#" style="background: #eaeaec;"><span class="sr-only">Color name</span></a>
-                            <a href="#" style="background: #333333;"><span class="sr-only">Color name</span></a>
+                            <a href="javascript:void(0)" class="active" style="background: #edd2c8;"><span class="sr-only">Color name</span></a>
+                            <a href="javascript:void(0)" style="background: #eaeaec;"><span class="sr-only">Color name</span></a>
+                            <a href="javascript:void(0)" style="background: #333333;"><span class="sr-only">Color name</span></a>
                         </div><!-- End .product-nav -->
                     </div><!-- End .product-body -->
                 </div><!-- End .product -->
@@ -351,18 +351,18 @@
                         </a>
 
                         <div class="product-action-vertical">
-                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
+                            <a href="javascript:void(0)" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
                         </div><!-- End .product-action -->
 
                         <div class="product-action">
-                            <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
+                            <a href="javascript:void(0)" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
                             <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
                     <div class="product-body">
                         <div class="product-cat">
-                            <a href="#">TV & Home Theater</a>
+                            <a href="javascript:void(0)">TV & Home Theater</a>
                         </div><!-- End .product-cat -->
                         <h3 class="product-title"><a href="product.html">Samsung - 55" Class  LED 2160p Smart</a></h3><!-- End .product-title -->
                         <div class="product-price">
@@ -385,18 +385,18 @@
                         </a>
 
                         <div class="product-action-vertical">
-                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
+                            <a href="javascript:void(0)" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
                         </div><!-- End .product-action -->
 
                         <div class="product-action">
-                            <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
+                            <a href="javascript:void(0)" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
                             <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
                     <div class="product-body">
                         <div class="product-cat">
-                            <a href="#">Laptops</a>
+                            <a href="javascript:void(0)">Laptops</a>
                         </div><!-- End .product-cat -->
                         <h3 class="product-title"><a href="product.html">MacBook Pro 13" Display, i5</a></h3><!-- End .product-title -->
                         <div class="product-price">
@@ -445,18 +445,18 @@
                         </a>
 
                         <div class="product-action-vertical">
-                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
+                            <a href="javascript:void(0)" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
                         </div><!-- End .product-action -->
 
                         <div class="product-action">
-                            <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
+                            <a href="javascript:void(0)" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
                             <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
                     <div class="product-body">
                         <div class="product-cat">
-                            <a href="#">TV & Home Theater</a>
+                            <a href="javascript:void(0)">TV & Home Theater</a>
                         </div><!-- End .product-cat -->
                         <h3 class="product-title"><a href="product.html">Samsung - 55" Class  LED 2160p Smart</a></h3><!-- End .product-title -->
                         <div class="product-price">
@@ -479,18 +479,18 @@
                         </a>
 
                         <div class="product-action-vertical">
-                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
+                            <a href="javascript:void(0)" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
                         </div><!-- End .product-action -->
 
                         <div class="product-action">
-                            <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
+                            <a href="javascript:void(0)" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
                             <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
                     <div class="product-body">
                         <div class="product-cat">
-                            <a href="#">Laptops</a>
+                            <a href="javascript:void(0)">Laptops</a>
                         </div><!-- End .product-cat -->
                         <h3 class="product-title"><a href="product.html">MacBook Pro 13" Display, i5</a></h3><!-- End .product-title -->
                         <div class="product-price">
@@ -513,18 +513,18 @@
                         </a>
 
                         <div class="product-action-vertical">
-                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
+                            <a href="javascript:void(0)" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
                         </div><!-- End .product-action -->
 
                         <div class="product-action">
-                            <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
+                            <a href="javascript:void(0)" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
                             <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
                     <div class="product-body">
                         <div class="product-cat">
-                            <a href="#">Tablets</a>
+                            <a href="javascript:void(0)">Tablets</a>
                         </div><!-- End .product-cat -->
                         <h3 class="product-title"><a href="product.html">Apple - 11 Inch iPad Pro  with Wi-Fi 256GB </a></h3><!-- End .product-title -->
                         <div class="product-price">
@@ -538,9 +538,9 @@
                         </div><!-- End .rating-container -->
 
                         <div class="product-nav product-nav-dots">
-                            <a href="#" style="background: #edd2c8;"><span class="sr-only">Color name</span></a>
-                            <a href="#" style="background: #eaeaec;"><span class="sr-only">Color name</span></a>
-                            <a href="#" class="active" style="background: #333333;"><span class="sr-only">Color name</span></a>
+                            <a href="javascript:void(0)" style="background: #edd2c8;"><span class="sr-only">Color name</span></a>
+                            <a href="javascript:void(0)" style="background: #eaeaec;"><span class="sr-only">Color name</span></a>
+                            <a href="javascript:void(0)" class="active" style="background: #333333;"><span class="sr-only">Color name</span></a>
                         </div><!-- End .product-nav -->
                     </div><!-- End .product-body -->
                 </div><!-- End .product -->
@@ -552,18 +552,18 @@
                         </a>
 
                         <div class="product-action-vertical">
-                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
+                            <a href="javascript:void(0)" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
                         </div><!-- End .product-action -->
 
                         <div class="product-action">
-                            <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
+                            <a href="javascript:void(0)" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
                             <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
                     <div class="product-body">
                         <div class="product-cat">
-                            <a href="#">Audio</a>
+                            <a href="javascript:void(0)">Audio</a>
                         </div><!-- End .product-cat -->
                         <h3 class="product-title"><a href="product.html">Bose - SoundLink Bluetooth Speaker</a></h3><!-- End .product-title -->
                         <div class="product-price">
@@ -587,18 +587,18 @@
                         </a>
 
                         <div class="product-action-vertical">
-                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
+                            <a href="javascript:void(0)" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
                         </div><!-- End .product-action -->
 
                         <div class="product-action">
-                            <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
+                            <a href="javascript:void(0)" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
                             <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
                     <div class="product-body">
                         <div class="product-cat">
-                            <a href="#">Cell Phone</a>
+                            <a href="javascript:void(0)">Cell Phone</a>
                         </div><!-- End .product-cat -->
                         <h3 class="product-title"><a href="product.html">Google - Pixel 3 XL  128GB</a></h3><!-- End .product-title -->
                         <div class="product-price">
@@ -613,9 +613,9 @@
                         </div><!-- End .rating-container -->
 
                         <div class="product-nav product-nav-dots">
-                            <a href="#" class="active" style="background: #edd2c8;"><span class="sr-only">Color name</span></a>
-                            <a href="#" style="background: #eaeaec;"><span class="sr-only">Color name</span></a>
-                            <a href="#" style="background: #333333;"><span class="sr-only">Color name</span></a>
+                            <a href="javascript:void(0)" class="active" style="background: #edd2c8;"><span class="sr-only">Color name</span></a>
+                            <a href="javascript:void(0)" style="background: #eaeaec;"><span class="sr-only">Color name</span></a>
+                            <a href="javascript:void(0)" style="background: #333333;"><span class="sr-only">Color name</span></a>
                         </div><!-- End .product-nav -->
                     </div><!-- End .product-body -->
                 </div><!-- End .product -->
@@ -654,18 +654,18 @@
                         </a>
 
                         <div class="product-action-vertical">
-                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
+                            <a href="javascript:void(0)" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
                         </div><!-- End .product-action -->
 
                         <div class="product-action">
-                            <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
+                            <a href="javascript:void(0)" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
                             <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
                     <div class="product-body">
                         <div class="product-cat">
-                            <a href="#">Laptops</a>
+                            <a href="javascript:void(0)">Laptops</a>
                         </div><!-- End .product-cat -->
                         <h3 class="product-title"><a href="product.html">MacBook Pro 13" Display, i5</a></h3><!-- End .product-title -->
                         <div class="product-price">
@@ -687,18 +687,18 @@
                         </a>
 
                         <div class="product-action-vertical">
-                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
+                            <a href="javascript:void(0)" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
                         </div><!-- End .product-action -->
 
                         <div class="product-action">
-                            <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
+                            <a href="javascript:void(0)" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
                             <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
                     <div class="product-body">
                         <div class="product-cat">
-                            <a href="#">Audio</a>
+                            <a href="javascript:void(0)">Audio</a>
                         </div><!-- End .product-cat -->
                         <h3 class="product-title"><a href="product.html">Bose - SoundLink Bluetooth Speaker</a></h3><!-- End .product-title -->
                         <div class="product-price">
@@ -721,18 +721,18 @@
                         </a>
 
                         <div class="product-action-vertical">
-                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
+                            <a href="javascript:void(0)" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
                         </div><!-- End .product-action -->
 
                         <div class="product-action">
-                            <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
+                            <a href="javascript:void(0)" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
                             <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
                     <div class="product-body">
                         <div class="product-cat">
-                            <a href="#">Tablets</a>
+                            <a href="javascript:void(0)">Tablets</a>
                         </div><!-- End .product-cat -->
                         <h3 class="product-title"><a href="product.html">Apple - 11 Inch iPad Pro  with Wi-Fi 256GB </a></h3><!-- End .product-title -->
                         <div class="product-price">
@@ -746,9 +746,9 @@
                         </div><!-- End .rating-container -->
 
                         <div class="product-nav product-nav-dots">
-                            <a href="#" style="background: #edd2c8;"><span class="sr-only">Color name</span></a>
-                            <a href="#" style="background: #eaeaec;"><span class="sr-only">Color name</span></a>
-                            <a href="#" class="active" style="background: #333333;"><span class="sr-only">Color name</span></a>
+                            <a href="javascript:void(0)" style="background: #edd2c8;"><span class="sr-only">Color name</span></a>
+                            <a href="javascript:void(0)" style="background: #eaeaec;"><span class="sr-only">Color name</span></a>
+                            <a href="javascript:void(0)" class="active" style="background: #333333;"><span class="sr-only">Color name</span></a>
                         </div><!-- End .product-nav -->
                     </div><!-- End .product-body -->
                 </div><!-- End .product -->
@@ -761,18 +761,18 @@
                         </a>
 
                         <div class="product-action-vertical">
-                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
+                            <a href="javascript:void(0)" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
                         </div><!-- End .product-action -->
 
                         <div class="product-action">
-                            <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
+                            <a href="javascript:void(0)" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
                             <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
                     <div class="product-body">
                         <div class="product-cat">
-                            <a href="#">TV & Home Theater</a>
+                            <a href="javascript:void(0)">TV & Home Theater</a>
                         </div><!-- End .product-cat -->
                         <h3 class="product-title"><a href="product.html">Samsung - 55" Class  LED 2160p Smart</a></h3><!-- End .product-title -->
                         <div class="product-price">
@@ -795,18 +795,18 @@
                         </a>
 
                         <div class="product-action-vertical">
-                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
+                            <a href="javascript:void(0)" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
                         </div><!-- End .product-action -->
 
                         <div class="product-action">
-                            <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
+                            <a href="javascript:void(0)" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
                             <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
                     <div class="product-body">
                         <div class="product-cat">
-                            <a href="#">Laptops</a>
+                            <a href="javascript:void(0)">Laptops</a>
                         </div><!-- End .product-cat -->
                         <h3 class="product-title"><a href="product.html">MacBook Pro 13" Display, i5</a></h3><!-- End .product-title -->
                         <div class="product-price">
@@ -830,18 +830,18 @@
                         </a>
 
                         <div class="product-action-vertical">
-                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
+                            <a href="javascript:void(0)" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
                         </div><!-- End .product-action -->
 
                         <div class="product-action">
-                            <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
+                            <a href="javascript:void(0)" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
                             <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
                     <div class="product-body">
                         <div class="product-cat">
-                            <a href="#">Cell Phone</a>
+                            <a href="javascript:void(0)">Cell Phone</a>
                         </div><!-- End .product-cat -->
                         <h3 class="product-title"><a href="product.html">Google - Pixel 3 XL  128GB</a></h3><!-- End .product-title -->
                         <div class="product-price">
@@ -856,9 +856,9 @@
                         </div><!-- End .rating-container -->
 
                         <div class="product-nav product-nav-dots">
-                            <a href="#" class="active" style="background: #edd2c8;"><span class="sr-only">Color name</span></a>
-                            <a href="#" style="background: #eaeaec;"><span class="sr-only">Color name</span></a>
-                            <a href="#" style="background: #333333;"><span class="sr-only">Color name</span></a>
+                            <a href="javascript:void(0)" class="active" style="background: #edd2c8;"><span class="sr-only">Color name</span></a>
+                            <a href="javascript:void(0)" style="background: #eaeaec;"><span class="sr-only">Color name</span></a>
+                            <a href="javascript:void(0)" style="background: #333333;"><span class="sr-only">Color name</span></a>
                         </div><!-- End .product-nav -->
                     </div><!-- End .product-body -->
                 </div><!-- End .product -->
@@ -898,18 +898,18 @@
                         </a>
 
                         <div class="product-action-vertical">
-                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
+                            <a href="javascript:void(0)" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
                         </div><!-- End .product-action -->
 
                         <div class="product-action">
-                            <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
+                            <a href="javascript:void(0)" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
                             <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
                     <div class="product-body">
                         <div class="product-cat">
-                            <a href="#">Cell Phone</a>
+                            <a href="javascript:void(0)">Cell Phone</a>
                         </div><!-- End .product-cat -->
                         <h3 class="product-title"><a href="product.html">Google - Pixel 3 XL  128GB</a></h3><!-- End .product-title -->
                         <div class="product-price">
@@ -924,9 +924,9 @@
                         </div><!-- End .rating-container -->
 
                         <div class="product-nav product-nav-dots">
-                            <a href="#" class="active" style="background: #edd2c8;"><span class="sr-only">Color name</span></a>
-                            <a href="#" style="background: #eaeaec;"><span class="sr-only">Color name</span></a>
-                            <a href="#" style="background: #333333;"><span class="sr-only">Color name</span></a>
+                            <a href="javascript:void(0)" class="active" style="background: #edd2c8;"><span class="sr-only">Color name</span></a>
+                            <a href="javascript:void(0)" style="background: #eaeaec;"><span class="sr-only">Color name</span></a>
+                            <a href="javascript:void(0)" style="background: #333333;"><span class="sr-only">Color name</span></a>
                         </div><!-- End .product-nav -->
                     </div><!-- End .product-body -->
                 </div><!-- End .product -->
@@ -939,18 +939,18 @@
                         </a>
 
                         <div class="product-action-vertical">
-                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
+                            <a href="javascript:void(0)" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
                         </div><!-- End .product-action -->
 
                         <div class="product-action">
-                            <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
+                            <a href="javascript:void(0)" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
                             <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
                     <div class="product-body">
                         <div class="product-cat">
-                            <a href="#">Laptops</a>
+                            <a href="javascript:void(0)">Laptops</a>
                         </div><!-- End .product-cat -->
                         <h3 class="product-title"><a href="product.html">MacBook Pro 13" Display, i5</a></h3><!-- End .product-title -->
                         <div class="product-price">
@@ -972,18 +972,18 @@
                         </a>
 
                         <div class="product-action-vertical">
-                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
+                            <a href="javascript:void(0)" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
                         </div><!-- End .product-action -->
 
                         <div class="product-action">
-                            <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
+                            <a href="javascript:void(0)" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
                             <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
                     <div class="product-body">
                         <div class="product-cat">
-                            <a href="#">Audio</a>
+                            <a href="javascript:void(0)">Audio</a>
                         </div><!-- End .product-cat -->
                         <h3 class="product-title"><a href="product.html">Bose - SoundLink Bluetooth Speaker</a></h3><!-- End .product-title -->
                         <div class="product-price">
@@ -1006,18 +1006,18 @@
                         </a>
 
                         <div class="product-action-vertical">
-                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
+                            <a href="javascript:void(0)" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
                         </div><!-- End .product-action -->
 
                         <div class="product-action">
-                            <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
+                            <a href="javascript:void(0)" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
                             <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
                     <div class="product-body">
                         <div class="product-cat">
-                            <a href="#">Tablets</a>
+                            <a href="javascript:void(0)">Tablets</a>
                         </div><!-- End .product-cat -->
                         <h3 class="product-title"><a href="product.html">Apple - 11 Inch iPad Pro  with Wi-Fi 256GB </a></h3><!-- End .product-title -->
                         <div class="product-price">
@@ -1031,9 +1031,9 @@
                         </div><!-- End .rating-container -->
 
                         <div class="product-nav product-nav-dots">
-                            <a href="#" style="background: #edd2c8;"><span class="sr-only">Color name</span></a>
-                            <a href="#" style="background: #eaeaec;"><span class="sr-only">Color name</span></a>
-                            <a href="#" class="active" style="background: #333333;"><span class="sr-only">Color name</span></a>
+                            <a href="javascript:void(0)" style="background: #edd2c8;"><span class="sr-only">Color name</span></a>
+                            <a href="javascript:void(0)" style="background: #eaeaec;"><span class="sr-only">Color name</span></a>
+                            <a href="javascript:void(0)" class="active" style="background: #333333;"><span class="sr-only">Color name</span></a>
                         </div><!-- End .product-nav -->
                     </div><!-- End .product-body -->
                 </div><!-- End .product -->
@@ -1072,18 +1072,18 @@
                         </a>
 
                         <div class="product-action-vertical">
-                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
+                            <a href="javascript:void(0)" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
                         </div><!-- End .product-action -->
 
                         <div class="product-action">
-                            <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
+                            <a href="javascript:void(0)" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
                             <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
                     <div class="product-body">
                         <div class="product-cat">
-                            <a href="#">Laptops</a>
+                            <a href="javascript:void(0)">Laptops</a>
                         </div><!-- End .product-cat -->
                         <h3 class="product-title"><a href="product.html">MacBook Pro 13" Display, i5</a></h3><!-- End .product-title -->
                         <div class="product-price">
@@ -1106,18 +1106,18 @@
                         </a>
 
                         <div class="product-action-vertical">
-                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
+                            <a href="javascript:void(0)" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
                         </div><!-- End .product-action -->
 
                         <div class="product-action">
-                            <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
+                            <a href="javascript:void(0)" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
                             <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
                     <div class="product-body">
                         <div class="product-cat">
-                            <a href="#">TV & Home Theater</a>
+                            <a href="javascript:void(0)">TV & Home Theater</a>
                         </div><!-- End .product-cat -->
                         <h3 class="product-title"><a href="product.html">Samsung - 55" Class  LED 2160p Smart</a></h3><!-- End .product-title -->
                         <div class="product-price">
@@ -1140,18 +1140,18 @@
                         </a>
 
                         <div class="product-action-vertical">
-                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
+                            <a href="javascript:void(0)" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
                         </div><!-- End .product-action -->
 
                         <div class="product-action">
-                            <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
+                            <a href="javascript:void(0)" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
                             <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
                     <div class="product-body">
                         <div class="product-cat">
-                            <a href="#">Laptops</a>
+                            <a href="javascript:void(0)">Laptops</a>
                         </div><!-- End .product-cat -->
                         <h3 class="product-title"><a href="product.html">MacBook Pro 13" Display, i5</a></h3><!-- End .product-title -->
                         <div class="product-price">
@@ -1173,18 +1173,18 @@
                         </a>
 
                         <div class="product-action-vertical">
-                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
+                            <a href="javascript:void(0)" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
                         </div><!-- End .product-action -->
 
                         <div class="product-action">
-                            <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
+                            <a href="javascript:void(0)" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
                             <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
                     <div class="product-body">
                         <div class="product-cat">
-                            <a href="#">Audio</a>
+                            <a href="javascript:void(0)">Audio</a>
                         </div><!-- End .product-cat -->
                         <h3 class="product-title"><a href="product.html">Bose - SoundLink Bluetooth Speaker</a></h3><!-- End .product-title -->
                         <div class="product-price">
@@ -1207,18 +1207,18 @@
                         </a>
 
                         <div class="product-action-vertical">
-                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
+                            <a href="javascript:void(0)" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
                         </div><!-- End .product-action -->
 
                         <div class="product-action">
-                            <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
+                            <a href="javascript:void(0)" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
                             <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
                     <div class="product-body">
                         <div class="product-cat">
-                            <a href="#">Tablets</a>
+                            <a href="javascript:void(0)">Tablets</a>
                         </div><!-- End .product-cat -->
                         <h3 class="product-title"><a href="product.html">Apple - 11 Inch iPad Pro  with Wi-Fi 256GB </a></h3><!-- End .product-title -->
                         <div class="product-price">
@@ -1232,9 +1232,9 @@
                         </div><!-- End .rating-container -->
 
                         <div class="product-nav product-nav-dots">
-                            <a href="#" style="background: #edd2c8;"><span class="sr-only">Color name</span></a>
-                            <a href="#" style="background: #eaeaec;"><span class="sr-only">Color name</span></a>
-                            <a href="#" class="active" style="background: #333333;"><span class="sr-only">Color name</span></a>
+                            <a href="javascript:void(0)" style="background: #edd2c8;"><span class="sr-only">Color name</span></a>
+                            <a href="javascript:void(0)" style="background: #eaeaec;"><span class="sr-only">Color name</span></a>
+                            <a href="javascript:void(0)" class="active" style="background: #333333;"><span class="sr-only">Color name</span></a>
                         </div><!-- End .product-nav -->
                     </div><!-- End .product-body -->
                 </div><!-- End .product -->
@@ -1254,7 +1254,7 @@
                     <div class="cta-text text-right text-white">
                         <p>Shop Today’s Deals <br><strong>Awesome Made Easy. HERO7 Black</strong></p>
                     </div><!-- End .cta-text -->
-                    <a href="#" class="btn btn-primary btn-round"><span>Shop Now - $429.99</span><i class="icon-long-arrow-right"></i></a>
+                    <a href="javascript:void(0)" class="btn btn-primary btn-round"><span>Shop Now - $429.99</span><i class="icon-long-arrow-right"></i></a>
                 </div><!-- End .cta-content -->
             </div><!-- End .col-md-12 -->
         </div><!-- End .row -->
@@ -1317,7 +1317,7 @@
     </div><!-- End .row -->
 
     <div class="more-container text-center mt-1 mb-5">
-        <a href="#" class="btn btn-outline-dark-2 btn-round btn-more"><span>Shop more Outlet deals</span><i class="icon-long-arrow-right"></i></a>
+        <a href="javascript:void(0)" class="btn btn-outline-dark-2 btn-round btn-more"><span>Shop more Outlet deals</span><i class="icon-long-arrow-right"></i></a>
     </div><!-- End .more-container -->
 </div><!-- End .container -->
 
@@ -1348,7 +1348,7 @@
             }
         }'>
         @foreach($memberships as $membership)
-        <a href="#" class="brand">
+        <a href="javascript:void(0)" class="brand">
             <img src="{{ asset('/images/brands/'.$membership->image) }}" alt="Brand Name">
         </a>
         @endforeach
@@ -1380,7 +1380,7 @@
         <div class="row">
             <div class="col-xl-5col d-none d-xl-block">
                 <div class="banner">
-                    <a href="#">
+                    <a href="javascript:void(0)">
                         <img src="{{ asset('/frontend/') }}/assets/images/demos/banners/banner-4.jpg" alt="banner">
                     </a>
                 </div><!-- End .banner -->
@@ -1418,18 +1418,18 @@
                                     </a>
 
                                     <div class="product-action-vertical">
-                                        <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
+                                        <a href="javascript:void(0)" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
                                     </div><!-- End .product-action -->
 
                                     <div class="product-action">
-                                        <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
+                                        <a href="javascript:void(0)" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
                                         <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                                     </div><!-- End .product-action -->
                                 </figure><!-- End .product-media -->
 
                                 <div class="product-body">
                                     <div class="product-cat">
-                                        <a href="#">Headphones</a>
+                                        <a href="javascript:void(0)">Headphones</a>
                                     </div><!-- End .product-cat -->
                                     <h3 class="product-title"><a href="product.html">Bose - SoundSport  wireless headphones</a></h3><!-- End .product-title -->
                                     <div class="product-price">
@@ -1443,9 +1443,9 @@
                                     </div><!-- End .rating-container -->
 
                                     <div class="product-nav product-nav-dots">
-                                        <a href="#" style="background: #69b4ff;"><span class="sr-only">Color name</span></a>
-                                        <a href="#" style="background: #ff887f;"><span class="sr-only">Color name</span></a>
-                                        <a href="#" class="active" style="background: #333333;"><span class="sr-only">Color name</span></a>
+                                        <a href="javascript:void(0)" style="background: #69b4ff;"><span class="sr-only">Color name</span></a>
+                                        <a href="javascript:void(0)" style="background: #ff887f;"><span class="sr-only">Color name</span></a>
+                                        <a href="javascript:void(0)" class="active" style="background: #333333;"><span class="sr-only">Color name</span></a>
                                     </div><!-- End .product-nav -->
                                 </div><!-- End .product-body -->
                             </div><!-- End .product -->
@@ -1457,18 +1457,18 @@
                                     </a>
 
                                     <div class="product-action-vertical">
-                                        <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
+                                        <a href="javascript:void(0)" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
                                     </div><!-- End .product-action -->
 
                                     <div class="product-action">
-                                        <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
+                                        <a href="javascript:void(0)" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
                                         <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                                     </div><!-- End .product-action -->
                                 </figure><!-- End .product-media -->
 
                                 <div class="product-body">
                                     <div class="product-cat">
-                                        <a href="#">Video Games</a>
+                                        <a href="javascript:void(0)">Video Games</a>
                                     </div><!-- End .product-cat -->
                                     <h3 class="product-title"><a href="product.html">Microsoft - Refurbish Xbox One S 500GB</a></h3><!-- End .product-title -->
                                     <div class="product-price">
@@ -1491,18 +1491,18 @@
                                     </a>
 
                                     <div class="product-action-vertical">
-                                        <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
+                                        <a href="javascript:void(0)" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
                                     </div><!-- End .product-action -->
 
                                     <div class="product-action">
-                                        <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
+                                        <a href="javascript:void(0)" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
                                         <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                                     </div><!-- End .product-action -->
                                 </figure><!-- End .product-media -->
 
                                 <div class="product-body">
                                     <div class="product-cat">
-                                        <a href="#">Smartwatches</a>
+                                        <a href="javascript:void(0)">Smartwatches</a>
                                     </div><!-- End .product-cat -->
                                     <h3 class="product-title"><a href="product.html">Apple Watch Series 4 Gold Aluminum Case</a></h3><!-- End .product-title -->
                                     <div class="product-price">
@@ -1516,9 +1516,9 @@
                                     </div><!-- End .rating-container -->
 
                                     <div class="product-nav product-nav-dots">
-                                        <a href="#" style="background: #edd2c8;"><span class="sr-only">Color name</span></a>
-                                        <a href="#" style="background: #eaeaec;"><span class="sr-only">Color name</span></a>
-                                        <a href="#" class="active" style="background: #333333;"><span class="sr-only">Color name</span></a>
+                                        <a href="javascript:void(0)" style="background: #edd2c8;"><span class="sr-only">Color name</span></a>
+                                        <a href="javascript:void(0)" style="background: #eaeaec;"><span class="sr-only">Color name</span></a>
+                                        <a href="javascript:void(0)" class="active" style="background: #333333;"><span class="sr-only">Color name</span></a>
                                     </div><!-- End .product-nav -->
                                 </div><!-- End .product-body -->
                             </div><!-- End .product -->
@@ -1532,18 +1532,18 @@
                                     </a>
 
                                     <div class="product-action-vertical">
-                                        <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
+                                        <a href="javascript:void(0)" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
                                     </div><!-- End .product-action -->
 
                                     <div class="product-action">
-                                        <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
+                                        <a href="javascript:void(0)" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
                                         <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                                     </div><!-- End .product-action -->
                                 </figure><!-- End .product-media -->
 
                                 <div class="product-body">
                                     <div class="product-cat">
-                                        <a href="#">TV & Home Theater</a>
+                                        <a href="javascript:void(0)">TV & Home Theater</a>
                                     </div><!-- End .product-cat -->
                                     <h3 class="product-title"><a href="product.html">Sony - Class LED 2160p Smart 4K Ultra HD</a></h3><!-- End .product-title -->
                                     <div class="product-price">
@@ -1567,18 +1567,18 @@
                                     </a>
 
                                     <div class="product-action-vertical">
-                                        <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
+                                        <a href="javascript:void(0)" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
                                     </div><!-- End .product-action -->
 
                                     <div class="product-action">
-                                        <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
+                                        <a href="javascript:void(0)" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
                                         <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                                     </div><!-- End .product-action -->
                                 </figure><!-- End .product-media -->
 
                                 <div class="product-body">
                                     <div class="product-cat">
-                                        <a href="#">Tablets</a>
+                                        <a href="javascript:void(0)">Tablets</a>
                                     </div><!-- End .product-cat -->
                                     <h3 class="product-title"><a href="product.html">Apple - 11 Inch iPad Pro  with Wi-Fi 256GB </a></h3><!-- End .product-title -->
                                     <div class="product-price">
@@ -1592,9 +1592,9 @@
                                     </div><!-- End .rating-container -->
 
                                     <div class="product-nav product-nav-dots">
-                                        <a href="#" style="background: #edd2c8;"><span class="sr-only">Color name</span></a>
-                                        <a href="#" style="background: #eaeaec;"><span class="sr-only">Color name</span></a>
-                                        <a href="#" class="active" style="background: #333333;"><span class="sr-only">Color name</span></a>
+                                        <a href="javascript:void(0)" style="background: #edd2c8;"><span class="sr-only">Color name</span></a>
+                                        <a href="javascript:void(0)" style="background: #eaeaec;"><span class="sr-only">Color name</span></a>
+                                        <a href="javascript:void(0)" class="active" style="background: #333333;"><span class="sr-only">Color name</span></a>
                                     </div><!-- End .product-nav -->
                                 </div><!-- End .product-body -->
                             </div><!-- End .product -->
@@ -1630,18 +1630,18 @@
                                     </a>
 
                                     <div class="product-action-vertical">
-                                        <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
+                                        <a href="javascript:void(0)" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
                                     </div><!-- End .product-action -->
 
                                     <div class="product-action">
-                                        <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
+                                        <a href="javascript:void(0)" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
                                         <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                                     </div><!-- End .product-action -->
                                 </figure><!-- End .product-media -->
 
                                 <div class="product-body">
                                     <div class="product-cat">
-                                        <a href="#">Tablets</a>
+                                        <a href="javascript:void(0)">Tablets</a>
                                     </div><!-- End .product-cat -->
                                     <h3 class="product-title"><a href="product.html">Apple - 11 Inch iPad Pro  with Wi-Fi 256GB </a></h3><!-- End .product-title -->
                                     <div class="product-price">
@@ -1655,9 +1655,9 @@
                                     </div><!-- End .rating-container -->
 
                                     <div class="product-nav product-nav-dots">
-                                        <a href="#" style="background: #edd2c8;"><span class="sr-only">Color name</span></a>
-                                        <a href="#" style="background: #eaeaec;"><span class="sr-only">Color name</span></a>
-                                        <a href="#" class="active" style="background: #333333;"><span class="sr-only">Color name</span></a>
+                                        <a href="javascript:void(0)" style="background: #edd2c8;"><span class="sr-only">Color name</span></a>
+                                        <a href="javascript:void(0)" style="background: #eaeaec;"><span class="sr-only">Color name</span></a>
+                                        <a href="javascript:void(0)" class="active" style="background: #333333;"><span class="sr-only">Color name</span></a>
                                     </div><!-- End .product-nav -->
                                 </div><!-- End .product-body -->
                             </div><!-- End .product -->
@@ -1669,18 +1669,18 @@
                                     </a>
 
                                     <div class="product-action-vertical">
-                                        <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
+                                        <a href="javascript:void(0)" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
                                     </div><!-- End .product-action -->
 
                                     <div class="product-action">
-                                        <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
+                                        <a href="javascript:void(0)" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
                                         <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                                     </div><!-- End .product-action -->
                                 </figure><!-- End .product-media -->
 
                                 <div class="product-body">
                                     <div class="product-cat">
-                                        <a href="#">Audio</a>
+                                        <a href="javascript:void(0)">Audio</a>
                                     </div><!-- End .product-cat -->
                                     <h3 class="product-title"><a href="product.html">Bose - SoundLink Bluetooth Speaker</a></h3><!-- End .product-title -->
                                     <div class="product-price">
@@ -1704,18 +1704,18 @@
                                     </a>
 
                                     <div class="product-action-vertical">
-                                        <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
+                                        <a href="javascript:void(0)" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
                                     </div><!-- End .product-action -->
 
                                     <div class="product-action">
-                                        <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
+                                        <a href="javascript:void(0)" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
                                         <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                                     </div><!-- End .product-action -->
                                 </figure><!-- End .product-media -->
 
                                 <div class="product-body">
                                     <div class="product-cat">
-                                        <a href="#">Cell Phone</a>
+                                        <a href="javascript:void(0)">Cell Phone</a>
                                     </div><!-- End .product-cat -->
                                     <h3 class="product-title"><a href="product.html">Google - Pixel 3 XL  128GB</a></h3><!-- End .product-title -->
                                     <div class="product-price">
@@ -1730,9 +1730,9 @@
                                     </div><!-- End .rating-container -->
 
                                     <div class="product-nav product-nav-dots">
-                                        <a href="#" class="active" style="background: #edd2c8;"><span class="sr-only">Color name</span></a>
-                                        <a href="#" style="background: #eaeaec;"><span class="sr-only">Color name</span></a>
-                                        <a href="#" style="background: #333333;"><span class="sr-only">Color name</span></a>
+                                        <a href="javascript:void(0)" class="active" style="background: #edd2c8;"><span class="sr-only">Color name</span></a>
+                                        <a href="javascript:void(0)" style="background: #eaeaec;"><span class="sr-only">Color name</span></a>
+                                        <a href="javascript:void(0)" style="background: #333333;"><span class="sr-only">Color name</span></a>
                                     </div><!-- End .product-nav -->
                                 </div><!-- End .product-body -->
                             </div><!-- End .product -->
@@ -1745,18 +1745,18 @@
                                     </a>
 
                                     <div class="product-action-vertical">
-                                        <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
+                                        <a href="javascript:void(0)" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
                                     </div><!-- End .product-action -->
 
                                     <div class="product-action">
-                                        <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
+                                        <a href="javascript:void(0)" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
                                         <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                                     </div><!-- End .product-action -->
                                 </figure><!-- End .product-media -->
 
                                 <div class="product-body">
                                     <div class="product-cat">
-                                        <a href="#">TV & Home Theater</a>
+                                        <a href="javascript:void(0)">TV & Home Theater</a>
                                     </div><!-- End .product-cat -->
                                     <h3 class="product-title"><a href="product.html">Samsung - 55" Class  LED 2160p Smart</a></h3><!-- End .product-title -->
                                     <div class="product-price">
@@ -1779,18 +1779,18 @@
                                     </a>
 
                                     <div class="product-action-vertical">
-                                        <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
+                                        <a href="javascript:void(0)" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
                                     </div><!-- End .product-action -->
 
                                     <div class="product-action">
-                                        <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
+                                        <a href="javascript:void(0)" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
                                         <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                                     </div><!-- End .product-action -->
                                 </figure><!-- End .product-media -->
 
                                 <div class="product-body">
                                     <div class="product-cat">
-                                        <a href="#">Laptops</a>
+                                        <a href="javascript:void(0)">Laptops</a>
                                     </div><!-- End .product-cat -->
                                     <h3 class="product-title"><a href="product.html">MacBook Pro 13" Display, i5</a></h3><!-- End .product-title -->
                                     <div class="product-price">
@@ -1836,18 +1836,18 @@
                                     </a>
 
                                     <div class="product-action-vertical">
-                                        <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
+                                        <a href="javascript:void(0)" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
                                     </div><!-- End .product-action -->
 
                                     <div class="product-action">
-                                        <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
+                                        <a href="javascript:void(0)" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
                                         <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                                     </div><!-- End .product-action -->
                                 </figure><!-- End .product-media -->
 
                                 <div class="product-body">
                                     <div class="product-cat">
-                                        <a href="#">Smartwatches</a>
+                                        <a href="javascript:void(0)">Smartwatches</a>
                                     </div><!-- End .product-cat -->
                                     <h3 class="product-title"><a href="product.html">Apple Watch Series 4 Gold Aluminum Case</a></h3><!-- End .product-title -->
                                     <div class="product-price">
@@ -1861,9 +1861,9 @@
                                     </div><!-- End .rating-container -->
 
                                     <div class="product-nav product-nav-dots">
-                                        <a href="#" style="background: #edd2c8;"><span class="sr-only">Color name</span></a>
-                                        <a href="#" style="background: #eaeaec;"><span class="sr-only">Color name</span></a>
-                                        <a href="#" class="active" style="background: #333333;"><span class="sr-only">Color name</span></a>
+                                        <a href="javascript:void(0)" style="background: #edd2c8;"><span class="sr-only">Color name</span></a>
+                                        <a href="javascript:void(0)" style="background: #eaeaec;"><span class="sr-only">Color name</span></a>
+                                        <a href="javascript:void(0)" class="active" style="background: #333333;"><span class="sr-only">Color name</span></a>
                                     </div><!-- End .product-nav -->
                                 </div><!-- End .product-body -->
                             </div><!-- End .product -->
@@ -1876,18 +1876,18 @@
                                     </a>
 
                                     <div class="product-action-vertical">
-                                        <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
+                                        <a href="javascript:void(0)" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
                                     </div><!-- End .product-action -->
 
                                     <div class="product-action">
-                                        <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
+                                        <a href="javascript:void(0)" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
                                         <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                                     </div><!-- End .product-action -->
                                 </figure><!-- End .product-media -->
 
                                 <div class="product-body">
                                     <div class="product-cat">
-                                        <a href="#">Headphones</a>
+                                        <a href="javascript:void(0)">Headphones</a>
                                     </div><!-- End .product-cat -->
                                     <h3 class="product-title"><a href="product.html">Bose - SoundSport  wireless headphones</a></h3><!-- End .product-title -->
                                     <div class="product-price">
@@ -1901,9 +1901,9 @@
                                     </div><!-- End .rating-container -->
 
                                     <div class="product-nav product-nav-dots">
-                                        <a href="#" style="background: #69b4ff;"><span class="sr-only">Color name</span></a>
-                                        <a href="#" style="background: #ff887f;"><span class="sr-only">Color name</span></a>
-                                        <a href="#" class="active" style="background: #333333;"><span class="sr-only">Color name</span></a>
+                                        <a href="javascript:void(0)" style="background: #69b4ff;"><span class="sr-only">Color name</span></a>
+                                        <a href="javascript:void(0)" style="background: #ff887f;"><span class="sr-only">Color name</span></a>
+                                        <a href="javascript:void(0)" class="active" style="background: #333333;"><span class="sr-only">Color name</span></a>
                                     </div><!-- End .product-nav -->
                                 </div><!-- End .product-body -->
                             </div><!-- End .product -->
@@ -1915,18 +1915,18 @@
                                     </a>
 
                                     <div class="product-action-vertical">
-                                        <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
+                                        <a href="javascript:void(0)" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
                                     </div><!-- End .product-action -->
 
                                     <div class="product-action">
-                                        <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
+                                        <a href="javascript:void(0)" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
                                         <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                                     </div><!-- End .product-action -->
                                 </figure><!-- End .product-media -->
 
                                 <div class="product-body">
                                     <div class="product-cat">
-                                        <a href="#">Video Games</a>
+                                        <a href="javascript:void(0)">Video Games</a>
                                     </div><!-- End .product-cat -->
                                     <h3 class="product-title"><a href="product.html">Microsoft - Refurbish Xbox One S 500GB</a></h3><!-- End .product-title -->
                                     <div class="product-price">
@@ -1949,18 +1949,18 @@
                                     </a>
 
                                     <div class="product-action-vertical">
-                                        <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
+                                        <a href="javascript:void(0)" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
                                     </div><!-- End .product-action -->
 
                                     <div class="product-action">
-                                        <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
+                                        <a href="javascript:void(0)" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
                                         <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                                     </div><!-- End .product-action -->
                                 </figure><!-- End .product-media -->
 
                                 <div class="product-body">
                                     <div class="product-cat">
-                                        <a href="#">Tablets</a>
+                                        <a href="javascript:void(0)">Tablets</a>
                                     </div><!-- End .product-cat -->
                                     <h3 class="product-title"><a href="product.html">Apple - 11 Inch iPad Pro  with Wi-Fi 256GB </a></h3><!-- End .product-title -->
                                     <div class="product-price">
@@ -1974,9 +1974,9 @@
                                     </div><!-- End .rating-container -->
 
                                     <div class="product-nav product-nav-dots">
-                                        <a href="#" style="background: #edd2c8;"><span class="sr-only">Color name</span></a>
-                                        <a href="#" style="background: #eaeaec;"><span class="sr-only">Color name</span></a>
-                                        <a href="#" class="active" style="background: #333333;"><span class="sr-only">Color name</span></a>
+                                        <a href="javascript:void(0)" style="background: #edd2c8;"><span class="sr-only">Color name</span></a>
+                                        <a href="javascript:void(0)" style="background: #eaeaec;"><span class="sr-only">Color name</span></a>
+                                        <a href="javascript:void(0)" class="active" style="background: #333333;"><span class="sr-only">Color name</span></a>
                                     </div><!-- End .product-nav -->
                                 </div><!-- End .product-body -->
                             </div><!-- End .product -->
@@ -1997,7 +1997,7 @@
         </div><!-- End .heading-left -->
 
        <div class="heading-right">
-            <a href="#" class="title-link">View All Recommendadion <i class="icon-long-arrow-right"></i></a>
+            <a href="javascript:void(0)" class="title-link">View All Recommendadion <i class="icon-long-arrow-right"></i></a>
        </div><!-- End .heading-right -->
     </div><!-- End .heading -->
 
@@ -2012,18 +2012,18 @@
                         </a>
 
                         <div class="product-action-vertical">
-                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
+                            <a href="javascript:void(0)" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
                         </div><!-- End .product-action -->
 
                         <div class="product-action">
-                            <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
+                            <a href="javascript:void(0)" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
                             <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
                     <div class="product-body">
                         <div class="product-cat">
-                            <a href="#">Headphones</a>
+                            <a href="javascript:void(0)">Headphones</a>
                         </div><!-- End .product-cat -->
                         <h3 class="product-title"><a href="product.html">Beats by Dr. Dre Wireless  Headphones</a></h3><!-- End .product-title -->
                         <div class="product-price">
@@ -2038,11 +2038,11 @@
                         </div><!-- End .rating-container -->
 
                         <div class="product-nav product-nav-dots">
-                            <a href="#" class="active" style="background: #666666;"><span class="sr-only">Color name</span></a>
-                            <a href="#" style="background: #ff887f;"><span class="sr-only">Color name</span></a>
-                            <a href="#" style="background: #6699cc;"><span class="sr-only">Color name</span></a>
-                            <a href="#" style="background: #f3dbc1;"><span class="sr-only">Color name</span></a>
-                            <a href="#" style="background: #eaeaec;"><span class="sr-only">Color name</span></a>
+                            <a href="javascript:void(0)" class="active" style="background: #666666;"><span class="sr-only">Color name</span></a>
+                            <a href="javascript:void(0)" style="background: #ff887f;"><span class="sr-only">Color name</span></a>
+                            <a href="javascript:void(0)" style="background: #6699cc;"><span class="sr-only">Color name</span></a>
+                            <a href="javascript:void(0)" style="background: #f3dbc1;"><span class="sr-only">Color name</span></a>
+                            <a href="javascript:void(0)" style="background: #eaeaec;"><span class="sr-only">Color name</span></a>
                         </div><!-- End .product-nav -->
                     </div><!-- End .product-body -->
                 </div><!-- End .product -->
@@ -2056,18 +2056,18 @@
                         </a>
 
                         <div class="product-action-vertical">
-                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
+                            <a href="javascript:void(0)" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
                         </div><!-- End .product-action -->
 
                         <div class="product-action">
-                            <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
+                            <a href="javascript:void(0)" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
                             <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
                     <div class="product-body">
                         <div class="product-cat">
-                            <a href="#">Cameras & Camcorders</a>
+                            <a href="javascript:void(0)">Cameras & Camcorders</a>
                         </div><!-- End .product-cat -->
                         <h3 class="product-title"><a href="product.html">GoPro - HERO7 Black HD Waterproof Action</a></h3><!-- End .product-title -->
                         <div class="product-price">
@@ -2093,18 +2093,18 @@
                         </a>
 
                         <div class="product-action-vertical">
-                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
+                            <a href="javascript:void(0)" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
                         </div><!-- End .product-action -->
 
                         <div class="product-action">
-                            <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
+                            <a href="javascript:void(0)" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
                             <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
                     <div class="product-body">
                         <div class="product-cat">
-                            <a href="#">Smartwatches</a>
+                            <a href="javascript:void(0)">Smartwatches</a>
                         </div><!-- End .product-cat -->
                         <h3 class="product-title"><a href="product.html">Apple - Apple Watch Series 3 with White Sport Band</a></h3><!-- End .product-title -->
                         <div class="product-price">
@@ -2118,9 +2118,9 @@
                         </div><!-- End .rating-container -->
 
                         <div class="product-nav product-nav-dots">
-                            <a href="#" class="active" style="background: #e2e2e2;"><span class="sr-only">Color name</span></a>
-                            <a href="#" style="background: #333333;"><span class="sr-only">Color name</span></a>
-                            <a href="#" style="background: #f2bc9e;"><span class="sr-only">Color name</span></a>
+                            <a href="javascript:void(0)" class="active" style="background: #e2e2e2;"><span class="sr-only">Color name</span></a>
+                            <a href="javascript:void(0)" style="background: #333333;"><span class="sr-only">Color name</span></a>
+                            <a href="javascript:void(0)" style="background: #f2bc9e;"><span class="sr-only">Color name</span></a>
                         </div><!-- End .product-nav -->
                     </div><!-- End .product-body -->
                 </div><!-- End .product -->
@@ -2134,18 +2134,18 @@
                         </a>
 
                         <div class="product-action-vertical">
-                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
+                            <a href="javascript:void(0)" class="btn-product-icon btn-wishlist" title="Add to wishlist"></a>
                         </div><!-- End .product-action -->
 
                         <div class="product-action">
-                            <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
+                            <a href="javascript:void(0)" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
                             <a href="{{ asset('/frontend/') }}/assets/popup/quickView.html" class="btn-product btn-quickview" title="Quick view"><span>quick view</span></a>
                         </div><!-- End .product-action -->
                     </figure><!-- End .product-media -->
 
                     <div class="product-body">
                         <div class="product-cat">
-                            <a href="#">Laptops</a>
+                            <a href="javascript:void(0)">Laptops</a>
                         </div><!-- End .product-cat -->
                         <h3 class="product-title"><a href="product.html">Lenovo - 330-15IKBR 15.6"</a></h3><!-- End .product-title -->
                         <div class="product-price">
